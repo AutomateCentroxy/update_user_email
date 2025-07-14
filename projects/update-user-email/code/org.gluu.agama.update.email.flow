@@ -55,7 +55,7 @@ Repeat 6 times max
                               emailObj.resent = uiInput.resent
                               // Render OTP input for
                               input = RRF "emailOtp.ftlh" emailObj
-                              When input.formType is emailOtpForm
+                              When input.formType is "emailOtpForm"
                                    // Check if form was submitted via JSON 
                                    uiInput = input
                               Otherwise
@@ -100,5 +100,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_qnvrl = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_qnvrl
+it_vzkjn = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_vzkjn
