@@ -1,13 +1,17 @@
+[#ftl output_format="HTML"]
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Update User Profile
-	</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  </head>
-  <body>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Update User Profile
+	</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></head>
+<body>
+
+  
+	
+	
+	
+	
+  
+  
 	<div class="registration-container">
 	  <div align="center" class="flex">
 		<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png" id="inh1m">
@@ -47,8 +51,11 @@
 		</form>
 	  </div>
 	</div>
-  </body>
-  <style>
+  
+  
+  
+</body>
+<style>
 	body {
 	  font-family: Arial, sans-serif;
 	  background-color: #f8f9fa;
@@ -156,7 +163,7 @@
 	  text-decoration: underline;
 	}
   </style>
-  <script>
+<script>
 	function validateForm(event) {
 	  // Example validation script if needed
 	}
