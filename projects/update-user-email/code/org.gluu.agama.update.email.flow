@@ -65,6 +65,7 @@ Repeat 6 times max
                                    uiInput.resent = true
                               // When passcode entered by user matches
                               When uiInput.passcode is otpCode
+                                   emailObj.success = true
                               // Variable assigned when OTP entered by user does not matches
                               uiInput.matches = false
                               sendMail = true
@@ -75,5 +76,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_dzrju = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_dzrju
+it_mdcqu = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_mdcqu
