@@ -1721,7 +1721,7 @@
 					"x": 5195.3487450495,
 					"y": 149.4655567473026
 				},
-				"previousNodeId": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
+				"previousNodeId": "assignmentNode-77186915-f185-4e35-aeb9-bbac6dcfb90a",
 				"agamaData": {
 					"assignments": [
 						{
@@ -2715,11 +2715,29 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a_otherwise"
+		},
+		{
+			"source": "assignmentNode-77186915-f185-4e35-aeb9-bbac6dcfb90a",
+			"sourceHandle": "source_assignmentNode-77186915-f185-4e35-aeb9-bbac6dcfb90a",
+			"target": "assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
+			"targetHandle": "target_assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"id": "xy-edge__assignmentNode-77186915-f185-4e35-aeb9-bbac6dcfb90asource_assignmentNode-77186915-f185-4e35-aeb9-bbac6dcfb90a-assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057target_assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057"
 		}
 	],
 	"viewport": {
-		"x": -3665.5260862324103,
-		"y": 242.30936842501967,
+		"x": -3728.5260862324103,
+		"y": 282.30936842501967,
 		"zoom": 0.860949188338904
 	}
 }
