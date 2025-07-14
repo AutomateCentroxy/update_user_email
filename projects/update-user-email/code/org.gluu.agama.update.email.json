@@ -253,7 +253,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "whenNode-6f4abbbb-5942-49b5-94c4-f1bf14fda271",
@@ -355,7 +355,7 @@
 				"agamaData": {
 					"javaClassName": "",
 					"javaMethodName": "getUserEntityByUsername",
-					"javaVariableName": "usernameUpdateService",
+					"javaVariableName": "emailUpdateService",
 					"exceptionVariableField": "",
 					"callType": "Call method on instance",
 					"arguments": [
@@ -375,7 +375,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "whenNode-532b07c7-f7a9-4a53-a097-f7259278fa5f",
@@ -913,8 +913,8 @@
 		}
 	],
 	"viewport": {
-		"x": -589.6237223158341,
-		"y": 57.74243151401248,
+		"x": -1028.6237223158341,
+		"y": -45.25756848598752,
 		"zoom": 0.860949188338904
 	}
 }
