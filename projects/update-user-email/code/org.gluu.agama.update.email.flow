@@ -41,6 +41,7 @@ Repeat 6 times max
                               sendMail = false
                               // Call email service to send mail
                               otpCode = Call emailUpdateService sendEmail email
+                              // Send Email Otp method called
                               Log "@info " Send Email Otp method called
                               // When OTP code null
                               When otpCode is null
@@ -63,5 +64,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_qhbhh = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_qhbhh
+it_juagc = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_juagc
