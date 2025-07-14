@@ -1285,6 +1285,50 @@
 				"width": 109,
 				"height": 58
 			},
+			"selected": false
+		},
+		{
+			"id": "assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474",
+			"type": "assignmentNode",
+			"position": {
+				"x": 5794.803812468582,
+				"y": 366.9370499675973
+			},
+			"data": {
+				"id": "assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474",
+				"type": "assignmentNode",
+				"position": {
+					"x": 5794.803812468582,
+					"y": 366.9370499675973
+				},
+				"previousNodeId": "whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841",
+				"branching": "continue",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "false",
+							"assignedVariableName": "uiInput.matches"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "sendMail"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Variable assigned when OTP entered by user does not matches"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
 			"selected": true
 		}
 	],
@@ -1876,11 +1920,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5_continue"
+		},
+		{
+			"id": "whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841-assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474",
+			"type": "default",
+			"source": "whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841",
+			"target": "assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841_continue"
 		}
 	],
 	"viewport": {
-		"x": -5092.0481910896415,
-		"y": -122.68437764123291,
+		"x": -5317.0481910896415,
+		"y": -130.6843776412329,
 		"zoom": 1
 	}
 }
