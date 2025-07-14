@@ -6,7 +6,9 @@ import io.jans.as.common.service.common.UserService;
 import io.jans.orm.exception.operation.EntryNotFoundException;
 import io.jans.service.cdi.util.CdiUtil;
 import io.jans.util.StringHelper;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.gluu.agama.smtp.jans.service.JansEmailService;
 import org.gluu.agama.update.EmailTemplate;
 import org.gluu.agama.update.jans.model.ContextData;
 import org.gluu.agama.user.EmailUpdate;
@@ -26,7 +28,8 @@ import io.jans.as.common.service.common.ConfigurationService;
 
 
 public class JansEmailUpdate extends EmailUpdate {
-    
+    private static final Logger logger = LoggerFactory.getLogger(JansEmailUpdate.class);
+
     private static final String MAIL = "mail";
     private static final String UID = "uid";
     private static final String DISPLAY_NAME = "displayName";
@@ -270,4 +273,5 @@ public class JansEmailUpdate extends EmailUpdate {
         return userService.getUserByAttribute(attributeName, value, true);
     }
 }
+
 
