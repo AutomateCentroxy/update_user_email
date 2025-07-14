@@ -1591,6 +1591,40 @@
 				"width": 170,
 				"height": 122
 			},
+			"selected": false
+		},
+		{
+			"id": "rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
+			"type": "rrfNode",
+			"position": {
+				"x": 7038.320854995159,
+				"y": 787.4664153001027
+			},
+			"data": {
+				"id": "rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
+				"type": "rrfNode",
+				"position": {
+					"x": 7038.320854995159,
+					"y": 787.4664153001027
+				},
+				"previousNodeId": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3",
+				"agamaData": {
+					"assignments": [],
+					"nodeIcon": "ph:globe-simple",
+					"templatePath": "acknowledgementEmail.ftlh",
+					"asssignedVariableName": "acknowledgementInput",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": " Show acknowledgement UI page for successful Update "
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
 			"selected": true
 		}
 	],
@@ -2334,6 +2368,25 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-4df2446b-c1c3-4fb6-8c83-1f3b4396fed0_success"
+		},
+		{
+			"id": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3-rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
+			"type": "default",
+			"source": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3",
+			"target": "rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3"
 		}
 	],
 	"viewport": {
