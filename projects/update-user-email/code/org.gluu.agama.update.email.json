@@ -1705,8 +1705,8 @@
 			"id": "whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a",
 			"type": "whenNode",
 			"position": {
-				"x": 4869.152389242874,
-				"y": -85.50042961809568
+				"x": 4880.562901598879,
+				"y": 5.783669229936745
 			},
 			"data": {
 				"id": "whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a",
@@ -1780,15 +1780,15 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
 			"id": "assignmentNode-a7a8486d-d0f1-4b4b-94fe-6d2fdaabc92a",
 			"type": "assignmentNode",
 			"position": {
-				"x": 4971.744075514853,
-				"y": 97.58386224918068
+				"x": 5048.357515619451,
+				"y": 281.78213313896043
 			},
 			"data": {
 				"id": "assignmentNode-a7a8486d-d0f1-4b4b-94fe-6d2fdaabc92a",
@@ -1820,7 +1820,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		}
 	],
