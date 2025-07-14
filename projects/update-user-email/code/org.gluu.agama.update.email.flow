@@ -58,7 +58,7 @@ Repeat 6 times max
                               // resent will false
                               uiInput.resent = false
                               // If user clicked on "resend code" button
-                              When uiInput.resent is true
+                              When uiInput.resent is ""
                                    // Variable assignment when user clicked on "resend code" button
                                    sendMail = true
                                    uiInput.resent = true
@@ -95,5 +95,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_smaqu = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_smaqu
+it_uznat = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_uznat
