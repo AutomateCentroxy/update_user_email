@@ -998,7 +998,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1083,6 +1083,40 @@
 			},
 			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "finishNode-03d5b503-672c-49c2-92e6-306363f1334e",
+			"type": "finishNode",
+			"position": {
+				"x": 3616.9883415604018,
+				"y": -88.12156315226272
+			},
+			"data": {
+				"id": "finishNode-03d5b503-672c-49c2-92e6-306363f1334e",
+				"type": "finishNode",
+				"position": {
+					"x": 3616.9883415604018,
+					"y": -88.12156315226272
+				},
+				"previousNodeId": "assignmentNode-3e88e8ea-3f2c-422e-8a3c-f43317fa4385",
+				"agamaData": {
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Finish flow when user exceeds maximum number of flows allowed",
+					"flowfilename": "",
+					"returnVariable": "obj",
+					"finishMode": "withVariable",
+					"nodeIcon": "material-symbols:line-end-square-rounded"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -1578,6 +1612,25 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__whenNode-fe870dec-1015-4016-bc7b-2a37ead9e755source_whenNode-fe870dec-1015-4016-bc7b-2a37ead9e755_success-callNode-20dfd3e5-ced1-489e-ba22-0f9c0e864163target_callNode-20dfd3e5-ced1-489e-ba22-0f9c0e864163"
+		},
+		{
+			"id": "assignmentNode-3e88e8ea-3f2c-422e-8a3c-f43317fa4385-finishNode-03d5b503-672c-49c2-92e6-306363f1334e",
+			"type": "default",
+			"source": "assignmentNode-3e88e8ea-3f2c-422e-8a3c-f43317fa4385",
+			"target": "finishNode-03d5b503-672c-49c2-92e6-306363f1334e",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-3e88e8ea-3f2c-422e-8a3c-f43317fa4385"
 		}
 	],
 	"viewport": {
