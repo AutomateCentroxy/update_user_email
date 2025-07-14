@@ -7,7 +7,7 @@ import io.jans.orm.exception.operation.EntryNotFoundException;
 import io.jans.service.cdi.util.CdiUtil;
 import io.jans.util.StringHelper;
 
-import org.gluu.agama.smtp.jans.model.ContextData;
+import org.gluu.agama.update.EmailTemplate;
 import org.gluu.agama.user.EmailUpdate;
 import io.jans.agama.engine.script.LogUtils;
 import java.io.IOException;
