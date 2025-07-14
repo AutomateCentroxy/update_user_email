@@ -685,8 +685,8 @@
 			"id": "logNode-39c45721-79eb-430a-ac0c-a9005fe1cc06",
 			"type": "logNode",
 			"position": {
-				"x": 3305,
-				"y": 4
+				"x": 3299.5057289121155,
+				"y": -0.9448439790959497
 			},
 			"data": {
 				"id": "logNode-39c45721-79eb-430a-ac0c-a9005fe1cc06",
@@ -711,6 +711,49 @@
 			"measured": {
 				"width": 168,
 				"height": 120
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d",
+			"type": "whenNode",
+			"position": {
+				"x": 3549.5057289121155,
+				"y": -0.9448439790959497
+			},
+			"data": {
+				"id": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d",
+				"type": "whenNode",
+				"position": {
+					"x": 3549.5057289121155,
+					"y": -0.9448439790959497
+				},
+				"previousNodeId": "logNode-39c45721-79eb-430a-ac0c-a9005fe1cc06",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "otpCode",
+							"operator": "is",
+							"dataValue": "null",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "When OTP code null"
+				}
+			},
+			"measured": {
+				"width": 109,
+				"height": 58
 			},
 			"selected": true
 		}
@@ -1038,11 +1081,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_callNode-20dfd3e5-ced1-489e-ba22-0f9c0e864163"
+		},
+		{
+			"id": "logNode-39c45721-79eb-430a-ac0c-a9005fe1cc06-whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d",
+			"type": "default",
+			"source": "logNode-39c45721-79eb-430a-ac0c-a9005fe1cc06",
+			"target": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-39c45721-79eb-430a-ac0c-a9005fe1cc06"
 		}
 	],
 	"viewport": {
-		"x": -1505.9873869947005,
-		"y": 137.34584958581047,
-		"zoom": 0.7412335049014176
+		"x": -6160.8042193257115,
+		"y": 335.9136013593953,
+		"zoom": 1.8200776481617982
 	}
 }
