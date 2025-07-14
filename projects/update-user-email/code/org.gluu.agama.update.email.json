@@ -1114,7 +1114,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-6225e75c-8d1e-4f63-af80-42ef09e485f1",
@@ -1133,21 +1133,27 @@
 				"previousNodeId": "whenNode-1dc6ed55-c698-44e3-8eab-0cddfe79863a",
 				"branching": "success",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "false",
+							"assignedVariableName": "sendMail"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Tun off send mail"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		}
 	],
@@ -1685,8 +1691,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2974.2851059472414,
-		"y": 98.48645700796709,
+		"x": -3181.2851059472414,
+		"y": 31.48645700796709,
 		"zoom": 1
 	}
 }
