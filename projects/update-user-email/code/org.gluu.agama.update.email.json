@@ -1329,7 +1329,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1370,6 +1370,39 @@
 				"height": 122
 			},
 			"selected": false
+		},
+		{
+			"id": "logNode-22443251-ca87-4890-acf4-be3af41ff76a",
+			"type": "logNode",
+			"position": {
+				"x": 6044.803812468582,
+				"y": 566.9370499675973
+			},
+			"data": {
+				"id": "logNode-22443251-ca87-4890-acf4-be3af41ff76a",
+				"type": "logNode",
+				"position": {
+					"x": 6044.803812468582,
+					"y": 566.9370499675973
+				},
+				"previousNodeId": "assignmentNode-e58e387d-d1b6-499c-9122-da99b248f29a",
+				"agamaData": {
+					"logMessage": "\"E-mail verification passed, initiating user email update flow\"",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "E-mail verification passed, initiating user provisioning flow"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -1998,11 +2031,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841_success"
+		},
+		{
+			"id": "assignmentNode-e58e387d-d1b6-499c-9122-da99b248f29a-logNode-22443251-ca87-4890-acf4-be3af41ff76a",
+			"type": "default",
+			"source": "assignmentNode-e58e387d-d1b6-499c-9122-da99b248f29a",
+			"target": "logNode-22443251-ca87-4890-acf4-be3af41ff76a",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-e58e387d-d1b6-499c-9122-da99b248f29a"
 		}
 	],
 	"viewport": {
-		"x": -6538.881301859855,
-		"y": -347.912265409414,
-		"zoom": 1.2485991523502282
+		"x": -5197.705427721407,
+		"y": -197.80986879997886,
+		"zoom": 0.9255035259134988
 	}
 }
