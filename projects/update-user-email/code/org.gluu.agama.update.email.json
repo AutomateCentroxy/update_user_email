@@ -233,7 +233,7 @@
 				},
 				"previousNodeId": "rrfNode-6608a07f-27b5-4ed6-8ea4-5b2c1ed3114a",
 				"agamaData": {
-					"javaClassName": "org.gluu.agama.user.UsernameUpdate",
+					"javaClassName": "org.gluu.agama.user.EmailUpdate",
 					"javaMethodName": "getInstance",
 					"javaVariableName": "",
 					"exceptionVariableField": "",
@@ -246,14 +246,14 @@
 					"displayName": "CALL",
 					"hasComment": true,
 					"comment": " create an instance of Update service",
-					"asssignedVariableName": "usernameUpdateService"
+					"asssignedVariableName": "emailUpdateService"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "whenNode-6f4abbbb-5942-49b5-94c4-f1bf14fda271",
@@ -913,8 +913,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5611.558457144061,
-		"y": 303.6021825073181,
-		"zoom": 2
+		"x": -589.6237223158341,
+		"y": 57.74243151401248,
+		"zoom": 0.860949188338904
 	}
 }
