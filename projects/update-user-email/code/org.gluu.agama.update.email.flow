@@ -33,24 +33,10 @@ Repeat 6 times max
                Otherwise
                     email = userInput.mail
                     inum = userWithUid.inum
-                    otpCode = Call emailUpdateService sendEmail email
-                    Log "@info " Send Email Otp method called
-                    // When OTP code null
-                    When otpCode is null
-                         // Variable assignment for unsuccessful Email delivery
-                         emailObj = { success: false, error: "Unable_to_deliver_email_message" }
-                         // Finish flow unsuccessfully
-                         Finish emailObj
-                    emailObj.email = email
-                    emailObj.accountExists = existingAccount
-                    emailObj.matches = uiInput.matches
-                    emailObj.resent = uiInput.resent
-                    // Redirect to page asking for OTP received using email
-                    uiInput = RRF "emailOtp.ftlh" emailObj
-                    // resent will false
-                    uiInput.resent = false
+                    Repeat __________ times max
+                         When 
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_jfbcp = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_jfbcp
+it_pizki = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_pizki
