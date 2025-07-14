@@ -8,7 +8,7 @@ Repeat 6 times max
      //  Retrieve user profile  from UI
      searchUserInput = RRF "searchUser.ftlh" uiFeedback
      //  create an instance of Update service
-     usernameUpdateService = Call org.gluu.agama.user.UsernameUpdate#getInstance 
+     emailUpdateService = Call org.gluu.agama.user.EmailUpdate#getInstance 
      // when searchUserForm is submitted
      When searchUserInput.formType is "searchUserForm"
           // assign username to a variable
@@ -33,5 +33,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_tekyg = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_tekyg
+it_vexwr = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_vexwr
