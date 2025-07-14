@@ -1557,6 +1557,40 @@
 				"width": 170,
 				"height": 122
 			},
+			"selected": false
+		},
+		{
+			"id": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3",
+			"type": "logNode",
+			"position": {
+				"x": 6788.320854995159,
+				"y": 787.4664153001027
+			},
+			"data": {
+				"id": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3",
+				"type": "logNode",
+				"position": {
+					"x": 6788.320854995159,
+					"y": 787.4664153001027
+				},
+				"previousNodeId": "whenNode-4df2446b-c1c3-4fb6-8c83-1f3b4396fed0",
+				"branching": "success",
+				"agamaData": {
+					"logMessage": "\"User % has been updated\" inum",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "LOG",
+					"hasComment": true,
+					"comment": " Show user updation log"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
 			"selected": true
 		}
 	],
@@ -2281,11 +2315,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_logNode-99ece441-25a4-4a21-a48a-5ea33381ddf6"
+		},
+		{
+			"id": "whenNode-4df2446b-c1c3-4fb6-8c83-1f3b4396fed0-logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3",
+			"type": "default",
+			"source": "whenNode-4df2446b-c1c3-4fb6-8c83-1f3b4396fed0",
+			"target": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "Condition met",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-4df2446b-c1c3-4fb6-8c83-1f3b4396fed0_success"
 		}
 	],
 	"viewport": {
-		"x": -5668.705427721407,
-		"y": -94.80986879997886,
-		"zoom": 0.9255035259134988
+		"x": -6325,
+		"y": -261,
+		"zoom": 1
 	}
 }
