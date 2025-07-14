@@ -835,8 +835,8 @@
 			"id": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
 			"type": "assignmentNode",
 			"position": {
-				"x": 3755.772952122932,
-				"y": -144.00291042506956
+				"x": 3781.716124794482,
+				"y": -152.15647897898515
 			},
 			"data": {
 				"id": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
@@ -877,6 +877,42 @@
 					"displayName": "",
 					"hasComment": true,
 					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
+			"type": "rrfNode",
+			"position": {
+				"x": 4028.009957269974,
+				"y": -164.75744856230926
+			},
+			"data": {
+				"id": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
+				"type": "rrfNode",
+				"position": {
+					"x": 4031.716124794482,
+					"y": -152.15647897898515
+				},
+				"previousNodeId": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
+				"agamaData": {
+					"assignments": [],
+					"nodeIcon": "ph:globe-simple",
+					"templatePath": "emailOtp.ftlh",
+					"asssignedVariableName": "uiInput",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "OTP received Page",
+					"hasComment": true,
+					"comment": "Redirect to page asking for OTP received using email",
+					"arguments": "emailObj"
 				}
 			},
 			"measured": {
@@ -1286,11 +1322,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d_continue"
+		},
+		{
+			"id": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785-rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
+			"type": "default",
+			"source": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
+			"target": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785"
 		}
 	],
 	"viewport": {
-		"x": -4831.966717235244,
-		"y": 417.44879397109685,
+		"x": -5212.966717235244,
+		"y": 423.44879397109685,
 		"zoom": 1.3491025343396987
 	}
 }
