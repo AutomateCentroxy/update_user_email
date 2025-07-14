@@ -471,7 +471,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-ff55da90-e37e-4952-9402-9a1187f12240",
@@ -1101,7 +1101,7 @@
 						{
 							"variable": "uiInput.resent",
 							"operator": "is",
-							"dataValue": "\"\"",
+							"dataValue": "true",
 							"combinator": "none"
 						}
 					],
@@ -1118,7 +1118,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2736,8 +2736,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1640.9685193197715,
-		"y": 287.69848880817506,
-		"zoom": 0.7412335049014176
+		"x": -5022,
+		"y": -45,
+		"zoom": 1
 	}
 }
