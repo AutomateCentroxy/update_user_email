@@ -158,8 +158,8 @@
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 122
+				"width": 168,
+				"height": 120
 			},
 			"selected": false
 		},
@@ -755,7 +755,47 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": true
+			"selected": false
+		},
+		{
+			"id": "assignmentNode-aaa5236a-3918-45fc-80a1-f5c90165a775",
+			"type": "assignmentNode",
+			"position": {
+				"x": 3742.9147367069063,
+				"y": 122.68478789931092
+			},
+			"data": {
+				"id": "assignmentNode-aaa5236a-3918-45fc-80a1-f5c90165a775",
+				"type": "assignmentNode",
+				"position": {
+					"x": 3799.5057289121155,
+					"y": 199.05515602090406
+				},
+				"previousNodeId": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d",
+				"branching": "success",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{ success: false, error: \"Unable_to_deliver_email_message\" }",
+							"assignedVariableName": "emailObj"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Variable assignment for unsuccessful Email delivery"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -1100,11 +1140,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_logNode-39c45721-79eb-430a-ac0c-a9005fe1cc06"
+		},
+		{
+			"id": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d-assignmentNode-aaa5236a-3918-45fc-80a1-f5c90165a775",
+			"type": "default",
+			"source": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d",
+			"target": "assignmentNode-aaa5236a-3918-45fc-80a1-f5c90165a775",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "Condition met",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d_success"
 		}
 	],
 	"viewport": {
-		"x": -6160.8042193257115,
-		"y": 335.9136013593953,
+		"x": -6438.8042193257115,
+		"y": 305.9136013593953,
 		"zoom": 1.8200776481617982
 	}
 }
