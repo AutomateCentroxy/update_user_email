@@ -58,7 +58,8 @@ Repeat 6 times max
                               uiInput = RRF "emailOtp.ftlh" emailObj
                               // resent will false
                               uiInput.resent = false
-                              When 
+                              // If user clicked on "resend code" button
+                              When uiInput.resent is ""
                     // Variable assignment when user exceeds the number of attempts allowed
                     obj = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
                     // Finish flow when user exceeds maximum number of flows allowed
@@ -66,5 +67,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_dqdml = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_dqdml
+it_kdlgs = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_kdlgs
