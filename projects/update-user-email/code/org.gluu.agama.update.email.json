@@ -375,7 +375,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "whenNode-532b07c7-f7a9-4a53-a097-f7259278fa5f",
@@ -541,7 +541,7 @@
 			"type": "assignmentNode",
 			"position": {
 				"x": 2805,
-				"y": 454
+				"y": 456.32301746385144
 			},
 			"data": {
 				"id": "assignmentNode-b6a25d34-d1c2-476d-ba6c-f7392d095417",
@@ -578,7 +578,8 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
@@ -623,6 +624,42 @@
 				"height": 122
 			},
 			"selected": false
+		},
+		{
+			"id": "callNode-20dfd3e5-ced1-489e-ba22-0f9c0e864163",
+			"type": "callNode",
+			"position": {
+				"x": 3055,
+				"y": 4
+			},
+			"data": {
+				"id": "callNode-20dfd3e5-ced1-489e-ba22-0f9c0e864163",
+				"type": "callNode",
+				"position": {
+					"x": 3055,
+					"y": 4
+				},
+				"previousNodeId": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "",
+					"javaVariableName": "",
+					"exceptionVariableField": "",
+					"callType": "Call static method",
+					"arguments": [],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			}
 		}
 	],
 	"edges": [
@@ -910,11 +947,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b_otherwise"
+		},
+		{
+			"id": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78-callNode-20dfd3e5-ced1-489e-ba22-0f9c0e864163",
+			"type": "default",
+			"source": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
+			"target": "callNode-20dfd3e5-ced1-489e-ba22-0f9c0e864163",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78"
 		}
 	],
 	"viewport": {
-		"x": -1028.6237223158341,
-		"y": -45.25756848598752,
-		"zoom": 0.860949188338904
+		"x": -3274.4405551722766,
+		"y": 225.33933752459188,
+		"zoom": 1.161508731925722
 	}
 }
