@@ -471,7 +471,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-ff55da90-e37e-4952-9402-9a1187f12240",
@@ -701,7 +701,7 @@
 				},
 				"previousNodeId": "callNode-20dfd3e5-ced1-489e-ba22-0f9c0e864163",
 				"agamaData": {
-					"logMessage": "Send Email Otp method called",
+					"logMessage": "\"Send Email Otp method called\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -716,7 +716,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2559,8 +2559,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2274,
-		"y": 123,
+		"x": -2965.735070525777,
+		"y": 20.280475306437438,
 		"zoom": 1
 	}
 }
