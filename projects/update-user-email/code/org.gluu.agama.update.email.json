@@ -1128,7 +1128,7 @@
 					"x": 5321.188708414839,
 					"y": 234.52321924367843
 				},
-				"previousNodeId": "assignmentNode-3a5dfce2-6028-486d-a7f3-bf9b99ca9f0c",
+				"previousNodeId": "assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
 				"agamaData": {
 					"variableField": "",
 					"valueField": "",
@@ -2657,6 +2657,24 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-f5a616fa-f4af-4044-ac0c-bad5657abd86"
+		},
+		{
+			"source": "assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
+			"sourceHandle": "source_assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
+			"target": "whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5",
+			"targetHandle": "target_whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"id": "xy-edge__assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057source_assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057-whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5target_whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5"
 		}
 	],
 	"viewport": {
