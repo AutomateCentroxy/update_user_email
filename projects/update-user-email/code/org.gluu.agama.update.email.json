@@ -1101,7 +1101,7 @@
 						{
 							"variable": "uiInput.resent",
 							"operator": "is",
-							"dataValue": "true",
+							"dataValue": "\"\"",
 							"combinator": "none"
 						}
 					],
@@ -1118,7 +1118,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2559,8 +2559,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4768.7495143733095,
-		"y": 384.78946349170246,
+		"x": -5045,
+		"y": -95,
 		"zoom": 1
 	}
 }
