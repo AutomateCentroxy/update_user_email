@@ -841,8 +841,8 @@
 			"id": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
 			"type": "assignmentNode",
 			"position": {
-				"x": 4394.415124050974,
-				"y": 204.48313837145233
+				"x": 4376.992493072088,
+				"y": 95.30131757043446
 			},
 			"data": {
 				"id": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
@@ -906,14 +906,16 @@
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
 					"templatePath": "emailOtp.ftlh",
-					"asssignedVariableName": "uiInput",
+					"asssignedVariableName": "input",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "OTP received Page",
 					"hasComment": true,
 					"comment": "Redirect to page asking for OTP received using email",
-					"arguments": "emailObj"
+					"arguments": [
+						"emailObj"
+					]
 				},
 				"branching": "otherwise"
 			},
@@ -1715,7 +1717,7 @@
 					"x": 4644.415124050974,
 					"y": 204.48313837145233
 				},
-				"previousNodeId": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
+				"previousNodeId": "rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2",
 				"agamaData": {
 					"variableField": "",
 					"valueField": "",
@@ -1784,6 +1786,42 @@
 			"dragging": false
 		},
 		{
+			"id": "rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2",
+			"type": "rrfNode",
+			"position": {
+				"x": 4614.215897020905,
+				"y": 82.52472151925153
+			},
+			"data": {
+				"id": "rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2",
+				"type": "rrfNode",
+				"position": {
+					"x": 4626.992493072088,
+					"y": 95.30131757043446
+				},
+				"previousNodeId": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
+				"agamaData": {
+					"assignments": [],
+					"nodeIcon": "ph:globe-simple",
+					"templatePath": "emailOtp.ftlh",
+					"asssignedVariableName": "input",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "Render OTP input for",
+					"hasComment": true,
+					"comment": "Render OTP input for",
+					"arguments": "emailObj"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true,
+			"dragging": false
+		},
+		{
 			"id": "assignmentNode-a7a8486d-d0f1-4b4b-94fe-6d2fdaabc92a",
 			"type": "assignmentNode",
 			"position": {
@@ -1820,7 +1858,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		}
 	],
@@ -2621,25 +2659,6 @@
 			"id": "xy-edge__rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5source_rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5-assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057target_assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057"
 		},
 		{
-			"id": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785-whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a",
-			"type": "default",
-			"source": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
-			"target": "whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785"
-		},
-		{
 			"id": "whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a-assignmentNode-a7a8486d-d0f1-4b4b-94fe-6d2fdaabc92a",
 			"type": "default",
 			"source": "whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a",
@@ -2675,11 +2694,49 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025asource_whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a_otherwise-rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5target_rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5"
+		},
+		{
+			"id": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785-rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2",
+			"type": "default",
+			"source": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
+			"target": "rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785"
+		},
+		{
+			"id": "rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2-whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a",
+			"type": "default",
+			"source": "rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2",
+			"target": "whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "source_rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2",
+			"targetHandle": "target_whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a"
 		}
 	],
 	"viewport": {
-		"x": -2645.079372394317,
-		"y": 228.25654937311413,
-		"zoom": 0.6134693852127242
+		"x": -3665.5260862324103,
+		"y": 242.30936842501967,
+		"zoom": 0.860949188338904
 	}
 }
