@@ -55,8 +55,10 @@ Repeat 6 times max
                               uiInput.resent = false
                     // Variable assignment when user exceeds the number of attempts allowed
                     obj = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
+                    // Finish flow when user exceeds maximum number of flows allowed
+                    Finish obj
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_nukzb = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_nukzb
+it_ghfbs = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_ghfbs
