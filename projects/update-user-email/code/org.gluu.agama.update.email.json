@@ -919,8 +919,46 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "assignmentNode-3a5dfce2-6028-486d-a7f3-bf9b99ca9f0c",
+			"type": "assignmentNode",
+			"position": {
+				"x": 4278.009957269975,
+				"y": -164.75744856230926
+			},
+			"data": {
+				"id": "assignmentNode-3a5dfce2-6028-486d-a7f3-bf9b99ca9f0c",
+				"type": "assignmentNode",
+				"position": {
+					"x": 4278.009957269975,
+					"y": -164.75744856230926
+				},
+				"previousNodeId": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "false",
+							"assignedVariableName": "uiInput.resent"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "resent will false"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -1341,6 +1379,25 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785"
+		},
+		{
+			"id": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5-assignmentNode-3a5dfce2-6028-486d-a7f3-bf9b99ca9f0c",
+			"type": "default",
+			"source": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
+			"target": "assignmentNode-3a5dfce2-6028-486d-a7f3-bf9b99ca9f0c",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5"
 		}
 	],
 	"viewport": {
