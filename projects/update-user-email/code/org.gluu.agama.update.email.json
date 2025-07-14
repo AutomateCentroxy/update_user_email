@@ -1203,8 +1203,8 @@
 			"id": "assignmentNode-d63acf36-33e3-46b1-82f2-670e8f7167a8",
 			"type": "assignmentNode",
 			"position": {
-				"x": 5544.803812468582,
-				"y": 566.9370499675973
+				"x": 5414.482602377348,
+				"y": 564.4935272783866
 			},
 			"data": {
 				"id": "assignmentNode-d63acf36-33e3-46b1-82f2-670e8f7167a8",
@@ -1240,6 +1240,50 @@
 			"measured": {
 				"width": 170,
 				"height": 122
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841",
+			"type": "whenNode",
+			"position": {
+				"x": 5544.803812468582,
+				"y": 366.9370499675973
+			},
+			"data": {
+				"id": "whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841",
+				"type": "whenNode",
+				"position": {
+					"x": 5544.803812468582,
+					"y": 366.9370499675973
+				},
+				"previousNodeId": "whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5",
+				"branching": "continue",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "uiInput.passcode",
+							"operator": "is",
+							"dataValue": "otpCode",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "When passcode entered by user matches"
+				}
+			},
+			"measured": {
+				"width": 109,
+				"height": 58
 			},
 			"selected": true
 		}
@@ -1813,11 +1857,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5_success"
+		},
+		{
+			"id": "whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5-whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841",
+			"type": "default",
+			"source": "whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5",
+			"target": "whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5_continue"
 		}
 	],
 	"viewport": {
-		"x": -6154.6306141600235,
-		"y": -211.88969210636935,
+		"x": -6573.630614160024,
+		"y": -194.88969210636935,
 		"zoom": 1.2277356839150602
 	}
 }
