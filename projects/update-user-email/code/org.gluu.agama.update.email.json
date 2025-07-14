@@ -21,7 +21,7 @@
 					"basepath": "",
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-start-square",
-					"timeout": "360",
+					"timeout": "500000",
 					"inputs": "",
 					"configs": "",
 					"flowname": "org.gluu.agama.update.email",
@@ -35,7 +35,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-8a7068cc-4e34-46f7-b0cc-e7b27a00f608",
@@ -716,7 +716,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
