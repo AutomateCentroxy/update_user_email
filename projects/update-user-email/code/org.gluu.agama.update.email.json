@@ -158,8 +158,8 @@
 				}
 			},
 			"measured": {
-				"width": 168,
-				"height": 120
+				"width": 170,
+				"height": 122
 			},
 			"selected": false
 		},
@@ -709,8 +709,8 @@
 				}
 			},
 			"measured": {
-				"width": 168,
-				"height": 120
+				"width": 170,
+				"height": 122
 			},
 			"selected": false,
 			"dragging": false
@@ -794,8 +794,42 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "finishNode-e51e0ecc-77b5-46e1-a015-7c5c8fb0a552",
+			"type": "finishNode",
+			"position": {
+				"x": 3992.9147367069063,
+				"y": 122.68478789931092
+			},
+			"data": {
+				"id": "finishNode-e51e0ecc-77b5-46e1-a015-7c5c8fb0a552",
+				"type": "finishNode",
+				"position": {
+					"x": 3992.9147367069063,
+					"y": 122.68478789931092
+				},
+				"previousNodeId": "assignmentNode-aaa5236a-3918-45fc-80a1-f5c90165a775",
+				"agamaData": {
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Finish flow unsuccessfully",
+					"flowfilename": "",
+					"returnVariable": "emailObj",
+					"finishMode": "withVariable",
+					"nodeIcon": "material-symbols:line-end-square-rounded"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -1159,11 +1193,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d_success"
+		},
+		{
+			"id": "assignmentNode-aaa5236a-3918-45fc-80a1-f5c90165a775-finishNode-e51e0ecc-77b5-46e1-a015-7c5c8fb0a552",
+			"type": "default",
+			"source": "assignmentNode-aaa5236a-3918-45fc-80a1-f5c90165a775",
+			"target": "finishNode-e51e0ecc-77b5-46e1-a015-7c5c8fb0a552",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-aaa5236a-3918-45fc-80a1-f5c90165a775"
 		}
 	],
 	"viewport": {
-		"x": -6438.8042193257115,
-		"y": 305.9136013593953,
-		"zoom": 1.8200776481617982
+		"x": -4782.856045431402,
+		"y": 249.23437056527092,
+		"zoom": 1.3491025343396987
 	}
 }
