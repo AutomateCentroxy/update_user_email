@@ -54,41 +54,8 @@ Repeat 6 times max
                               emailObj.matches = uiInput.matches
                               emailObj.resent = uiInput.resent
                               When input.formType is emailOtpForm
-                              // Redirect to page asking for OTP received using email
-                              uiInput = RRF "emailOtp.ftlh" emailObj
-                              // resent will false
-                              uiInput.resent = false
-                              // If user clicked on "resend code" button
-                              When uiInput.resent is ""
-                                   // Variable assignment when user clicked on "resend code" button
-                                   sendMail = true
-                                   uiInput.resent = true
-                              // When passcode entered by user matches
-                              When uiInput.passcode is otpCode
-                                   emailObj.success = true
-                                   // E-mail verification passed, initiating user provisioning flow
-                                   Log "@info E-mail verification passed, initiating user email update flow"
-                                   //  Check user already exist or not with username
-                                   userWithUid = Call emailUpdateService getUserEntityByInum inum
-                                   //  Call user registration service method to update a user
-                                   inum = Call emailUpdateService updateUser userInput
-                                   //  If user update success
-                                   When inum is not null
-                                        //  Show user updation log
-                                        Log "@info User % has been updated" inum
-                                        //  Show acknowledgement UI page for successful Update 
-                                        acknowledgementInput = RRF "acknowledgementEmail.ftlh" 
-                                        //  Finish the flow successfully
-                                        Log "@info Finish the flow successfully"
-                                        //  Finish the flow successfully
-                                        Finish userName
-                                   Otherwise
-                                        //  User update failed log
-                                        Log "@info User update failed. Error : %" E
-                                        uiFeedback.errorMessage = "User update failed"
-                              // Variable assigned when OTP entered by user does not matches
-                              uiInput.matches = false
-                              sendMail = true
+                                   // Check if form was submitted via JSON 
+                                   uiInput = input
                     // Variable assignment when user exceeds the number of attempts allowed
                     obj = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
                     // Finish flow when user exceeds maximum number of flows allowed
@@ -96,5 +63,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_qatvp = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_qatvp
+it_pomtc = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_pomtc
