@@ -888,45 +888,6 @@
 			"dragging": false
 		},
 		{
-			"id": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
-			"type": "rrfNode",
-			"position": {
-				"x": 5176.643493820043,
-				"y": -189.70558771241343
-			},
-			"data": {
-				"id": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
-				"type": "rrfNode",
-				"position": {
-					"x": 4031.716124794482,
-					"y": -152.15647897898515
-				},
-				"previousNodeId": "whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a",
-				"agamaData": {
-					"assignments": [],
-					"nodeIcon": "ph:globe-simple",
-					"templatePath": "emailOtp.ftlh",
-					"asssignedVariableName": "input",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "OTP received Page",
-					"hasComment": true,
-					"comment": "Redirect to page asking for OTP received using email",
-					"arguments": [
-						"emailObj"
-					]
-				},
-				"branching": "otherwise"
-			},
-			"measured": {
-				"width": 170,
-				"height": 122
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
 			"id": "repeatNode-169e0058-0ffb-4858-9f1e-6bf76fee7f10",
 			"type": "repeatNode",
 			"position": {
@@ -1818,7 +1779,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1860,6 +1821,45 @@
 			},
 			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "assignmentNode-77186915-f185-4e35-aeb9-bbac6dcfb90a",
+			"type": "assignmentNode",
+			"position": {
+				"x": 5130.562901598879,
+				"y": -244.21633077006325
+			},
+			"data": {
+				"id": "assignmentNode-77186915-f185-4e35-aeb9-bbac6dcfb90a",
+				"type": "assignmentNode",
+				"position": {
+					"x": 5130.562901598879,
+					"y": -244.21633077006325
+				},
+				"previousNodeId": "whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a",
+				"branching": "otherwise",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{ matches: true, resent: false }",
+							"assignedVariableName": "uiInput"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -2641,24 +2641,6 @@
 			"id": "xy-edge__assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057source_assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057-whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5target_whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5"
 		},
 		{
-			"source": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
-			"sourceHandle": "source_rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
-			"target": "assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
-			"targetHandle": "target_assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
-			"label": "",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"id": "xy-edge__rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5source_rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5-assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057target_assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057"
-		},
-		{
 			"id": "whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a-assignmentNode-a7a8486d-d0f1-4b4b-94fe-6d2fdaabc92a",
 			"type": "default",
 			"source": "whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a",
@@ -2676,24 +2658,6 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a_success"
-		},
-		{
-			"source": "whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a",
-			"sourceHandle": "source_whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a_otherwise",
-			"target": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
-			"targetHandle": "target_rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
-			"label": "otherwise",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"id": "xy-edge__whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025asource_whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a_otherwise-rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5target_rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5"
 		},
 		{
 			"id": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785-rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2",
@@ -2732,6 +2696,25 @@
 			},
 			"sourceHandle": "source_rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2",
 			"targetHandle": "target_whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a"
+		},
+		{
+			"id": "whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a-assignmentNode-77186915-f185-4e35-aeb9-bbac6dcfb90a",
+			"type": "default",
+			"source": "whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a",
+			"target": "assignmentNode-77186915-f185-4e35-aeb9-bbac6dcfb90a",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "otherwise",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-5bb89c92-72d8-4e2b-9fbc-d44a7b18025a_otherwise"
 		}
 	],
 	"viewport": {
