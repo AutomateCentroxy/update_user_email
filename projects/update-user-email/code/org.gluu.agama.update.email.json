@@ -1118,7 +1118,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1765,21 +1765,23 @@
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
 					"templatePath": "emailOtp.ftlh",
-					"asssignedVariableName": "input",
+					"asssignedVariableName": "uiInput",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "Render OTP input for",
+					"displayName": "",
 					"hasComment": true,
-					"comment": "Render OTP input for",
-					"arguments": "emailObj"
+					"comment": "Redirect to page asking for OTP received using email",
+					"arguments": [
+						"emailObj"
+					]
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2736,8 +2738,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5022,
-		"y": -45,
-		"zoom": 1
+		"x": -3385.1523495814927,
+		"y": 327.57307576663345,
+		"zoom": 0.7834971869493407
 	}
 }
