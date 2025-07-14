@@ -1687,7 +1687,7 @@
 						{
 							"variable": "input.formType",
 							"operator": "is",
-							"dataValue": "emailOtpForm",
+							"dataValue": "\"emailOtpForm\"",
 							"combinator": "none"
 						}
 					],
@@ -1704,7 +1704,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1859,7 +1859,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -2736,8 +2736,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3117.9685193197706,
-		"y": 236.69848880817506,
+		"x": -3152.9685193197706,
+		"y": 259.69848880817506,
 		"zoom": 0.7412335049014176
 	}
 }
