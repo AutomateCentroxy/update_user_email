@@ -646,8 +646,8 @@
 			"id": "callNode-20dfd3e5-ced1-489e-ba22-0f9c0e864163",
 			"type": "callNode",
 			"position": {
-				"x": 3352.797773206025,
-				"y": 440.4635297299753
+				"x": 3351.448670671685,
+				"y": 386.49942835638734
 			},
 			"data": {
 				"id": "callNode-20dfd3e5-ced1-489e-ba22-0f9c0e864163",
@@ -688,8 +688,8 @@
 			"id": "logNode-39c45721-79eb-430a-ac0c-a9005fe1cc06",
 			"type": "logNode",
 			"position": {
-				"x": 3656.6788096070923,
-				"y": 502.295147358979
+				"x": 3636.442271591997,
+				"y": 456.42566119142924
 			},
 			"data": {
 				"id": "logNode-39c45721-79eb-430a-ac0c-a9005fe1cc06",
@@ -965,8 +965,8 @@
 			"id": "assignmentNode-3e88e8ea-3f2c-422e-8a3c-f43317fa4385",
 			"type": "assignmentNode",
 			"position": {
-				"x": 3283.4762702915277,
-				"y": -77.79017289219588
+				"x": 3366.9883415604018,
+				"y": -88.12156315226272
 			},
 			"data": {
 				"id": "assignmentNode-3e88e8ea-3f2c-422e-8a3c-f43317fa4385",
@@ -978,20 +978,28 @@
 				"previousNodeId": "repeatNode-169e0058-0ffb-4858-9f1e-6bf76fee7f10",
 				"branching": "continue",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{ success: false, error: \"ExceededTheNumberOfAttemptsAllowed\" }",
+							"assignedVariableName": "obj"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Variable assignment when user exceeds the number of attempts allowed"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
-			}
+			},
+			"selected": true,
+			"dragging": false
 		},
 		{
 			"id": "assignmentNode-3a5dfce2-6028-486d-a7f3-bf9b99ca9f0c",
@@ -1073,7 +1081,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		}
 	],
@@ -1573,8 +1581,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2165.624273878245,
-		"y": 204.6763741666074,
-		"zoom": 0.7412335049014176
+		"x": -3345.497239479826,
+		"y": 254.08562252712187,
+		"zoom": 1.161508731925722
 	}
 }
