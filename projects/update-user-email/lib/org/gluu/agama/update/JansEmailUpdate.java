@@ -74,7 +74,8 @@ public class JansEmailUpdate extends EmailUpdate {
     public Map<String, String> getUserEntityByMail(String email) {
         User user = getUser(MAIL, email);
         boolean local = user != null;
-        LogUtils.log("There is % local account for %", local ? "a" : "no", email);
+        // LogUtils.log("There is % local account for %", local ? "a" : "no", email);
+        logger.debug("There is {} local account for {}", local ? "a" : "no", email);
     
         if (local) {            
             String uid = getSingleValuedAttr(user, UID);
@@ -273,5 +274,4 @@ public class JansEmailUpdate extends EmailUpdate {
         return userService.getUserByAttribute(attributeName, value, true);
     }
 }
-
 
