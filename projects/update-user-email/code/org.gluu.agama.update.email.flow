@@ -72,6 +72,9 @@ Repeat 6 times max
                                    userWithUid = Call emailUpdateService getUserEntityByInum inum
                                    //  If user update success
                                    When inum is not null
+                                   Otherwise
+                                        //  User update failed log
+                                        Log "@info User update failed. Error : %" E
                               // Variable assigned when OTP entered by user does not matches
                               uiInput.matches = false
                               sendMail = true
@@ -82,5 +85,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_lkroc = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_lkroc
+it_hgvsb = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_hgvsb
