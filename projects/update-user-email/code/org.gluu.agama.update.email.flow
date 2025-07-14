@@ -53,8 +53,10 @@ Repeat 6 times max
                               uiInput = RRF "emailOtp.ftlh" emailObj
                               // resent will false
                               uiInput.resent = false
+                    // Variable assignment when user exceeds the number of attempts allowed
+                    obj = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_wxwvt = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_wxwvt
+it_nukzb = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_nukzb
