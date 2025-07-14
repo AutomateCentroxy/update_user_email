@@ -75,6 +75,7 @@ Repeat 6 times max
                                    Otherwise
                                         //  User update failed log
                                         Log "@info User update failed. Error : %" E
+                                        uiFeedback.errorMessage = "User update failed"
                               // Variable assigned when OTP entered by user does not matches
                               uiInput.matches = false
                               sendMail = true
@@ -85,5 +86,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_hgvsb = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_hgvsb
+it_ygtqe = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_ygtqe
