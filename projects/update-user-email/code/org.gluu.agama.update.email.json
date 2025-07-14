@@ -860,11 +860,6 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "existingAccount",
-							"assignedVariableName": "emailObj.accountExists"
-						},
-						{
-							"variableTypeCheck": true,
 							"assignmentExpression": "uiInput.matches",
 							"assignedVariableName": "emailObj.matches"
 						},
@@ -887,7 +882,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1692,7 +1687,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -2495,8 +2490,8 @@
 		}
 	],
 	"viewport": {
-		"x": -6661,
-		"y": -369,
+		"x": -4291.7371149786495,
+		"y": -156.40301254210794,
 		"zoom": 1
 	}
 }
