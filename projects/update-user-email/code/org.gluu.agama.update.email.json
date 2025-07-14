@@ -891,8 +891,8 @@
 			"id": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
 			"type": "rrfNode",
 			"position": {
-				"x": 4590.0688020151265,
-				"y": 57.009819263043596
+				"x": 4880.299851099833,
+				"y": 170.39757679076052
 			},
 			"data": {
 				"id": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
@@ -920,7 +920,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1666,49 +1666,6 @@
 			"dragging": false
 		},
 		{
-			"id": "whenNode-2179523e-69fa-4145-97ff-c80ac900718b",
-			"type": "whenNode",
-			"position": {
-				"x": 4858.656699240069,
-				"y": 6.556955366770051
-			},
-			"data": {
-				"id": "whenNode-2179523e-69fa-4145-97ff-c80ac900718b",
-				"type": "whenNode",
-				"position": {
-					"x": 4840.0688020151265,
-					"y": 57.009819263043596
-				},
-				"previousNodeId": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
-				"agamaData": {
-					"variableField": "",
-					"valueField": "",
-					"conditionInputField": "",
-					"conditions": [
-						{
-							"variable": "input.formType",
-							"operator": "is",
-							"dataValue": "emailOtpForm",
-							"combinator": "none"
-						}
-					],
-					"nodeIcon": "ph:swap",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": ""
-				}
-			},
-			"measured": {
-				"width": 109,
-				"height": 58
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
 			"id": "finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a",
 			"type": "finishNode",
 			"position": {
@@ -1744,46 +1701,6 @@
 			"dragging": false
 		},
 		{
-			"id": "assignmentNode-f5a616fa-f4af-4044-ac0c-bad5657abd86",
-			"type": "assignmentNode",
-			"position": {
-				"x": 4945.3487450495,
-				"y": 149.4655567473026
-			},
-			"data": {
-				"id": "assignmentNode-f5a616fa-f4af-4044-ac0c-bad5657abd86",
-				"type": "assignmentNode",
-				"position": {
-					"x": 5108.656699240069,
-					"y": 206.55695536677004
-				},
-				"previousNodeId": "whenNode-2179523e-69fa-4145-97ff-c80ac900718b",
-				"branching": "success",
-				"agamaData": {
-					"assignments": [
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "input",
-							"assignedVariableName": "uiInput"
-						}
-					],
-					"nodeIcon": "material-symbols:equal",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": ""
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 122
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
 			"id": "assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
 			"type": "assignmentNode",
 			"position": {
@@ -1797,7 +1714,7 @@
 					"x": 5195.3487450495,
 					"y": 149.4655567473026
 				},
-				"previousNodeId": "assignmentNode-f5a616fa-f4af-4044-ac0c-bad5657abd86",
+				"previousNodeId": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
 				"agamaData": {
 					"assignments": [
 						{
@@ -1819,7 +1736,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -2602,63 +2519,6 @@
 			"targetHandle": "target_whenNode-4df2446b-c1c3-4fb6-8c83-1f3b4396fed0"
 		},
 		{
-			"id": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5-whenNode-2179523e-69fa-4145-97ff-c80ac900718b",
-			"type": "default",
-			"source": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
-			"target": "whenNode-2179523e-69fa-4145-97ff-c80ac900718b",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5"
-		},
-		{
-			"id": "whenNode-2179523e-69fa-4145-97ff-c80ac900718b-assignmentNode-f5a616fa-f4af-4044-ac0c-bad5657abd86",
-			"type": "default",
-			"source": "whenNode-2179523e-69fa-4145-97ff-c80ac900718b",
-			"target": "assignmentNode-f5a616fa-f4af-4044-ac0c-bad5657abd86",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "Condition met",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_whenNode-2179523e-69fa-4145-97ff-c80ac900718b_success"
-		},
-		{
-			"id": "assignmentNode-f5a616fa-f4af-4044-ac0c-bad5657abd86-assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
-			"type": "default",
-			"source": "assignmentNode-f5a616fa-f4af-4044-ac0c-bad5657abd86",
-			"target": "assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_assignmentNode-f5a616fa-f4af-4044-ac0c-bad5657abd86"
-		},
-		{
 			"source": "assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
 			"sourceHandle": "source_assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
 			"target": "whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5",
@@ -2675,11 +2535,29 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057source_assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057-whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5target_whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5"
+		},
+		{
+			"source": "rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
+			"sourceHandle": "source_rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5",
+			"target": "assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
+			"targetHandle": "target_assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"id": "xy-edge__rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5source_rrfNode-4bb79a3b-b8ff-4ade-a6ac-14149470a6a5-assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057target_assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057"
 		}
 	],
 	"viewport": {
-		"x": -4387.676890882006,
-		"y": 169.92845900362246,
+		"x": -4243.676890882006,
+		"y": 120.92845900362244,
 		"zoom": 0.9613030751874218
 	}
 }
