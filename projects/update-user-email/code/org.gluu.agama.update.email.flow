@@ -55,6 +55,8 @@ Repeat 6 times max
                               emailObj.resent = uiInput.resent
                               // Redirect to page asking for OTP received using email
                               uiInput = RRF "emailOtp.ftlh" emailObj
+                              When input.formType is emailOtpForm
+                                   uiInput = input
                     // Variable assignment when user exceeds the number of attempts allowed
                     obj = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
                     // Finish flow when user exceeds maximum number of flows allowed
@@ -62,5 +64,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_nshvf = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_nshvf
+it_gnjpj = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_gnjpj
