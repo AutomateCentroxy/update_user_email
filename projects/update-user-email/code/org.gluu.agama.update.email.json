@@ -829,7 +829,62 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
+		},
+		{
+			"id": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
+			"type": "assignmentNode",
+			"position": {
+				"x": 3755.772952122932,
+				"y": -144.00291042506956
+			},
+			"data": {
+				"id": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
+				"type": "assignmentNode",
+				"position": {
+					"x": 3799.5057289121155,
+					"y": -0.9448439790959497
+				},
+				"previousNodeId": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d",
+				"branching": "continue",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "email",
+							"assignedVariableName": "emailObj.email"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "existingAccount",
+							"assignedVariableName": "emailObj.accountExists"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "uiInput.matches",
+							"assignedVariableName": "emailObj.matches"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "uiInput.resent",
+							"assignedVariableName": "emailObj.resent"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -1212,11 +1267,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-aaa5236a-3918-45fc-80a1-f5c90165a775"
+		},
+		{
+			"id": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d-assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
+			"type": "default",
+			"source": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d",
+			"target": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d_continue"
 		}
 	],
 	"viewport": {
-		"x": -4782.856045431402,
-		"y": 249.23437056527092,
+		"x": -4831.966717235244,
+		"y": 417.44879397109685,
 		"zoom": 1.3491025343396987
 	}
 }
