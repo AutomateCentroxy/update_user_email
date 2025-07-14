@@ -99,5 +99,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_zxodc = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_zxodc
+it_uhrxs = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_uhrxs
