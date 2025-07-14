@@ -958,7 +958,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1036,8 +1036,8 @@
 			"id": "whenNode-fe870dec-1015-4016-bc7b-2a37ead9e755",
 			"type": "whenNode",
 			"position": {
-				"x": 3167.2481298657754,
-				"y": 269.4970853901003
+				"x": 3209.070308430306,
+				"y": 208.78747134481387
 			},
 			"data": {
 				"id": "whenNode-fe870dec-1015-4016-bc7b-2a37ead9e755",
@@ -1052,21 +1052,28 @@
 					"variableField": "",
 					"valueField": "",
 					"conditionInputField": "",
-					"conditions": [],
+					"conditions": [
+						{
+							"variable": "sendMail",
+							"operator": "is",
+							"dataValue": "true",
+							"combinator": "none"
+						}
+					],
 					"nodeIcon": "ph:swap",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "When send mail is allowed"
 				}
 			},
 			"measured": {
 				"width": 109,
 				"height": 58
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		}
 	],
@@ -1566,8 +1573,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2139.624273878245,
-		"y": 176.6763741666074,
+		"x": -2165.624273878245,
+		"y": 204.6763741666074,
 		"zoom": 0.7412335049014176
 	}
 }
