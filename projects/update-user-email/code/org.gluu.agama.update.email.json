@@ -1232,11 +1232,6 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "false",
 							"assignedVariableName": "uiInput.matches"
-						},
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "true",
-							"assignedVariableName": "sendMail"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -1252,7 +1247,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1664,7 +1659,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2561,8 +2556,8 @@
 		}
 	],
 	"viewport": {
-		"x": -7214,
-		"y": -381,
+		"x": -5275,
+		"y": -74,
 		"zoom": 1
 	}
 }
