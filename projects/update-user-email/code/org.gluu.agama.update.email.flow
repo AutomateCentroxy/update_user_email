@@ -80,7 +80,8 @@ Repeat 6 times max
                                         //  Finish the flow successfully
                                         Log "@info Finish the flow successfully"
                                         //  Finish the flow successfully
-                                        Finish userName
+                                        it_bllxq = {success:true, data: { userId: "userName", email: "email"}}
+                                        Finish it_bllxq
                                    Otherwise
                                         //  User update failed log
                                         Log "@info User update failed. Error : %" E
@@ -95,5 +96,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_wxurl = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_wxurl
+it_yvqcm = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_yvqcm
