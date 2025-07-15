@@ -1655,8 +1655,8 @@
 					"hasComment": true,
 					"comment": " Finish the flow successfully",
 					"flowfilename": "",
-					"returnVariable": "userName",
-					"finishMode": "withVariable",
+					"returnVariable": "{ userId: \"userName\", email: \"email\"}",
+					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
 			},
@@ -2561,8 +2561,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4163.067022455903,
-		"y": -61.47639222052675,
-		"zoom": 0.6745512671698494
+		"x": -9838.344454240492,
+		"y": -700.6816345525349,
+		"zoom": 1.3491025343396987
 	}
 }
