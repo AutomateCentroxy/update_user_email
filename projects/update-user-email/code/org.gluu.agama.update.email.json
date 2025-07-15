@@ -1633,8 +1633,8 @@
 			"id": "finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a",
 			"type": "finishNode",
 			"position": {
-				"x": 8456.71218877032,
-				"y": 778.4397709817304
+				"x": 8355.904432103725,
+				"y": 774.7336034572234
 			},
 			"data": {
 				"id": "finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a",
@@ -1643,7 +1643,7 @@
 					"x": 7538.320854995159,
 					"y": 787.4664153001027
 				},
-				"previousNodeId": "assignmentNode-77f15c0d-80d1-44ee-85b7-d1c6ee1d9d3b",
+				"previousNodeId": "logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751",
 				"agamaData": {
 					"nodeColor": "",
 					"titleColor": "",
@@ -1652,7 +1652,7 @@
 					"hasComment": true,
 					"comment": " Finish the flow successfully",
 					"flowfilename": "",
-					"returnVariable": "resultObj",
+					"returnVariable": "userName",
 					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
@@ -1661,7 +1661,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1702,44 +1702,6 @@
 			},
 			"selected": false,
 			"dragging": false
-		},
-		{
-			"id": "assignmentNode-77f15c0d-80d1-44ee-85b7-d1c6ee1d9d3b",
-			"type": "assignmentNode",
-			"position": {
-				"x": 8172.320854995159,
-				"y": 782.4664153001027
-			},
-			"data": {
-				"id": "assignmentNode-77f15c0d-80d1-44ee-85b7-d1c6ee1d9d3b",
-				"type": "assignmentNode",
-				"position": {
-					"x": 8172.320854995159,
-					"y": 782.4664153001027
-				},
-				"previousNodeId": "logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751",
-				"agamaData": {
-					"assignments": [
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "{ userId: userName, email: email }",
-							"assignedVariableName": "resultObj"
-						}
-					],
-					"nodeIcon": "material-symbols:equal",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": "Assign the updated email and username"
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 122
-			},
-			"selected": true
 		},
 		{
 			"id": "rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2",
@@ -2577,29 +2539,10 @@
 			"id": "xy-edge__rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2source_rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2-assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057target_assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057"
 		},
 		{
-			"id": "logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751-assignmentNode-77f15c0d-80d1-44ee-85b7-d1c6ee1d9d3b",
-			"type": "default",
 			"source": "logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751",
-			"target": "assignmentNode-77f15c0d-80d1-44ee-85b7-d1c6ee1d9d3b",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751"
-		},
-		{
-			"id": "assignmentNode-77f15c0d-80d1-44ee-85b7-d1c6ee1d9d3b-finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a",
-			"type": "default",
-			"source": "assignmentNode-77f15c0d-80d1-44ee-85b7-d1c6ee1d9d3b",
+			"sourceHandle": "source_logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751",
 			"target": "finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a",
+			"targetHandle": "target_finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a",
 			"label": "",
 			"labelBgPadding": [
 				8,
@@ -2611,13 +2554,12 @@
 				"color": "#ffffff",
 				"fillOpacity": 0.7
 			},
-			"sourceHandle": "source_assignmentNode-77f15c0d-80d1-44ee-85b7-d1c6ee1d9d3b",
-			"targetHandle": "target_finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a"
+			"id": "xy-edge__logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751source_logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751-finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565atarget_finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a"
 		}
 	],
 	"viewport": {
-		"x": -8627.325815131906,
-		"y": -563.233030677233,
-		"zoom": 1.161508731925722
+		"x": -10470.260976688774,
+		"y": -715.1804682527767,
+		"zoom": 1.3491025343396987
 	}
 }
