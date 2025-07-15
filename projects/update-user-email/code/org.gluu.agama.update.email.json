@@ -1661,7 +1661,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1732,14 +1732,14 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Assign the updated email and username"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2",
