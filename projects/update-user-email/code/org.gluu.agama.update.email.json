@@ -1757,14 +1757,14 @@
 				"branching": "continue",
 				"agamaData": {
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
-					"maxIteration": "",
-					"maxIterationVariableName": "",
+					"maxIteration": "3",
+					"maxIterationVariableName": "otpTries",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Iterate x times max"
 				}
 			},
 			"measured": {
