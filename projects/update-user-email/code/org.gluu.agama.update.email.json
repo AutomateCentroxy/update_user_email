@@ -1148,6 +1148,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "true",
 							"assignedVariableName": "uiInput.resent"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "BreakLoop"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -1163,7 +1168,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1809,15 +1814,15 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
 			"id": "assignmentNode-9e7fdf4b-4b29-498c-b191-9914ef650bfe",
 			"type": "assignmentNode",
 			"position": {
-				"x": 6579.416921315264,
-				"y": 430.6578349905091
+				"x": 6617.416921315264,
+				"y": 379.6578349905091
 			},
 			"data": {
 				"id": "assignmentNode-9e7fdf4b-4b29-498c-b191-9914ef650bfe",
@@ -1894,8 +1899,8 @@
 			"id": "logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8",
 			"type": "logNode",
 			"position": {
-				"x": 6386.133867340487,
-				"y": 638.073416472982
+				"x": 6384.133867340487,
+				"y": 651.073416472982
 			},
 			"data": {
 				"id": "logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8",
@@ -2835,8 +2840,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3552.373522642809,
-		"y": 153.04112144410172,
-		"zoom": 0.860949188338904
+		"x": -6000,
+		"y": -170,
+		"zoom": 1
 	}
 }
