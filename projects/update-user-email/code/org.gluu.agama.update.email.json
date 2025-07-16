@@ -1163,7 +1163,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1794,11 +1794,6 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "false",
 							"assignedVariableName": "verified"
-						},
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "false",
-							"assignedVariableName": "breakOtpLoop"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -1814,7 +1809,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2840,8 +2835,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4931.849098163022,
-		"y": 29.614210397885472,
+		"x": -3552.373522642809,
+		"y": 153.04112144410172,
 		"zoom": 0.860949188338904
 	}
 }
