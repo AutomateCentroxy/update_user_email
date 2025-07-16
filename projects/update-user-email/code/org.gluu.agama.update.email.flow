@@ -80,13 +80,14 @@ Repeat 6 times max
                                         //  Finish the flow successfully
                                         Log "@info Finish the flow successfully"
                                         //  Finish the flow successfully
-                                        it_rndue = {success:true, data: { userId: userName, email: email}}
-                                        Finish it_rndue
+                                        it_nlayw = {success:true, data: { userId: userName, email: email}}
+                                        Finish it_nlayw
                                    Otherwise
                                         //  User update failed log
                                         Log "@info User update failed. Error : %" E
                                         uiFeedback.errorMessage = "User update failed"
                               Otherwise
+                                   // Variable assigned when OTP entered by user does not matches
                                    uiInput.matches = false
                               // Variable assigned when OTP entered by user does not matches
                               uiInput.matches = false
@@ -99,5 +100,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_ezoih = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_ezoih
+it_anlii = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_anlii
