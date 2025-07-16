@@ -31,7 +31,8 @@
 			<div class="text-red-500 text-sm font-medium mb-2">${errorMessage}
 			</div>
 			<!--#if-->
-			&lt;#if matches?? &amp;&amp; matches == false&gt;
+			<!--#if-->
+			&lt;#if matches?? &amp;&amp; !matches&gt;
 			<div class="text-red-500 text-sm font-medium mb-2">Invalid OTP. Please try again.
 			</div>
 			<!--#if-->
