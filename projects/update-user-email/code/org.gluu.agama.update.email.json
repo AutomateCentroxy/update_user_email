@@ -1148,11 +1148,6 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "true",
 							"assignedVariableName": "uiInput.resent"
-						},
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "true",
-							"assignedVariableName": "BreakLoop"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -1168,7 +1163,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2840,8 +2835,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2039.4320332637199,
-		"y": 206.09828754315308,
-		"zoom": 0.580754365962861
+		"x": -3633.691641167754,
+		"y": 33.07365821402061,
+		"zoom": 0.7412335049014176
 	}
 }
