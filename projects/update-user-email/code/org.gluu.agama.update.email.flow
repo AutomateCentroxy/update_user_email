@@ -87,8 +87,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_pysym = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_pysym
+                                             it_igutd = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_igutd
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -97,6 +97,7 @@ Repeat 6 times max
                                         // Variable assigned when OTP entered by user does not matches
                                         uiInput.matches = false
                                         uiFeedback.errorMessage = "Incorrect OTP entered. Please try again."
+                              Quit When breakOtpLoop is true
                     // Variable assignment when user exceeds the number of attempts allowed
                     obj = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
                     // Finish flow when user exceeds maximum number of flows allowed
@@ -104,5 +105,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_imhfi = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_imhfi
+it_liavg = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_liavg
