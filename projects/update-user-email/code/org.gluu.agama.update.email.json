@@ -1930,36 +1930,32 @@
 			"dragging": false
 		},
 		{
-			"id": "assignmentNode-c56ff411-f121-4dbe-b81a-ae83af8efaaf",
-			"type": "assignmentNode",
+			"id": "quitNode-845a109d-9dd7-4d14-877e-27a1c25949f7",
+			"type": "quitNode",
 			"position": {
-				"x": 5373.952602079118,
-				"y": -140.8531136411114
+				"x": 5218.468068398403,
+				"y": -134.11673532404288
 			},
 			"data": {
-				"id": "assignmentNode-c56ff411-f121-4dbe-b81a-ae83af8efaaf",
-				"type": "assignmentNode",
+				"id": "quitNode-845a109d-9dd7-4d14-877e-27a1c25949f7",
+				"type": "quitNode",
 				"position": {
-					"x": 5356.715663966233,
-					"y": -107.9462317892391
+					"x": 5016.325794165473,
+					"y": -52.63302788131146
 				},
 				"previousNodeId": "repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800",
 				"branching": "continue",
 				"agamaData": {
-					"assignments": [
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "true",
-							"assignedVariableName": "BreakLoop"
-						}
-					],
-					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "",
+					"variableField": "BreakLoop",
+					"valueField": "true",
+					"conditionInputField": "is",
+					"nodeIcon": "material-symbols:pip-exit-outline-rounded"
 				}
 			},
 			"measured": {
@@ -2879,27 +2875,28 @@
 			"sourceHandle": "source_assignmentNode-d63acf36-33e3-46b1-82f2-670e8f7167a8"
 		},
 		{
+			"id": "repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800-quitNode-845a109d-9dd7-4d14-877e-27a1c25949f7",
+			"type": "default",
 			"source": "repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800",
-			"sourceHandle": "source_repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800_continue",
-			"target": "assignmentNode-c56ff411-f121-4dbe-b81a-ae83af8efaaf",
-			"targetHandle": "target_assignmentNode-c56ff411-f121-4dbe-b81a-ae83af8efaaf",
-			"label": "continue",
+			"target": "quitNode-845a109d-9dd7-4d14-877e-27a1c25949f7",
 			"labelBgPadding": [
 				8,
 				4
 			],
 			"labelBgBorderRadius": 4,
+			"label": "continue",
 			"labelBgStyle": {
 				"fill": "#009688",
 				"color": "#ffffff",
 				"fillOpacity": 0.7
 			},
-			"id": "xy-edge__repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800source_repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800_continue-assignmentNode-c56ff411-f121-4dbe-b81a-ae83af8efaaftarget_assignmentNode-c56ff411-f121-4dbe-b81a-ae83af8efaaf"
+			"labelShowBg": true,
+			"sourceHandle": "source_repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800_continue"
 		}
 	],
 	"viewport": {
-		"x": -2771.01609220722,
-		"y": 374.75266500044063,
+		"x": -2809.016092207221,
+		"y": 188.75266500044063,
 		"zoom": 0.6381643844144765
 	}
 }
