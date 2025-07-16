@@ -1118,15 +1118,15 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
 			"id": "assignmentNode-d63acf36-33e3-46b1-82f2-670e8f7167a8",
 			"type": "assignmentNode",
 			"position": {
-				"x": 6243.461971593343,
-				"y": 528.9143190431187
+				"x": 6134.461971593343,
+				"y": 527.9143190431187
 			},
 			"data": {
 				"id": "assignmentNode-d63acf36-33e3-46b1-82f2-670e8f7167a8",
@@ -1889,6 +1889,40 @@
 				"height": 122
 			},
 			"selected": false
+		},
+		{
+			"id": "logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8",
+			"type": "logNode",
+			"position": {
+				"x": 6354.461971593343,
+				"y": 536.9143190431187
+			},
+			"data": {
+				"id": "logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8",
+				"type": "logNode",
+				"position": {
+					"x": 6384.461971593343,
+					"y": 527.9143190431187
+				},
+				"previousNodeId": "assignmentNode-d63acf36-33e3-46b1-82f2-670e8f7167a8",
+				"agamaData": {
+					"logMessage": "\"Resend mail will trigger\"",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "Resend mail will trigger",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -2779,11 +2813,30 @@
 			},
 			"sourceHandle": "source_assignmentNode-9e7fdf4b-4b29-498c-b191-9914ef650bfe",
 			"targetHandle": "target_assignmentNode-e58e387d-d1b6-499c-9122-da99b248f29a"
+		},
+		{
+			"id": "assignmentNode-d63acf36-33e3-46b1-82f2-670e8f7167a8-logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8",
+			"type": "default",
+			"source": "assignmentNode-d63acf36-33e3-46b1-82f2-670e8f7167a8",
+			"target": "logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-d63acf36-33e3-46b1-82f2-670e8f7167a8"
 		}
 	],
 	"viewport": {
-		"x": -5515.493861853376,
-		"y": 3.8816345783537827,
+		"x": -5594.989157476209,
+		"y": -84.1997353131053,
 		"zoom": 1
 	}
 }
