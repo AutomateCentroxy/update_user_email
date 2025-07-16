@@ -28,13 +28,12 @@
 		  <form method="post" class="w-full mt-6">
 			<!-- ✅ Show error messages from backend -->
 			&lt;#if errorMessage?? &amp;&amp; errorMessage?length gt 0&gt;
-			<div class="text-red-500 text-sm font-medium mb-2">${errorMessage}
-			</div>
+			  <div class="text-red-500 text-sm font-medium mb-2">${errorMessage}</div>
 			<!--#if-->
-			<!--#if-->
+
 			&lt;#if matches?? &amp;&amp; !matches&gt;
-			<div class="text-red-500 text-sm font-medium mb-2">Invalid OTP. Please try again.
-			</div>
+			  <div class="text-red-500 text-sm font-medium mb-2">Invalid OTP. Please try again.</div>
+			<!--#if-->
 			<!--#if-->
 			<label for="passcode" class="block text-gray-600 text-sm mb-2">Enter OTP</label>
 			<input type="text" id="passcode" name="passcode" pattern="[0-9]+" placeholder="000000" required="" autofocus="" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500">
