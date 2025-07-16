@@ -1770,7 +1770,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-f0d26744-593d-4b71-b9e8-0902c4193828",
@@ -1820,6 +1820,41 @@
 			},
 			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "rrfNode-1c96035d-d493-4be3-a585-c43407303815",
+			"type": "rrfNode",
+			"position": {
+				"x": 6672.274721555622,
+				"y": 1.409363064625694
+			},
+			"data": {
+				"id": "rrfNode-1c96035d-d493-4be3-a585-c43407303815",
+				"type": "rrfNode",
+				"position": {
+					"x": 6672.274721555622,
+					"y": 1.409363064625694
+				},
+				"previousNodeId": "assignmentNode-f0d26744-593d-4b71-b9e8-0902c4193828",
+				"agamaData": {
+					"assignments": [],
+					"nodeIcon": "ph:globe-simple",
+					"templatePath": "emailOtp.ftlh",
+					"asssignedVariableName": "uiInput",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"arguments": "emailObj"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -2673,11 +2708,30 @@
 			},
 			"sourceHandle": "source_logNode-784831d1-e9b6-44e6-8867-753b3a5ad195",
 			"targetHandle": "target_assignmentNode-f0d26744-593d-4b71-b9e8-0902c4193828"
+		},
+		{
+			"id": "assignmentNode-f0d26744-593d-4b71-b9e8-0902c4193828-rrfNode-1c96035d-d493-4be3-a585-c43407303815",
+			"type": "default",
+			"source": "assignmentNode-f0d26744-593d-4b71-b9e8-0902c4193828",
+			"target": "rrfNode-1c96035d-d493-4be3-a585-c43407303815",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-f0d26744-593d-4b71-b9e8-0902c4193828"
 		}
 	],
 	"viewport": {
-		"x": -6445.382607256794,
-		"y": 146.07978838102736,
+		"x": -6716.382607256793,
+		"y": 205.07978838102736,
 		"zoom": 1.0988542175768798
 	}
 }
