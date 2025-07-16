@@ -1956,16 +1956,17 @@
 					"displayName": "",
 					"hasComment": true,
 					"comment": "",
-					"variableField": "",
-					"valueField": "",
-					"conditionInputField": "",
+					"variableField": "breakOtpLoop",
+					"valueField": "true",
+					"conditionInputField": "is",
 					"nodeIcon": "material-symbols:pip-exit-outline-rounded"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
-			}
+			},
+			"selected": true
 		}
 	],
 	"edges": [
