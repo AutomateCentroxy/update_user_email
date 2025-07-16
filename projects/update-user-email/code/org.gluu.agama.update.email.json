@@ -841,7 +841,7 @@
 			"id": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
 			"type": "assignmentNode",
 			"position": {
-				"x": 4500.992493072088,
+				"x": 5000.992493072088,
 				"y": 102.30131757043446
 			},
 			"data": {
@@ -851,8 +851,8 @@
 					"x": 3799.5057289121155,
 					"y": -0.9448439790959497
 				},
-				"previousNodeId": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d",
-				"branching": "continue",
+				"previousNodeId": "repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800",
+				"branching": "repeat",
 				"agamaData": {
 					"assignments": [
 						{
@@ -1082,7 +1082,7 @@
 			"id": "whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5",
 			"type": "whenNode",
 			"position": {
-				"x": 5357.476044576745,
+				"x": 5857.476044576745,
 				"y": 307.63836957548386
 			},
 			"data": {
@@ -1125,7 +1125,7 @@
 			"id": "assignmentNode-d63acf36-33e3-46b1-82f2-670e8f7167a8",
 			"type": "assignmentNode",
 			"position": {
-				"x": 5493.461971593343,
+				"x": 5993.461971593343,
 				"y": 528.9143190431187
 			},
 			"data": {
@@ -1170,7 +1170,7 @@
 			"id": "whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841",
 			"type": "whenNode",
 			"position": {
-				"x": 5654.914988890436,
+				"x": 6154.914988890436,
 				"y": 306.15590256568106
 			},
 			"data": {
@@ -1214,7 +1214,7 @@
 			"id": "assignmentNode-e58e387d-d1b6-499c-9122-da99b248f29a",
 			"type": "assignmentNode",
 			"position": {
-				"x": 5910.844856929648,
+				"x": 6410.844856929648,
 				"y": 562.4896489381888
 			},
 			"data": {
@@ -1254,7 +1254,7 @@
 			"id": "logNode-22443251-ca87-4890-acf4-be3af41ff76a",
 			"type": "logNode",
 			"position": {
-				"x": 6147.502653841422,
+				"x": 6647.502653841422,
 				"y": 561.007181928386
 			},
 			"data": {
@@ -1288,7 +1288,7 @@
 			"id": "callNode-357b4876-1919-45ff-bb44-a69d9e33eef4",
 			"type": "callNode",
 			"position": {
-				"x": 6378.572785802211,
+				"x": 6878.572785802211,
 				"y": 560.4896489381888
 			},
 			"data": {
@@ -1329,7 +1329,7 @@
 			"id": "whenNode-4df2446b-c1c3-4fb6-8c83-1f3b4396fed0",
 			"type": "whenNode",
 			"position": {
-				"x": 6839.615818034702,
+				"x": 7339.615818034702,
 				"y": 608.9488823099056
 			},
 			"data": {
@@ -1372,7 +1372,7 @@
 			"id": "logNode-99ece441-25a4-4a21-a48a-5ea33381ddf6",
 			"type": "logNode",
 			"position": {
-				"x": 7082.615818034703,
+				"x": 7582.615818034703,
 				"y": 341.9138163295111
 			},
 			"data": {
@@ -1407,7 +1407,7 @@
 			"id": "assignmentNode-0ab56c8a-7f53-47a3-9013-4b1bfd29edbe",
 			"type": "assignmentNode",
 			"position": {
-				"x": 7313.211939701407,
+				"x": 7813.211939701407,
 				"y": 326.12421221187714
 			},
 			"data": {
@@ -1446,7 +1446,7 @@
 			"id": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3",
 			"type": "logNode",
 			"position": {
-				"x": 7094.08137161307,
+				"x": 7594.08137161307,
 				"y": 752.2644761334544
 			},
 			"data": {
@@ -1481,7 +1481,7 @@
 			"id": "rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
 			"type": "rrfNode",
 			"position": {
-				"x": 7328.563838622872,
+				"x": 7828.563838622872,
 				"y": 750.7820091236516
 			},
 			"data": {
@@ -1516,7 +1516,7 @@
 			"id": "logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751",
 			"type": "logNode",
 			"position": {
-				"x": 7583.57714325521,
+				"x": 8083.57714325521,
 				"y": 750.5933745893416
 			},
 			"data": {
@@ -1550,7 +1550,7 @@
 			"id": "callNode-8396ea26-e3b7-4a0f-9328-87d75843e944",
 			"type": "callNode",
 			"position": {
-				"x": 6616.642917763,
+				"x": 7116.642917763,
 				"y": 558.9721159479917
 			},
 			"data": {
@@ -1591,7 +1591,7 @@
 			"id": "finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a",
 			"type": "finishNode",
 			"position": {
-				"x": 7831.852344138424,
+				"x": 8331.852344138424,
 				"y": 754.7202988248852
 			},
 			"data": {
@@ -1626,7 +1626,7 @@
 			"id": "assignmentNode-f2bb17a3-bf53-4115-8700-f3fdfec25057",
 			"type": "assignmentNode",
 			"position": {
-				"x": 5019.108123565466,
+				"x": 5519.108123565466,
 				"y": 101.48252072992017
 			},
 			"data": {
@@ -1665,7 +1665,7 @@
 			"id": "rrfNode-f249c0e1-2cec-4f0e-920e-67dafff9cfc2",
 			"type": "rrfNode",
 			"position": {
-				"x": 4755.5176919522255,
+				"x": 5255.5176919522255,
 				"y": 101.87382405359122
 			},
 			"data": {
@@ -1703,7 +1703,7 @@
 			"id": "assignmentNode-98bd95a5-0df4-4367-a6a1-cd0f1e1f5834",
 			"type": "assignmentNode",
 			"position": {
-				"x": 5895.62291903503,
+				"x": 6395.62291903503,
 				"y": 5.049518360949293
 			},
 			"data": {
@@ -1740,10 +1740,45 @@
 			"dragging": false
 		},
 		{
+			"id": "repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800",
+			"type": "repeatNode",
+			"position": {
+				"x": 4530.325794165473,
+				"y": -34.63302788131146
+			},
+			"data": {
+				"id": "repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800",
+				"type": "repeatNode",
+				"position": {
+					"x": 4523.438200658763,
+					"y": 428.1271608508494
+				},
+				"previousNodeId": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d",
+				"branching": "continue",
+				"agamaData": {
+					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
+					"maxIteration": "",
+					"maxIterationVariableName": "",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true,
+			"dragging": false
+		},
+		{
 			"id": "assignmentNode-81bbbc71-146f-4580-a643-fe69f0711591",
 			"type": "assignmentNode",
 			"position": {
-				"x": 6145.62291903503,
+				"x": 6645.62291903503,
 				"y": 5.049518360949293
 			},
 			"data": {
@@ -1775,7 +1810,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -2139,25 +2174,6 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-aaa5236a-3918-45fc-80a1-f5c90165a775"
-		},
-		{
-			"id": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d-assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
-			"type": "default",
-			"source": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d",
-			"target": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "continue",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d_continue"
 		},
 		{
 			"id": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78-repeatNode-169e0058-0ffb-4858-9f1e-6bf76fee7f10",
@@ -2610,11 +2626,48 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-98bd95a5-0df4-4367-a6a1-cd0f1e1f5834"
+		},
+		{
+			"id": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d-repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800",
+			"type": "default",
+			"source": "whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d",
+			"target": "repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-48100de2-f4ec-46a7-ba97-45a38a0b509d_continue"
+		},
+		{
+			"source": "repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800",
+			"sourceHandle": "source_repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800_repeat",
+			"target": "assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
+			"targetHandle": "target_assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785",
+			"label": "repeat",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"id": "xy-edge__repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800source_repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800_repeat-assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785target_assignmentNode-0f8941f1-2483-4b8d-a625-a7770d9d1785"
 		}
 	],
 	"viewport": {
-		"x": -4579.7778447499295,
-		"y": 168.05223286802487,
-		"zoom": 0.860949188338904
+		"x": -4949.662669890498,
+		"y": 105.46550015015362,
+		"zoom": 1.161508731925722
 	}
 }
