@@ -1755,7 +1755,7 @@
 				},
 				"previousNodeId": "assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474",
 				"agamaData": {
-					"logMessage": "User enter the wrong OTP.",
+					"logMessage": "\"User enter the wrong OTP\"",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -1767,8 +1767,8 @@
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 122
+				"width": 168,
+				"height": 120
 			},
 			"selected": true
 		}
@@ -2608,8 +2608,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5558,
-		"y": -5,
-		"zoom": 1
+		"x": -3369.3418950538453,
+		"y": 171.1234858862535,
+		"zoom": 0.6381643844144765
 	}
 }
