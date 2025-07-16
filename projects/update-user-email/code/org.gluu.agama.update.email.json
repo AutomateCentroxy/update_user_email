@@ -1101,7 +1101,7 @@
 						{
 							"variable": "uiInput.resent",
 							"operator": "is",
-							"dataValue": "\"true\"",
+							"dataValue": "true",
 							"combinator": "none"
 						}
 					],
@@ -1118,7 +1118,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2009,7 +2009,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -2960,8 +2960,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5300.18788439975,
-		"y": -165.63015045543966,
+		"x": -5010.18788439975,
+		"y": -92.63015045543966,
 		"zoom": 0.860949188338904
 	}
 }
