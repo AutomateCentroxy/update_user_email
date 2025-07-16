@@ -1738,6 +1738,44 @@
 			},
 			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "assignmentNode-81bbbc71-146f-4580-a643-fe69f0711591",
+			"type": "assignmentNode",
+			"position": {
+				"x": 6145.62291903503,
+				"y": 5.049518360949293
+			},
+			"data": {
+				"id": "assignmentNode-81bbbc71-146f-4580-a643-fe69f0711591",
+				"type": "assignmentNode",
+				"position": {
+					"x": 6145.62291903503,
+					"y": 5.049518360949293
+				},
+				"previousNodeId": "assignmentNode-98bd95a5-0df4-4367-a6a1-cd0f1e1f5834",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Incorrect OTP entered. Please try again.\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -2553,6 +2591,25 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841_otherwise"
+		},
+		{
+			"id": "assignmentNode-98bd95a5-0df4-4367-a6a1-cd0f1e1f5834-assignmentNode-81bbbc71-146f-4580-a643-fe69f0711591",
+			"type": "default",
+			"source": "assignmentNode-98bd95a5-0df4-4367-a6a1-cd0f1e1f5834",
+			"target": "assignmentNode-81bbbc71-146f-4580-a643-fe69f0711591",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-98bd95a5-0df4-4367-a6a1-cd0f1e1f5834"
 		}
 	],
 	"viewport": {
