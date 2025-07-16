@@ -1148,6 +1148,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "true",
 							"assignedVariableName": "uiInput.resent"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "breakOtpLoop"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -1814,7 +1819,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1928,6 +1933,39 @@
 			},
 			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "quitNode-c3dcd4a3-11e3-4faa-9cf2-6b54c3ad6c66",
+			"type": "quitNode",
+			"position": {
+				"x": 6636.133867340487,
+				"y": 638.073416472982
+			},
+			"data": {
+				"id": "quitNode-c3dcd4a3-11e3-4faa-9cf2-6b54c3ad6c66",
+				"type": "quitNode",
+				"position": {
+					"x": 6636.133867340487,
+					"y": 638.073416472982
+				},
+				"previousNodeId": "logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8",
+				"agamaData": {
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"nodeIcon": "material-symbols:pip-exit-outline-rounded"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			}
 		}
 	],
 	"edges": [
@@ -2837,11 +2875,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-d63acf36-33e3-46b1-82f2-670e8f7167a8"
+		},
+		{
+			"id": "logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8-quitNode-c3dcd4a3-11e3-4faa-9cf2-6b54c3ad6c66",
+			"type": "default",
+			"source": "logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8",
+			"target": "quitNode-c3dcd4a3-11e3-4faa-9cf2-6b54c3ad6c66",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8"
 		}
 	],
 	"viewport": {
-		"x": -2919.626906853154,
-		"y": 142.25178811289874,
-		"zoom": 0.7412335049014176
+		"x": -5949,
+		"y": -180,
+		"zoom": 1
 	}
 }
