@@ -49,6 +49,7 @@ Repeat 6 times max
                                    emailObj = { success: false, error: "Unable_to_deliver_email_message" }
                                    // Finish flow unsuccessfully
                                    Finish emailObj
+                              verified = false
                               // Iterate x times max
                               otpTries = Repeat 3 times max
                                    // Variable assignment after successful email delivery
@@ -82,8 +83,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_dqery = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_dqery
+                                             it_qedae = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_qedae
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -99,5 +100,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_byzok = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_byzok
+it_blqku = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_blqku
