@@ -80,8 +80,8 @@ Repeat 6 times max
                                         //  Finish the flow successfully
                                         Log "@info Finish the flow successfully"
                                         //  Finish the flow successfully
-                                        it_ploah = {success:true, data: { userId: userName, email: email}}
-                                        Finish it_ploah
+                                        it_nnaor = {success:true, data: { userId: userName, email: email}}
+                                        Finish it_nnaor
                                    Otherwise
                                         //  User update failed log
                                         Log "@info User update failed. Error : %" E
@@ -89,6 +89,8 @@ Repeat 6 times max
                               Otherwise
                                    // Variable assigned when OTP entered by user does not matches
                                    uiInput.matches = false
+                                   // User enter the wrong OTP.
+                                   Log "@error User enter the wrong OTP"
                                    emailObj.email = email
                                    emailObj.matches = false
                                    emailObj.resent = false
@@ -99,5 +101,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_gpuwm = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_gpuwm
+it_svugm = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_svugm
