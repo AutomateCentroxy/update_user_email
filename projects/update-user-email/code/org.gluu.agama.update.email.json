@@ -1118,7 +1118,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1794,6 +1794,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "false",
 							"assignedVariableName": "verified"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "false",
+							"assignedVariableName": "breakOtpLoop"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -1809,7 +1814,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1894,8 +1899,8 @@
 			"id": "logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8",
 			"type": "logNode",
 			"position": {
-				"x": 6325.4242532952,
-				"y": 662.3572620910966
+				"x": 6386.133867340487,
+				"y": 638.073416472982
 			},
 			"data": {
 				"id": "logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8",
@@ -2835,8 +2840,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5437,
-		"y": -47,
-		"zoom": 1
+		"x": -2919.626906853154,
+		"y": 142.25178811289874,
+		"zoom": 0.7412335049014176
 	}
 }
