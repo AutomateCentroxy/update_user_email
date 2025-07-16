@@ -61,7 +61,7 @@ Repeat 6 times max
                                    // resent will false
                                    uiInput.resent = false
                                    // If user clicked on "resend code" button
-                                   When uiInput.resent is "true"
+                                   When uiInput.resent is true
                                         // Variable assignment when user clicked on "resend code" button
                                         sendMail = true
                                         uiInput.resent = true
@@ -88,8 +88,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_fbykg = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_fbykg
+                                             it_iuaoo = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_iuaoo
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -105,5 +105,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_gwnlf = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_gwnlf
+it_vmfuz = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_vmfuz
