@@ -67,6 +67,7 @@ Repeat 6 times max
                                         uiInput.resent = true
                                    // When passcode entered by user matches
                                    When uiInput.passcode is otpCode
+                                        verified = true
                                         emailObj.success = true
                                         // E-mail verification passed, initiating user provisioning flow
                                         Log "@info E-mail verification passed, initiating user email update flow"
@@ -83,8 +84,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_qedae = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_qedae
+                                             it_swznz = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_swznz
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -100,5 +101,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_blqku = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_blqku
+it_mjzsz = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_mjzsz
