@@ -1118,7 +1118,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1930,70 +1930,27 @@
 			"dragging": false
 		},
 		{
-			"id": "whenNode-acc4cb43-87b3-4e8d-b2f7-0c41cca2a1d0",
-			"type": "whenNode",
-			"position": {
-				"x": 6773.665659950305,
-				"y": 931.1255927160092
-			},
-			"data": {
-				"id": "whenNode-acc4cb43-87b3-4e8d-b2f7-0c41cca2a1d0",
-				"type": "whenNode",
-				"position": {
-					"x": 6634.133867340487,
-					"y": 651.073416472982
-				},
-				"previousNodeId": "logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8",
-				"agamaData": {
-					"variableField": "",
-					"valueField": "",
-					"conditionInputField": "",
-					"conditions": [
-						{
-							"variable": "BreakLoop",
-							"operator": "is",
-							"dataValue": "true",
-							"combinator": "none"
-						}
-					],
-					"nodeIcon": "ph:swap",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": ""
-				}
-			},
-			"measured": {
-				"width": 109,
-				"height": 58
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
-			"id": "assignmentNode-93fe0652-b83c-4fc0-9785-805e6e44bc78",
+			"id": "assignmentNode-c56ff411-f121-4dbe-b81a-ae83af8efaaf",
 			"type": "assignmentNode",
 			"position": {
-				"x": 7023.665659950305,
-				"y": 931.1255927160092
+				"x": 5373.952602079118,
+				"y": -140.8531136411114
 			},
 			"data": {
-				"id": "assignmentNode-93fe0652-b83c-4fc0-9785-805e6e44bc78",
+				"id": "assignmentNode-c56ff411-f121-4dbe-b81a-ae83af8efaaf",
 				"type": "assignmentNode",
 				"position": {
-					"x": 7023.665659950305,
-					"y": 931.1255927160092
+					"x": 5356.715663966233,
+					"y": -107.9462317892391
 				},
-				"previousNodeId": "whenNode-acc4cb43-87b3-4e8d-b2f7-0c41cca2a1d0",
+				"previousNodeId": "repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800",
 				"branching": "continue",
 				"agamaData": {
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"OTP send\"",
-							"assignedVariableName": "uiFeedback.errorMessage"
+							"assignmentExpression": "true",
+							"assignedVariableName": "BreakLoop"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -2009,7 +1966,8 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": true,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -2921,47 +2879,27 @@
 			"sourceHandle": "source_assignmentNode-d63acf36-33e3-46b1-82f2-670e8f7167a8"
 		},
 		{
-			"id": "logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8-whenNode-acc4cb43-87b3-4e8d-b2f7-0c41cca2a1d0",
-			"type": "default",
-			"source": "logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8",
-			"target": "whenNode-acc4cb43-87b3-4e8d-b2f7-0c41cca2a1d0",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_logNode-fa32d7b8-28c5-44bd-8bbb-e722d0a286c8"
-		},
-		{
-			"id": "whenNode-acc4cb43-87b3-4e8d-b2f7-0c41cca2a1d0-assignmentNode-93fe0652-b83c-4fc0-9785-805e6e44bc78",
-			"type": "default",
-			"source": "whenNode-acc4cb43-87b3-4e8d-b2f7-0c41cca2a1d0",
-			"target": "assignmentNode-93fe0652-b83c-4fc0-9785-805e6e44bc78",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
+			"source": "repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800",
+			"sourceHandle": "source_repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800_continue",
+			"target": "assignmentNode-c56ff411-f121-4dbe-b81a-ae83af8efaaf",
+			"targetHandle": "target_assignmentNode-c56ff411-f121-4dbe-b81a-ae83af8efaaf",
 			"label": "continue",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
 			"labelBgStyle": {
 				"fill": "#009688",
 				"color": "#ffffff",
 				"fillOpacity": 0.7
 			},
-			"labelShowBg": true,
-			"sourceHandle": "source_whenNode-acc4cb43-87b3-4e8d-b2f7-0c41cca2a1d0_continue"
+			"id": "xy-edge__repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800source_repeatNode-08a47e3d-dabe-4057-a6e3-24ec6a586800_continue-assignmentNode-c56ff411-f121-4dbe-b81a-ae83af8efaaftarget_assignmentNode-c56ff411-f121-4dbe-b81a-ae83af8efaaf"
 		}
 	],
 	"viewport": {
-		"x": -4615.216842093287,
-		"y": 152.04319211341942,
-		"zoom": 0.860949188338904
+		"x": -2771.01609220722,
+		"y": 374.75266500044063,
+		"zoom": 0.6381643844144765
 	}
 }
