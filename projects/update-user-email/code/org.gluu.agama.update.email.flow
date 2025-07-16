@@ -65,7 +65,6 @@ Repeat 6 times max
                                         // Variable assignment when user clicked on "resend code" button
                                         sendMail = true
                                         uiInput.resent = true
-                                        BreakLoop = true
                                         Log "@info Resend mail will trigger"
                                    // When passcode entered by user matches
                                    When uiInput.passcode is otpCode
@@ -86,8 +85,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_zqqlb = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_zqqlb
+                                             it_txpec = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_txpec
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -103,5 +102,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_vvfvh = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_vvfvh
+it_gmkwp = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_gmkwp
