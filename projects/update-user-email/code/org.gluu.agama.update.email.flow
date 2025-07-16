@@ -67,8 +67,6 @@ Repeat 6 times max
                                         uiInput.resent = true
                                         BreakLoop = true
                                         Log "@info Resend mail will trigger"
-                                        When BreakLoop is true
-                                        uiFeedback.errorMessage = "OTP send"
                                    // When passcode entered by user matches
                                    When uiInput.passcode is otpCode
                                         verified = true
@@ -88,8 +86,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_jkxtn = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_jkxtn
+                                             it_apilf = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_apilf
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -98,6 +96,7 @@ Repeat 6 times max
                                         // Variable assigned when OTP entered by user does not matches
                                         uiInput.matches = false
                                         uiFeedback.errorMessage = "Incorrect OTP entered. Please try again."
+                              BreakLoop = true
                     // Variable assignment when user exceeds the number of attempts allowed
                     obj = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
                     // Finish flow when user exceeds maximum number of flows allowed
@@ -105,5 +104,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_cfdvs = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_cfdvs
+it_rtdor = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_rtdor
