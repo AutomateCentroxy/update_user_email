@@ -1211,46 +1211,6 @@
 			"dragging": false
 		},
 		{
-			"id": "assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474",
-			"type": "assignmentNode",
-			"position": {
-				"x": 5941.738007961677,
-				"y": 246.56589878643945
-			},
-			"data": {
-				"id": "assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474",
-				"type": "assignmentNode",
-				"position": {
-					"x": 5794.803812468582,
-					"y": 366.9370499675973
-				},
-				"previousNodeId": "whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841",
-				"branching": "continue",
-				"agamaData": {
-					"assignments": [
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "false",
-							"assignedVariableName": "uiInput.matches"
-						}
-					],
-					"nodeIcon": "material-symbols:equal",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": "Variable assigned when OTP entered by user does not matches"
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 122
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
 			"id": "assignmentNode-e58e387d-d1b6-499c-9122-da99b248f29a",
 			"type": "assignmentNode",
 			"position": {
@@ -1740,40 +1700,6 @@
 			"dragging": false
 		},
 		{
-			"id": "logNode-5ab5ee8f-bcb5-407b-baf5-acc23101cecf",
-			"type": "logNode",
-			"position": {
-				"x": 6186.738007961677,
-				"y": 238.56589878643945
-			},
-			"data": {
-				"id": "logNode-5ab5ee8f-bcb5-407b-baf5-acc23101cecf",
-				"type": "logNode",
-				"position": {
-					"x": 6191.738007961677,
-					"y": 246.56589878643945
-				},
-				"previousNodeId": "assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474",
-				"agamaData": {
-					"logMessage": "\"User enter the wrong OTP\"",
-					"logLevel": "error",
-					"nodeIcon": "octicon:log-16",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "User enter the wrong OTP.",
-					"hasComment": true,
-					"comment": "User enter the wrong OTP."
-				}
-			},
-			"measured": {
-				"width": 168,
-				"height": 120
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
 			"id": "assignmentNode-98bd95a5-0df4-4367-a6a1-cd0f1e1f5834",
 			"type": "assignmentNode",
 			"position": {
@@ -1810,7 +1736,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		}
 	],
@@ -2347,25 +2273,6 @@
 			"sourceHandle": "source_whenNode-8dbe9e5f-dfed-4891-971a-fb2639cef0c5_continue"
 		},
 		{
-			"id": "whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841-assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474",
-			"type": "default",
-			"source": "whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841",
-			"target": "assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "continue",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841_continue"
-		},
-		{
 			"id": "whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841-assignmentNode-e58e387d-d1b6-499c-9122-da99b248f29a",
 			"type": "default",
 			"source": "whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841",
@@ -2627,25 +2534,6 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751source_logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751-finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565atarget_finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a"
-		},
-		{
-			"id": "assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474-logNode-5ab5ee8f-bcb5-407b-baf5-acc23101cecf",
-			"type": "default",
-			"source": "assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474",
-			"target": "logNode-5ab5ee8f-bcb5-407b-baf5-acc23101cecf",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474"
 		},
 		{
 			"id": "whenNode-97b13a61-3ce5-4c4c-be62-02a9151e1841-assignmentNode-98bd95a5-0df4-4367-a6a1-cd0f1e1f5834",
