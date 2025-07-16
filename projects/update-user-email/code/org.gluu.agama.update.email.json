@@ -1148,11 +1148,6 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "true",
 							"assignedVariableName": "uiInput.resent"
-						},
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "true",
-							"assignedVariableName": "breakOtpLoop"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -1168,7 +1163,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2845,8 +2840,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5592,
-		"y": -93,
-		"zoom": 1
+		"x": -4931.849098163022,
+		"y": 29.614210397885472,
+		"zoom": 0.860949188338904
 	}
 }
