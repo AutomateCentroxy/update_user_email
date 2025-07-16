@@ -1247,7 +1247,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1738,6 +1738,39 @@
 			},
 			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "logNode-5ab5ee8f-bcb5-407b-baf5-acc23101cecf",
+			"type": "logNode",
+			"position": {
+				"x": 6191.738007961677,
+				"y": 246.56589878643945
+			},
+			"data": {
+				"id": "logNode-5ab5ee8f-bcb5-407b-baf5-acc23101cecf",
+				"type": "logNode",
+				"position": {
+					"x": 6191.738007961677,
+					"y": 246.56589878643945
+				},
+				"previousNodeId": "assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474",
+				"agamaData": {
+					"logMessage": "User enter the wrong OTP.",
+					"logLevel": "error",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "User enter the wrong OTP.",
+					"hasComment": true,
+					"comment": "User enter the wrong OTP."
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -2553,11 +2586,30 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751source_logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751-finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565atarget_finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a"
+		},
+		{
+			"id": "assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474-logNode-5ab5ee8f-bcb5-407b-baf5-acc23101cecf",
+			"type": "default",
+			"source": "assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474",
+			"target": "logNode-5ab5ee8f-bcb5-407b-baf5-acc23101cecf",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-21f746d0-6fa5-4edf-88c8-01a6b80ee474"
 		}
 	],
 	"viewport": {
-		"x": -5275,
-		"y": -74,
+		"x": -5558,
+		"y": -5,
 		"zoom": 1
 	}
 }
