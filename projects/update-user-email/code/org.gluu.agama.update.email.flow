@@ -47,7 +47,7 @@ Repeat 6 times max
                          uiFeedback.matches = true
                          //  Show UI to collect OTP code from user.
                          emailOtpCreds = RRF "emailOtp.ftlh" uiFeedback
-                         When 
+                         When emailOtpCreds.resend is "yes"
                               Log "@ " __________
                               Call __________#__________ 
                               When 
@@ -65,5 +65,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_sopzj = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_sopzj
+it_bgods = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_bgods
