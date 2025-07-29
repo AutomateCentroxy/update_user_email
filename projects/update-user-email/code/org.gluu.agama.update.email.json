@@ -1249,22 +1249,22 @@
 				"previousNodeId": "repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b",
 				"branching": "repeat",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Email OTP verification loop Started\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Email loop Started",
 					"hasComment": true,
-					"comment": ""
+					"comment": "\"Email OTP verification loop Started\""
 				}
 			},
 			"measured": {
 				"width": 168,
 				"height": 120
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1397,7 +1397,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -2067,8 +2067,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5354.4045497161505,
-		"y": 252.88715753605436,
+		"x": -5465.4045497161505,
+		"y": 74.88715753605436,
 		"zoom": 1.3491025343396987
 	}
 }
