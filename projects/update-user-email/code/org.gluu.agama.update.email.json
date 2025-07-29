@@ -1086,6 +1086,46 @@
 				"width": 170,
 				"height": 122
 			},
+			"selected": false
+		},
+		{
+			"id": "callNode-aabaffb7-0adc-4e6f-b7cc-2e0949d9dade",
+			"type": "callNode",
+			"position": {
+				"x": 3270.562032466444,
+				"y": -92.42630909395726
+			},
+			"data": {
+				"id": "callNode-aabaffb7-0adc-4e6f-b7cc-2e0949d9dade",
+				"type": "callNode",
+				"position": {
+					"x": 3270.562032466444,
+					"y": -92.42630909395726
+				},
+				"previousNodeId": "logNode-89b978e6-6073-4abf-bfc0-347048925243",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "sendEmail",
+					"javaVariableName": "emailUpdateService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"email"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "sent Email otp",
+					"hasComment": true,
+					"comment": "sent Email otp",
+					"asssignedVariableName": "otpCode"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
 			"selected": true
 		}
 	],
@@ -1582,11 +1622,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78"
+		},
+		{
+			"id": "logNode-89b978e6-6073-4abf-bfc0-347048925243-callNode-aabaffb7-0adc-4e6f-b7cc-2e0949d9dade",
+			"type": "default",
+			"source": "logNode-89b978e6-6073-4abf-bfc0-347048925243",
+			"target": "callNode-aabaffb7-0adc-4e6f-b7cc-2e0949d9dade",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-89b978e6-6073-4abf-bfc0-347048925243"
 		}
 	],
 	"viewport": {
-		"x": -1988.7879023126588,
-		"y": 334.76869300523344,
+		"x": -1956.0232247753524,
+		"y": 269.4189924421747,
 		"zoom": 0.7834971869493407
 	}
 }
