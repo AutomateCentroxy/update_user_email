@@ -1385,7 +1385,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-935d50c3-c86c-4836-a538-31d72de63dbd",
@@ -1675,21 +1675,22 @@
 				"previousNodeId": "whenNode-6432e1c9-0a75-45c1-9087-507f03ba7a4b",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"User has requested a new code.\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "new code",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Log new code request"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "callNode-c1131577-9ffe-4c7f-ab36-ff275be62c09",
@@ -2829,8 +2830,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2800.2457668698116,
-		"y": 419.2291282590676,
-		"zoom": 0.6381643844144765
+		"x": -4244.375278149321,
+		"y": -115.30409216277377,
+		"zoom": 0.860949188338904
 	}
 }
