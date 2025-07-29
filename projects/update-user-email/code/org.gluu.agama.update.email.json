@@ -1230,40 +1230,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
-		},
-		{
-			"id": "repeatNode-600011f2-ed96-4fba-9453-795dc66fa6c5",
-			"type": "repeatNode",
-			"position": {
-				"x": 4270.562032466444,
-				"y": -92.42630909395726
-			},
-			"data": {
-				"id": "repeatNode-600011f2-ed96-4fba-9453-795dc66fa6c5",
-				"type": "repeatNode",
-				"position": {
-					"x": 4270.562032466444,
-					"y": -92.42630909395726
-				},
-				"previousNodeId": "repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b",
-				"branching": "continue",
-				"agamaData": {
-					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
-					"maxIteration": "",
-					"maxIterationVariableName": "",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": ""
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 122
-			}
+			"selected": false
 		},
 		{
 			"id": "logNode-46e0d32c-3b69-44c7-8583-58d6581f473b",
@@ -1294,8 +1261,8 @@
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 122
+				"width": 168,
+				"height": 120
 			},
 			"selected": false,
 			"dragging": false
@@ -1397,6 +1364,40 @@
 				"width": 109,
 				"height": 58
 			}
+		},
+		{
+			"id": "logNode-935d50c3-c86c-4836-a538-31d72de63dbd",
+			"type": "logNode",
+			"position": {
+				"x": 4270.562032466444,
+				"y": -92.42630909395726
+			},
+			"data": {
+				"id": "logNode-935d50c3-c86c-4836-a538-31d72de63dbd",
+				"type": "logNode",
+				"position": {
+					"x": 4270.562032466444,
+					"y": -92.42630909395726
+				},
+				"previousNodeId": "repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b",
+				"branching": "continue",
+				"agamaData": {
+					"logMessage": "\"Email OTP verification loop completed\"",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "Email OTP verification loop completed",
+					"hasComment": true,
+					"comment": "Email OTP verification loop completed"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -1970,25 +1971,6 @@
 			"sourceHandle": "source_assignmentNode-fcedbb1f-277e-426d-85aa-544fadb7794f"
 		},
 		{
-			"id": "repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b-repeatNode-600011f2-ed96-4fba-9453-795dc66fa6c5",
-			"type": "default",
-			"source": "repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b",
-			"target": "repeatNode-600011f2-ed96-4fba-9453-795dc66fa6c5",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "continue",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b_continue"
-		},
-		{
 			"id": "repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b-logNode-46e0d32c-3b69-44c7-8583-58d6581f473b",
 			"type": "default",
 			"source": "repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b",
@@ -2063,11 +2045,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_rrfNode-0163a647-901e-46b5-9dee-b44cd0f66fb3"
+		},
+		{
+			"id": "repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b-logNode-935d50c3-c86c-4836-a538-31d72de63dbd",
+			"type": "default",
+			"source": "repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b",
+			"target": "logNode-935d50c3-c86c-4836-a538-31d72de63dbd",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b_continue"
 		}
 	],
 	"viewport": {
-		"x": -5012.40454971615,
-		"y": 225.88715753605436,
+		"x": -5354.4045497161505,
+		"y": 252.88715753605436,
 		"zoom": 1.3491025343396987
 	}
 }
