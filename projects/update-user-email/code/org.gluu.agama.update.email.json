@@ -1254,6 +1254,16 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "true",
 							"assignedVariableName": "uiFeedback.matches"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"\"",
+							"assignedVariableName": "uiFeedback.infoMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -1269,7 +1279,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1919,8 +1929,8 @@
 			"id": "finishNode-20078c43-6728-4d68-8d1d-973340da3f19",
 			"type": "finishNode",
 			"position": {
-				"x": 4749.89863249867,
-				"y": -129.00372540610124
+				"x": 4792.89863249867,
+				"y": -130.00372540610124
 			},
 			"data": {
 				"id": "finishNode-20078c43-6728-4d68-8d1d-973340da3f19",
@@ -1947,7 +1957,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		}
 	],
@@ -2901,8 +2911,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2919.626239457646,
-		"y": 412.14646818194706,
-		"zoom": 0.7412335049014176
+		"x": -3959.2844405031083,
+		"y": 153.24054240388614,
+		"zoom": 1
 	}
 }
