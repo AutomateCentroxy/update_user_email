@@ -39,7 +39,7 @@ Repeat 6 times max
                     // The OTP Code has been send to user.
                     Log "@info OTP generated and send to: " email
                     EmailOtpValidationResult = false
-                    EmailMax = Repeat 3 times max
+                    EmailMax = Repeat 4 times max
                          // "Email OTP verification loop Started"
                          Log "@info Email OTP verification loop Started"
                          // uiFeedback.email/matches
@@ -84,8 +84,8 @@ Repeat 6 times max
                                         //  Finish the flow successfully
                                         Log "@info Finish the flow successfully"
                                         //  Finish the flow successfully
-                                        it_mhblk = {success:true, data: { userId: userName, email: email}}
-                                        Finish it_mhblk
+                                        it_swxch = {success:true, data: { userId: userName, email: email}}
+                                        Finish it_swxch
                                    Otherwise
                                         //  User update failed log
                                         Log "@info User update failed. Error : %" E
@@ -96,10 +96,10 @@ Repeat 6 times max
                     uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                     // Email OTP verification loop completed
                     Log "@error You have reached the maximun email OTP verification"
-                    it_pvlin = {success:false, error: "User update flow reached max attempts. Try later"}
-                    Finish it_pvlin
+                    it_wbmcd = {success:false, error: "User update flow reached max attempts. Try later"}
+                    Finish it_wbmcd
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_zpcdi = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_zpcdi
+it_ekrsj = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_ekrsj
