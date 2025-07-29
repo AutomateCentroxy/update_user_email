@@ -1847,7 +1847,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-e09c8c76-5277-497d-9bd8-10ee1605dd64",
@@ -1866,13 +1866,13 @@
 				"previousNodeId": "whenNode-e1d858a7-314e-4564-876e-4980d9326a37",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Fail to resend new code to user. \" otpCode",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Log error code",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -1880,7 +1880,8 @@
 			"measured": {
 				"width": 168,
 				"height": 120
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-be5de4c1-ac08-4a56-bc50-9def49d32a42",
@@ -1898,20 +1899,27 @@
 				},
 				"previousNodeId": "logNode-e09c8c76-5277-497d-9bd8-10ee1605dd64",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Error occurs while sending new code to you. Please contact site administrator.\"",
+							"assignedVariableName": "uiFeedback.infoMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "UI Feedback",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Provide feedback about the otp resend error to user."
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
-			}
+			},
+			"selected": false
 		}
 	],
 	"edges": [
