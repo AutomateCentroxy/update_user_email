@@ -1191,7 +1191,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-46e0d32c-3b69-44c7-8583-58d6581f473b",
@@ -1365,8 +1365,8 @@
 				"previousNodeId": "repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b",
 				"branching": "continue",
 				"agamaData": {
-					"logMessage": "\"Email OTP verification loop completed\"",
-					"logLevel": "info",
+					"logMessage": "\"You have reached the maximun email OTP verification\"",
+					"logLevel": "error",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
@@ -1380,7 +1380,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-b0af97ac-f510-4afe-90b2-375d5fc2bf7c",
@@ -2784,8 +2784,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3522.4616731556343,
-		"y": 208.85312617297632,
-		"zoom": 1
+		"x": -3349.378525249056,
+		"y": 207.76947360497138,
+		"zoom": 0.860949188338904
 	}
 }
