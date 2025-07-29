@@ -1529,7 +1529,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1548,12 +1548,18 @@
 				},
 				"previousNodeId": "logNode-4e609a71-ab5a-483a-9321-db14d5721beb",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Invalid OTP, Please Try Again!\"",
+							"assignedVariableName": "uiFeedback.infoMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Invalid OTP, Please Try Again!",
 					"hasComment": true,
 					"comment": ""
 				}
