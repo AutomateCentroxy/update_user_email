@@ -84,8 +84,8 @@ Repeat 6 times max
                                         //  Finish the flow successfully
                                         Log "@info Finish the flow successfully"
                                         //  Finish the flow successfully
-                                        it_swxch = {success:true, data: { userId: userName, email: email}}
-                                        Finish it_swxch
+                                        it_jrftt = {success:true, data: { userId: userName, email: email}}
+                                        Finish it_jrftt
                                    Otherwise
                                         //  User update failed log
                                         Log "@info User update failed. Error : %" E
@@ -96,10 +96,10 @@ Repeat 6 times max
                     uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                     // Email OTP verification loop completed
                     Log "@error You have reached the maximun email OTP verification"
-                    it_wbmcd = {success:false, error: "User update flow reached max attempts. Try later"}
-                    Finish it_wbmcd
+                    it_wqafx = {success:false, error: "User update flow reached max attempts. Try later"}
+                    Finish it_wqafx
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_ekrsj = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_ekrsj
+it_vixzu = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_vixzu
