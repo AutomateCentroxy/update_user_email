@@ -1495,7 +1495,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-4e609a71-ab5a-483a-9321-db14d5721beb",
@@ -1514,13 +1514,13 @@
 				"previousNodeId": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
 				"branching": "otherwise",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Invalid OTP, Please Try Again!\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Invalid OTP",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -1529,7 +1529,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2864,8 +2864,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4301.375278149321,
-		"y": 344.6959078372263,
+		"x": -4525.375278149321,
+		"y": 397.6959078372263,
 		"zoom": 0.860949188338904
 	}
 }
