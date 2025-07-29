@@ -34,8 +34,10 @@ Repeat 6 times max
                     email = userInput.mail
                     inum = userWithUid.inum
                     Log "@info Send-Email-page-trigger"
+                    // sent Email otp
+                    otpCode = Call emailUpdateService sendEmail email
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_didau = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_didau
+it_pxkgd = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_pxkgd
