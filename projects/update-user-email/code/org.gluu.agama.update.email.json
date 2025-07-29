@@ -1269,7 +1269,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1941,7 +1941,7 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{success:false, error:\"User update flow reached max attempts. Try later\"}",
+					"returnVariable": "{success:false, error:\"Email update flow reached max OTP resend attempts. Try later\"}",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
@@ -1950,7 +1950,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		}
 	],
@@ -2903,8 +2903,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4525.246276061691,
-		"y": 24.25769266153452,
+		"x": -4719.635139990395,
+		"y": 234.7533097450957,
 		"zoom": 1.161508731925722
 	}
 }
