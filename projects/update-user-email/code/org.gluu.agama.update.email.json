@@ -1941,7 +1941,7 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{success:false, error:\"Email update flow reached max OTP resend attempts. Try later\"}",
+					"returnVariable": "{success:false, error:\"ExceededTheNumberOfAttemptsAllowed\"}",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
