@@ -1324,7 +1324,7 @@
 					"x": 4954.592250530218,
 					"y": 162.02109193545124
 				},
-				"previousNodeId": "logNode-4a0c1139-9c11-4613-b1d6-6c3d1adf5eb2",
+				"previousNodeId": "rrfNode-0163a647-901e-46b5-9dee-b44cd0f66fb3",
 				"agamaData": {
 					"variableField": "",
 					"valueField": "",
@@ -1874,40 +1874,6 @@
 				"height": 122
 			},
 			"selected": false,
-			"dragging": false
-		},
-		{
-			"id": "logNode-4a0c1139-9c11-4613-b1d6-6c3d1adf5eb2",
-			"type": "logNode",
-			"position": {
-				"x": 4750.877767844924,
-				"y": 141.78455392035573
-			},
-			"data": {
-				"id": "logNode-4a0c1139-9c11-4613-b1d6-6c3d1adf5eb2",
-				"type": "logNode",
-				"position": {
-					"x": 4834.522124973985,
-					"y": 152.57737419507333
-				},
-				"previousNodeId": "rrfNode-0163a647-901e-46b5-9dee-b44cd0f66fb3",
-				"agamaData": {
-					"logMessage": "\"You have reached the maximum email OTP verification\"",
-					"logLevel": "error",
-					"nodeIcon": "octicon:log-16",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "Max attempted ",
-					"hasComment": true,
-					"comment": ""
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 122
-			},
-			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2862,29 +2828,10 @@
 			"targetHandle": "target_logNode-935d50c3-c86c-4836-a538-31d72de63dbd"
 		},
 		{
-			"id": "rrfNode-0163a647-901e-46b5-9dee-b44cd0f66fb3-logNode-4a0c1139-9c11-4613-b1d6-6c3d1adf5eb2",
-			"type": "default",
 			"source": "rrfNode-0163a647-901e-46b5-9dee-b44cd0f66fb3",
-			"target": "logNode-4a0c1139-9c11-4613-b1d6-6c3d1adf5eb2",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_rrfNode-0163a647-901e-46b5-9dee-b44cd0f66fb3"
-		},
-		{
-			"id": "logNode-4a0c1139-9c11-4613-b1d6-6c3d1adf5eb2-whenNode-6432e1c9-0a75-45c1-9087-507f03ba7a4b",
-			"type": "default",
-			"source": "logNode-4a0c1139-9c11-4613-b1d6-6c3d1adf5eb2",
+			"sourceHandle": "source_rrfNode-0163a647-901e-46b5-9dee-b44cd0f66fb3",
 			"target": "whenNode-6432e1c9-0a75-45c1-9087-507f03ba7a4b",
+			"targetHandle": "target_whenNode-6432e1c9-0a75-45c1-9087-507f03ba7a4b",
 			"label": "",
 			"labelBgPadding": [
 				8,
@@ -2896,12 +2843,11 @@
 				"color": "#ffffff",
 				"fillOpacity": 0.7
 			},
-			"sourceHandle": "source_logNode-4a0c1139-9c11-4613-b1d6-6c3d1adf5eb2",
-			"targetHandle": "target_whenNode-6432e1c9-0a75-45c1-9087-507f03ba7a4b"
+			"id": "xy-edge__rrfNode-0163a647-901e-46b5-9dee-b44cd0f66fb3source_rrfNode-0163a647-901e-46b5-9dee-b44cd0f66fb3-whenNode-6432e1c9-0a75-45c1-9087-507f03ba7a4btarget_whenNode-6432e1c9-0a75-45c1-9087-507f03ba7a4b"
 		}
 	],
 	"viewport": {
-		"x": -2871.15955731429,
+		"x": -2913.15955731429,
 		"y": 176.6408369185259,
 		"zoom": 0.7412335049014176
 	}
