@@ -1343,7 +1343,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "whenNode-6432e1c9-0a75-45c1-9087-507f03ba7a4b",
@@ -1413,6 +1413,243 @@
 				"height": 120
 			},
 			"selected": false
+		},
+		{
+			"id": "logNode-b0af97ac-f510-4afe-90b2-375d5fc2bf7c",
+			"type": "logNode",
+			"position": {
+				"x": 5204.592250530218,
+				"y": -87.97890806454876
+			},
+			"data": {
+				"id": "logNode-b0af97ac-f510-4afe-90b2-375d5fc2bf7c",
+				"type": "logNode",
+				"position": {
+					"x": 5204.592250530218,
+					"y": -87.97890806454876
+				},
+				"previousNodeId": "whenNode-6432e1c9-0a75-45c1-9087-507f03ba7a4b",
+				"branching": "otherwise",
+				"agamaData": {
+					"logMessage": "",
+					"logLevel": "",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			}
+		},
+		{
+			"id": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
+			"type": "whenNode",
+			"position": {
+				"x": 5454.592250530218,
+				"y": -87.97890806454876
+			},
+			"data": {
+				"id": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
+				"type": "whenNode",
+				"position": {
+					"x": 5454.592250530218,
+					"y": -87.97890806454876
+				},
+				"previousNodeId": "logNode-b0af97ac-f510-4afe-90b2-375d5fc2bf7c",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 109,
+				"height": 58
+			}
+		},
+		{
+			"id": "logNode-4e609a71-ab5a-483a-9321-db14d5721beb",
+			"type": "logNode",
+			"position": {
+				"x": 5686.592250530218,
+				"y": -323.97890806454876
+			},
+			"data": {
+				"id": "logNode-4e609a71-ab5a-483a-9321-db14d5721beb",
+				"type": "logNode",
+				"position": {
+					"x": 5704.592250530218,
+					"y": -337.97890806454876
+				},
+				"previousNodeId": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
+				"branching": "otherwise",
+				"agamaData": {
+					"logMessage": "",
+					"logLevel": "",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "assignmentNode-34029f81-9572-43c8-a3dd-c85c2900d102",
+			"type": "assignmentNode",
+			"position": {
+				"x": 5939.592250530218,
+				"y": -327.97890806454876
+			},
+			"data": {
+				"id": "assignmentNode-34029f81-9572-43c8-a3dd-c85c2900d102",
+				"type": "assignmentNode",
+				"position": {
+					"x": 5954.592250530218,
+					"y": -337.97890806454876
+				},
+				"previousNodeId": "logNode-4e609a71-ab5a-483a-9321-db14d5721beb",
+				"agamaData": {
+					"assignments": [],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "logNode-0c1c6df7-44aa-4d3b-a087-33709a3ea7ca",
+			"type": "logNode",
+			"position": {
+				"x": 5715.3651436342925,
+				"y": 55.4851369442618
+			},
+			"data": {
+				"id": "logNode-0c1c6df7-44aa-4d3b-a087-33709a3ea7ca",
+				"type": "logNode",
+				"position": {
+					"x": 5704.592250530218,
+					"y": 112.02109193545124
+				},
+				"previousNodeId": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
+				"branching": "success",
+				"agamaData": {
+					"logMessage": "",
+					"logLevel": "",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "assignmentNode-4632d34d-2e43-4bad-ae6f-b3f796a992ec",
+			"type": "assignmentNode",
+			"position": {
+				"x": 5987.3030648688755,
+				"y": 69.5880863093499
+			},
+			"data": {
+				"id": "assignmentNode-4632d34d-2e43-4bad-ae6f-b3f796a992ec",
+				"type": "assignmentNode",
+				"position": {
+					"x": 5935.592250530218,
+					"y": 68.02109193545124
+				},
+				"previousNodeId": "logNode-0c1c6df7-44aa-4d3b-a087-33709a3ea7ca",
+				"agamaData": {
+					"assignments": [],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true,
+			"dragging": false
+		},
+		{
+			"id": "logNode-8044d192-66b1-468e-94b0-bbda3b7374b6",
+			"type": "logNode",
+			"position": {
+				"x": 6303.116828572619,
+				"y": 110.32994003071565
+			},
+			"data": {
+				"id": "logNode-8044d192-66b1-468e-94b0-bbda3b7374b6",
+				"type": "logNode",
+				"position": {
+					"x": 6185.592250530218,
+					"y": 68.02109193545124
+				},
+				"previousNodeId": "assignmentNode-4632d34d-2e43-4bad-ae6f-b3f796a992ec",
+				"agamaData": {
+					"logMessage": "",
+					"logLevel": "",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": false,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -2079,11 +2316,144 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b_continue"
+		},
+		{
+			"id": "whenNode-6432e1c9-0a75-45c1-9087-507f03ba7a4b-logNode-b0af97ac-f510-4afe-90b2-375d5fc2bf7c",
+			"type": "default",
+			"source": "whenNode-6432e1c9-0a75-45c1-9087-507f03ba7a4b",
+			"target": "logNode-b0af97ac-f510-4afe-90b2-375d5fc2bf7c",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "otherwise",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-6432e1c9-0a75-45c1-9087-507f03ba7a4b_otherwise"
+		},
+		{
+			"id": "logNode-b0af97ac-f510-4afe-90b2-375d5fc2bf7c-whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
+			"type": "default",
+			"source": "logNode-b0af97ac-f510-4afe-90b2-375d5fc2bf7c",
+			"target": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-b0af97ac-f510-4afe-90b2-375d5fc2bf7c"
+		},
+		{
+			"id": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb-logNode-4e609a71-ab5a-483a-9321-db14d5721beb",
+			"type": "default",
+			"source": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
+			"target": "logNode-4e609a71-ab5a-483a-9321-db14d5721beb",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "otherwise",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb_otherwise"
+		},
+		{
+			"id": "logNode-4e609a71-ab5a-483a-9321-db14d5721beb-assignmentNode-34029f81-9572-43c8-a3dd-c85c2900d102",
+			"type": "default",
+			"source": "logNode-4e609a71-ab5a-483a-9321-db14d5721beb",
+			"target": "assignmentNode-34029f81-9572-43c8-a3dd-c85c2900d102",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-4e609a71-ab5a-483a-9321-db14d5721beb"
+		},
+		{
+			"id": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb-logNode-0c1c6df7-44aa-4d3b-a087-33709a3ea7ca",
+			"type": "default",
+			"source": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
+			"target": "logNode-0c1c6df7-44aa-4d3b-a087-33709a3ea7ca",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "Condition met",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb_success"
+		},
+		{
+			"id": "logNode-0c1c6df7-44aa-4d3b-a087-33709a3ea7ca-assignmentNode-4632d34d-2e43-4bad-ae6f-b3f796a992ec",
+			"type": "default",
+			"source": "logNode-0c1c6df7-44aa-4d3b-a087-33709a3ea7ca",
+			"target": "assignmentNode-4632d34d-2e43-4bad-ae6f-b3f796a992ec",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-0c1c6df7-44aa-4d3b-a087-33709a3ea7ca"
+		},
+		{
+			"id": "assignmentNode-4632d34d-2e43-4bad-ae6f-b3f796a992ec-logNode-8044d192-66b1-468e-94b0-bbda3b7374b6",
+			"type": "default",
+			"source": "assignmentNode-4632d34d-2e43-4bad-ae6f-b3f796a992ec",
+			"target": "logNode-8044d192-66b1-468e-94b0-bbda3b7374b6",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-4632d34d-2e43-4bad-ae6f-b3f796a992ec"
 		}
 	],
 	"viewport": {
-		"x": -3973.6990470442142,
-		"y": 270.1753601596505,
-		"zoom": 1
+		"x": -3369.638034924615,
+		"y": 258.82153110918745,
+		"zoom": 0.6381643844144765
 	}
 }
