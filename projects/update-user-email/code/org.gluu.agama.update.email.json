@@ -1453,7 +1453,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
@@ -1474,7 +1474,14 @@
 					"variableField": "",
 					"valueField": "",
 					"conditionInputField": "",
-					"conditions": [],
+					"conditions": [
+						{
+							"variable": "emailOtpCreds.passcode",
+							"operator": "is",
+							"dataValue": "otpCode",
+							"combinator": "none"
+						}
+					],
 					"nodeIcon": "ph:swap",
 					"nodeColor": "",
 					"titleColor": "",
@@ -1488,7 +1495,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-4e609a71-ab5a-483a-9321-db14d5721beb",
@@ -1587,8 +1594,8 @@
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 122
+				"width": 168,
+				"height": 120
 			},
 			"selected": false,
 			"dragging": false
