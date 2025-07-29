@@ -1264,7 +1264,7 @@
 				"width": 168,
 				"height": 120
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1283,20 +1283,32 @@
 				},
 				"previousNodeId": "logNode-46e0d32c-3b69-44c7-8583-58d6581f473b",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "email",
+							"assignedVariableName": "uiFeedback.email"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "uiFeedback.matches"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "uiFeedback.email/matches",
 					"hasComment": true,
-					"comment": ""
+					"comment": "uiFeedback.email/matches"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "rrfNode-0163a647-901e-46b5-9dee-b44cd0f66fb3",
@@ -2067,8 +2079,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5465.4045497161505,
-		"y": 74.88715753605436,
-		"zoom": 1.3491025343396987
+		"x": -3697.6990470442142,
+		"y": 309.1753601596505,
+		"zoom": 1
 	}
 }
