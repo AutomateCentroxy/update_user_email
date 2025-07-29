@@ -1690,7 +1690,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "callNode-c1131577-9ffe-4c7f-ab36-ff275be62c09",
@@ -1709,18 +1709,21 @@
 				"previousNodeId": "logNode-e79c2b27-32ab-40a2-8423-bbac21e6d900",
 				"agamaData": {
 					"javaClassName": "",
-					"javaMethodName": "",
-					"javaVariableName": "",
+					"javaMethodName": "sendEmail",
+					"javaVariableName": "emailUpdateService",
 					"exceptionVariableField": "",
-					"callType": "Call static method",
-					"arguments": [],
+					"callType": "Call method on instance",
+					"arguments": [
+						"email"
+					],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Resend Email otp",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Resend Email otp",
+					"asssignedVariableName": "otpCode"
 				}
 			},
 			"measured": {
