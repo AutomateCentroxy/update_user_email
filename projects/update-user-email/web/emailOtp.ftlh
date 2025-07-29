@@ -3,21 +3,64 @@
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>OTP Verification
 	</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></head>
-<body><div class="otp-container"><div align="center" class="flex"><img src="https://gluu.org/wp-content/uploads/2020/12/logo.png" alt="Logo" id="inh1m"></div><div class="header"><i class="fas fa-key">
+<body>
+
+  
+	
+	
+	
+	
+  
+  
+	<div class="otp-container">
+	  <div align="center" class="flex">
+		<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png" alt="Logo" id="inh1m">
+	  </div>
+	  <div class="header">
+		<i class="fas fa-key">
 		</i> OTP Verification
-	  </div><!-- ✅ Show Error Message -->
+	  </div>
+	  <!-- ✅ Show Error Message -->
 	  [#if errorMessage?? &amp;&amp; errorMessage?length gt 0]
-	  <div role="alert" align="center" class="alert alert-danger mt-3 error"><p>${errorMessage}
-		</p></div>
+	  <div role="alert" align="center" class="alert alert-danger mt-3 error">
+		<p>${errorMessage}
+		</p>
+	  </div>
 	  [/#if]
 	  [#if matches?? &amp;&amp; !matches]
-	  <div role="alert" align="center" class="alert alert-danger mt-3 error"><p>Invalid OTP. Please try again.
-		</p></div>
+	  <div role="alert" align="center" class="alert alert-danger mt-3 error">
+		<p>Invalid OTP. Please try again.
+		</p>
+	  </div>
 	  [/#if]
-	  <div class="content"><p class="text-center">A verification code has been sent to:
-		</p><p class="text-center email-display">${email}
-		</p><!-- OTP Submission Form --><form method="post" enctype="application/x-www-form-urlencoded"><div class="form-group"><label for="passcode" class="form-label">Enter OTP: <span class="required">*</span></label><input type="text" id="passcode" name="passcode" pattern="[0-9]+" required="" placeholder="000000" class="form-control"></div><div class="buttons"><button type="submit" class="btn btn-primary">Continue</button></div></form><!-- Resend Code --><form method="post" enctype="application/x-www-form-urlencoded" class="resend-form"><p class="text-sm text-center mt-4">Didn't receive the code?
-		  </p><div align="center"><button type="submit" name="resent" value="yes" class="btn btn-secondary resend-btn">Resend Code</button></div></form></div></div></body>
+	  <div class="content">
+		<p class="text-center">A verification code has been sent to:
+		</p>
+		<p class="text-center email-display">${email}
+		</p>
+		<!-- OTP Submission Form -->
+		<form method="post" enctype="application/x-www-form-urlencoded">
+		  <div class="form-group">
+			<label for="passcode" class="form-label">Enter OTP: <span class="required">*</span></label>
+			<input type="text" id="passcode" name="passcode" pattern="[0-9]+" required="" placeholder="000000" class="form-control">
+		  </div>
+		  <div class="buttons">
+			<button type="submit" class="btn btn-primary">Continue</button>
+		  </div>
+		</form>
+		<!-- Resend Code -->
+		<form method="post" enctype="application/x-www-form-urlencoded" class="resend-form">
+		  <p class="text-sm text-center mt-4">Didn't receive the code?
+		  </p>
+		  <div align="center">
+			<button type="submit" name="resend" value="yes" class="btn btn-secondary resend-btn">Resend Code</button>
+		  </div>
+		</form>
+	  </div>
+	</div>
+  
+  
+</body>
 <style>
 	body {
 	  font-family: Arial, sans-serif;
