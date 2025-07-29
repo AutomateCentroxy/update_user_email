@@ -1438,21 +1438,22 @@
 				"previousNodeId": "whenNode-6432e1c9-0a75-45c1-9087-507f03ba7a4b",
 				"branching": "otherwise",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Password provided by the user \" ",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "LOG",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Add log entry with collected code in log file."
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
@@ -1486,7 +1487,8 @@
 			"measured": {
 				"width": 109,
 				"height": 58
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "logNode-4e609a71-ab5a-483a-9321-db14d5721beb",
@@ -2855,8 +2857,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4656.375278149321,
-		"y": -91.30409216277371,
+		"x": -4301.375278149321,
+		"y": 344.6959078372263,
 		"zoom": 0.860949188338904
 	}
 }
