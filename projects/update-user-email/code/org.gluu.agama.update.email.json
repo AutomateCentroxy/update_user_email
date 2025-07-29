@@ -1588,13 +1588,13 @@
 				"previousNodeId": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Email Otp Verified\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Email Otp Verified",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -1622,14 +1622,20 @@
 				},
 				"previousNodeId": "logNode-0c1c6df7-44aa-4d3b-a087-33709a3ea7ca",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "EmailOtpValidationResult"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "EmailOtpValidationResult",
 					"hasComment": true,
-					"comment": ""
+					"comment": "EmailOtpValidationResult:TRUE"
 				}
 			},
 			"measured": {
