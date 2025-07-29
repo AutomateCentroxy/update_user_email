@@ -68,10 +68,11 @@ Repeat 6 times max
                                    Log "@ " __________
                               Otherwise
                                    Log "@info Invalid OTP, Please Try Again!"
+                                   uiFeedback.infoMessage = "Invalid OTP, Please Try Again!"
                     // Email OTP verification loop completed
                     Log "@info Email OTP verification loop completed"
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_zbkrh = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_zbkrh
+it_blvtv = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_blvtv
