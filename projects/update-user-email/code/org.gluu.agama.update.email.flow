@@ -63,7 +63,7 @@ Repeat 6 times max
                          Otherwise
                               // Add log entry with collected code in log file.
                               Log "@info Password provided by the user " 
-                              When 
+                              When emailOtpCreds.passcode is otpCode
                                    Log "@ " __________
                                    Log "@ " __________
                               Otherwise
@@ -73,5 +73,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_omhug = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_omhug
+it_uqmua = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_uqmua
