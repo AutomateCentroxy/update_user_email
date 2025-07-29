@@ -39,8 +39,13 @@ Repeat 6 times max
                     // The OTP Code has been send to user.
                     Log "@info OTP generated and send to: " email
                     EmailOtpValidationResult = false
+                    Repeat __________ times max
+                         Log "@ " __________
+                         RRF "__________" 
+                         When 
+                    Repeat __________ times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_afawm = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_afawm
+it_orqrc = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_orqrc
