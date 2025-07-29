@@ -82,8 +82,8 @@ Repeat 6 times max
                                         //  Finish the flow successfully
                                         Log "@info Finish the flow successfully"
                                         //  Finish the flow successfully
-                                        it_jjxlr = {success:true, data: { userId: userName, email: email}}
-                                        Finish it_jjxlr
+                                        it_fnezn = {success:true, data: { userId: userName, email: email}}
+                                        Finish it_fnezn
                                    Otherwise
                                         //  User update failed log
                                         Log "@info User update failed. Error : %" E
@@ -92,9 +92,9 @@ Repeat 6 times max
                                    Log "@info Invalid OTP, Please Try Again!"
                                    uiFeedback.infoMessage = "Invalid OTP, Please Try Again!"
                     // Email OTP verification loop completed
-                    Log "@info Email OTP verification loop completed"
+                    Log "@error You have reached the maximun email OTP verification"
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_njnsi = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_njnsi
+it_ueokt = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_ueokt
