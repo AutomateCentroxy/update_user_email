@@ -42,6 +42,9 @@ Repeat 6 times max
                     EmailMax = Repeat 6 times max
                          // "Email OTP verification loop Started"
                          Log "@info Email OTP verification loop Started"
+                         // uiFeedback.email/matches
+                         uiFeedback.email = email
+                         uiFeedback.matches = true
                          RRF "__________" 
                          When 
                     // Email OTP verification loop completed
@@ -49,5 +52,5 @@ Repeat 6 times max
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_rhkjy = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_rhkjy
+it_sghun = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_sghun
