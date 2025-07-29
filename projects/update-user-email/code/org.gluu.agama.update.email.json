@@ -1216,12 +1216,12 @@
 				"previousNodeId": "assignmentNode-fcedbb1f-277e-426d-85aa-544fadb7794f",
 				"agamaData": {
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
-					"maxIteration": "",
-					"maxIterationVariableName": "",
+					"maxIteration": "6",
+					"maxIterationVariableName": "EmailMax",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Email-Loop",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -1229,7 +1229,8 @@
 			"measured": {
 				"width": 170,
 				"height": 122
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "repeatNode-600011f2-ed96-4fba-9453-795dc66fa6c5",
@@ -2065,8 +2066,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5958.404549716149,
-		"y": 172.88715753605436,
+		"x": -5012.40454971615,
+		"y": 225.88715753605436,
 		"zoom": 1.3491025343396987
 	}
 }
