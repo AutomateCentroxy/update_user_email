@@ -2001,7 +2001,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2020,15 +2020,15 @@
 				},
 				"previousNodeId": "assignmentNode-35ec2466-c978-44e5-8283-e539bbac2f55",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Validating access token: %\" accessToken",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "LOG",
 					"hasComment": true,
-					"comment": ""
+					"comment": "accessToken"
 				}
 			},
 			"measured": {
