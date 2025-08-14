@@ -14,7 +14,7 @@ public abstract class EmailUpdate {
 
     public abstract String updateUser(Map<String, String> profile) throws Exception;
 
-    public abstract String sendEmail(String to);
+    public abstract String sendEmail(String to, String lang);
 
     public abstract Map<String, String> getUserEntityByInum(String inum);
 
