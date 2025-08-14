@@ -335,7 +335,7 @@ public class JansEmailUpdate extends EmailUpdate {
                 templateData = EmailTemplatePt.get(otp);
                 break;
             default:
-                templateData = EmailTemplateEn.get(otp);
+                templateData = EmailOtpTemplateEn.get(otp);
                 break;
         }
 
