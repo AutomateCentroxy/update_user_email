@@ -1,4 +1,4 @@
-package org.gluu.agama.update;
+package org.gluu.agama.smtp;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
