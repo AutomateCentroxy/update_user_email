@@ -1020,7 +1020,8 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "callNode-aabaffb7-0adc-4e6f-b7cc-2e0949d9dade",
@@ -1061,7 +1062,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-e042d399-71fb-42be-951c-02814c757dd0",
@@ -1079,7 +1080,7 @@
 				},
 				"previousNodeId": "callNode-aabaffb7-0adc-4e6f-b7cc-2e0949d9dade",
 				"agamaData": {
-					"logMessage": "\"OTP generated and send to: \" email",
+					"logMessage": "\"OTP generated and send to: \" email lang",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -3263,8 +3264,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2540.432190850676,
-		"y": 228.31314469119013,
+		"x": -2803.432190850676,
+		"y": 255.31314469119013,
 		"zoom": 1.161508731925722
 	}
 }
