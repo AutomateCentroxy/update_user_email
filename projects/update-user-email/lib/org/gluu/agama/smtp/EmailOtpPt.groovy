@@ -56,7 +56,7 @@ class EmailOtpPt {
                   <tbody>
                     <tr>
                       <td style="padding:20px;font-size:12px;color:#666;">
-                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">Siga-nos em:</p>
+                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">Follow us on:</p>
                         <p>
                           <a href="https://www.facebook.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/facebook.png" style="height:20px;"></a>
                           <a href="https://x.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/twitter.png" style="height:20px;"></a>
@@ -66,7 +66,7 @@ class EmailOtpPt {
                         <p style="margin-top:10px;line-height:20px;color:#A8AAAF;font-size:12px;">
                           Phi Wallet Unipessoal LDA<br>
                           Avenida da Liberdade 262 R/C<br>
-                          1250-149 Lisboa<br>
+                          1250-149 Lisbon<br>
                           Portugal
                         </p>
                       </td>
