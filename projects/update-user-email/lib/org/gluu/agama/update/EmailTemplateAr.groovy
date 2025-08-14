@@ -1,13 +1,14 @@
-package org.gluu.agama.update;
+package org.gluu.agama.smtp;
 
 import java.util.Map;
 
-class EmailTemplateAr {
+class SendEmailTemplateAr {
 
-    static Map<String, String> get(String otp) {
+    static Map<String, String> get(String username) {
 
         String html = """
-<table role="presentation" dir="rtl" cellspacing="0" cellpadding="0" width="100%" style="background-color:#F2F4F6;margin:0;padding:0;width:100%;">
+<table role="presentation" cellspacing="0" cellpadding="0" width="100%" 
+       style="background-color:#F2F4F6;margin:0;padding:0;width:100%;">
   <tbody>
     <tr>
       <td align="center">
@@ -26,20 +27,20 @@ class EmailTemplateAr {
                 <table role="presentation" cellspacing="0" cellpadding="0" width="570" align="center" style="background-color:#FFFFFF;margin:0 auto;padding:0;border-radius:4px;">
                   <tbody>
                     <tr>
-                      <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
-                        <p dir="rtl">ÙØ±Ø­Ø¨ÙØ§Ø</p>
-                        <p>Ø£Ø¯Ø®Ù Ø§ÙØ±ÙØ² Ø§ÙÙÙÙÙ ÙÙ 6 Ø£Ø±ÙØ§Ù Ø£Ø¯ÙØ§Ù ÙÙØªØ­ÙÙ ÙÙ Ø¹ÙÙØ§Ù Ø¨Ø±ÙØ¯Ù Ø§ÙØ¥ÙÙØªØ±ÙÙÙ.</p>
+                      <td dir="rtl" lang="ar" style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
+          
+                        <p>مرحباً،</p>
+                        <p>خبر رائع! تم إنشاء اسم المستخدم الخاص بك بنجاح.</p>
 
-                        <div style="text-align:center;margin:30px 0;">
-                          <div style="display:inline-block;background-color:#b6f6da;color:#0ca65d;font-size:40px;font-weight:600;letter-spacing:6px;padding:10px 20px;border-radius:4px;">
-                            """ + otp + """
-                          </div>
-                        </div>
+                        <p>اسم المستخدم: <span style="font-weight: bold;">""" + username + """</span></p>
+                        
+                        <p>يمكنك الآن استخدام اسم المستخدم بدلاً من بريدك الإلكتروني لتسجيل الدخول، مما يجعل تجربتك أكثر سلاسة وأمانًا.</p>
 
-                        <p>Ø¥Ø°Ø§ ÙÙ ØªÙÙ Ø¨Ø·ÙØ¨ Ø°ÙÙØ ÙÙÙÙÙ ØªØ¬Ø§ÙÙ ÙØ°Ø§ Ø§ÙØ¨Ø±ÙØ¯ Ø§ÙØ¥ÙÙØªØ±ÙÙÙ Ø¨Ø£ÙØ§Ù.</p>
-                        <p>Ø´ÙØ±ÙØ§ ÙÙØ³Ø§Ø¹Ø¯ØªÙØ§ ÙÙ Ø§ÙØ­ÙØ§Ø¸ Ø¹ÙÙ Ø£ÙØ§Ù Ø­Ø³Ø§Ø¨Ù.</p>
+                        <p><span style="font-weight: bold;">لكن هذا ليس كل شيء!</span></p>
 
-                        <p style="margin-top:30px;">ÙØ±ÙÙ Phi Wallet</p>
+                        <p>نحن لا نقوم فقط بتحسين طريقة تسجيل الدخول لديك، بل نُعِد حسابك لميزات جديدة في الطريق، مصممة لدعم رحلتك نحو مستقبل مالي أكثر ازدهارًا.</p>
+                        <p>إذا كانت لديك أي أسئلة، لا تتردد في التواصل معنا.</p>
+                        <p>مع أطيب التحيات،<br>فريق Phi Wallet</p>
 
                       </td>
                     </tr>
@@ -55,7 +56,7 @@ class EmailTemplateAr {
                   <tbody>
                     <tr>
                       <td style="padding:20px;font-size:12px;color:#666;">
-                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">ØªØ§Ø¨Ø¹ÙØ§ Ø¹ÙÙ:</p>
+                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">Follow us on:</p>
                         <p>
                           <a href="https://www.facebook.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/facebook.png" style="height:20px;"></a>
                           <a href="https://x.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/twitter.png" style="height:20px;"></a>
@@ -75,6 +76,7 @@ class EmailTemplateAr {
               </td>
             </tr>
 
+
           </tbody>
         </table>
       </td>
@@ -84,7 +86,7 @@ class EmailTemplateAr {
 """;
 
         return Map.of(
-            "subject", "Ø±ÙØ² Ø§ÙØªØ­ÙÙ Ø§ÙØ®Ø§Øµ Ø¨Ù",
+            "subject", "تم إنشاء اسم المستخدم الخاص بك بنجاح",
             "body", html
         );
     }
