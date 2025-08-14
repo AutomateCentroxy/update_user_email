@@ -317,7 +317,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -599,6 +599,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "userWithUid.lang",
 							"assignedVariableName": "lang"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -614,7 +619,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -3267,8 +3272,8 @@
 		}
 	],
 	"viewport": {
-		"x": 175.34571092770557,
-		"y": 168.28378715499656,
-		"zoom": 0.5494271087884399
+		"x": -1345.7499806213864,
+		"y": 454.0036842794641,
+		"zoom": 0.7412335049014176
 	}
 }
