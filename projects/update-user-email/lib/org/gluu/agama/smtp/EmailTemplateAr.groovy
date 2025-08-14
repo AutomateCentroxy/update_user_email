@@ -27,8 +27,8 @@ class EmailTemplateAr {
                   <tbody>
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
-                        <p dir="rtl">ÙØ±Ø­Ø¨ÙØ§Ø</p>
-                        <p>Ø£Ø¯Ø®Ù Ø§ÙØ±ÙØ² Ø§ÙÙÙÙÙ ÙÙ 6 Ø£Ø±ÙØ§Ù Ø£Ø¯ÙØ§Ù ÙÙØªØ­ÙÙ ÙÙ Ø¹ÙÙØ§Ù Ø¨Ø±ÙØ¯Ù Ø§ÙØ¥ÙÙØªØ±ÙÙÙ.</p>
+                        <p dir="rtl">مرحبًا،</p>
+                        <p>أدخل الرمز المكون من 6 أرقام أدناه للتحقق من عنوان بريدك الإلكتروني.</p>
 
                         <div style="text-align:center;margin:30px 0;">
                           <div style="display:inline-block;background-color:#b6f6da;color:#0ca65d;font-size:40px;font-weight:600;letter-spacing:6px;padding:10px 20px;border-radius:4px;">
@@ -36,10 +36,10 @@ class EmailTemplateAr {
                           </div>
                         </div>
 
-                        <p>Ø¥Ø°Ø§ ÙÙ ØªÙÙ Ø¨Ø·ÙØ¨ Ø°ÙÙØ ÙÙÙÙÙ ØªØ¬Ø§ÙÙ ÙØ°Ø§ Ø§ÙØ¨Ø±ÙØ¯ Ø§ÙØ¥ÙÙØªØ±ÙÙÙ Ø¨Ø£ÙØ§Ù.</p>
-                        <p>Ø´ÙØ±ÙØ§ ÙÙØ³Ø§Ø¹Ø¯ØªÙØ§ ÙÙ Ø§ÙØ­ÙØ§Ø¸ Ø¹ÙÙ Ø£ÙØ§Ù Ø­Ø³Ø§Ø¨Ù.</p>
+                        <p>إذا لم تقم بطلب ذلك، يمكنك تجاهل هذا البريد الإلكتروني بأمان.</p>
+                        <p>شكرًا لمساعدتنا في الحفاظ على أمان حسابك.</p>
 
-                        <p style="margin-top:30px;">ÙØ±ÙÙ Phi Wallet</p>
+                        <p style="margin-top:30px;">فريق Phi Wallet</p>
 
                       </td>
                     </tr>
@@ -55,7 +55,7 @@ class EmailTemplateAr {
                   <tbody>
                     <tr>
                       <td style="padding:20px;font-size:12px;color:#666;">
-                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">ØªØ§Ø¨Ø¹ÙØ§ Ø¹ÙÙ:</p>
+                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">تابعنا على:</p>
                         <p>
                           <a href="https://www.facebook.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/facebook.png" style="height:20px;"></a>
                           <a href="https://x.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/twitter.png" style="height:20px;"></a>
@@ -84,7 +84,7 @@ class EmailTemplateAr {
 """;
 
         return Map.of(
-            "subject", "Ø±ÙØ² Ø§ÙØªØ­ÙÙ Ø§ÙØ®Ø§Øµ Ø¨Ù",
+            "subject", "رمز التحقق الخاص بك",
             "body", html
         );
     }
