@@ -594,6 +594,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "userWithUid.inum",
 							"assignedVariableName": "inum"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "userWithUid.lang",
+							"assignedVariableName": "lang"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -609,7 +614,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2153,7 +2158,7 @@
 				"width": 168,
 				"height": 120
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -3257,8 +3262,8 @@
 		}
 	],
 	"viewport": {
-		"x": -279.7127671622036,
-		"y": -15.709928770506622,
-		"zoom": 0.860949188338904
+		"x": -2540.432190850676,
+		"y": 228.31314469119013,
+		"zoom": 1.161508731925722
 	}
 }
