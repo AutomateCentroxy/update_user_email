@@ -24,12 +24,12 @@ import io.jans.model.SmtpConfiguration;
 import io.jans.service.MailService;
 
 
-import org.gluu.agama.smtp.EmailTemplateEn;
-import org.gluu.agama.smtp.EmailTemplateAr;
-import org.gluu.agama.smtp.EmailTemplateEs;
-import org.gluu.agama.smtp.EmailTemplateFr;
-import org.gluu.agama.smtp.EmailTemplateId;
-import org.gluu.agama.smtp.EmailTemplatePt;
+import org.gluu.agama.smtp.EmailOtpEn;
+import org.gluu.agama.smtp.EmailOtpAr;
+import org.gluu.agama.smtp.EmailOtpEs;
+import org.gluu.agama.smtp.EmailOtpFr;
+import org.gluu.agama.smtp.EmailOtpId;
+import org.gluu.agama.smtp.EmailOtpPt;
 
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
