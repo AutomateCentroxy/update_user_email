@@ -9,7 +9,7 @@ import io.jans.util.StringHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.gluu.agama.smtp.jans.service.JansEmailService;
-import org.gluu.agama.update.EmailTemplate;
+
 import org.gluu.agama.update.jans.model.ContextData;
 import org.gluu.agama.user.EmailUpdate;
 import io.jans.agama.engine.script.LogUtils;
@@ -23,7 +23,26 @@ import java.util.regex.Pattern;
 // Import for MailService and Smtp config
 import io.jans.model.SmtpConfiguration;
 import io.jans.service.MailService;
-import io.jans.as.common.service.common.ConfigurationService;
+
+
+import org.gluu.agama.update.EmailTemplateEn;
+import org.gluu.agama.update.EmailTemplateAr;
+import org.gluu.agama.update.EmailTemplateEs;
+import org.gluu.agama.update.EmailTemplateFr;
+import org.gluu.agama.update.EmailTemplateId;
+import org.gluu.agama.update.EmailTemplatePt;
+
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.net.URI;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+import com.fasterxml.jackson.databind.ObjectMapper; 
+import io.jans.as.server.service.token.TokenService;
+import io.jans.as.server.model.common.AuthorizationGrant;
+import io.jans.as.server.model.common.AuthorizationGrantList;
+import io.jans.as.server.model.common.AbstractToken; 
 
 
 
@@ -40,6 +59,7 @@ public class JansEmailUpdate extends EmailUpdate {
     private static final String EXT_ATTR = "jansExtUid";
     private static final String USER_STATUS = "jansStatus";
     private static final String EXT_UID_PREFIX = "github:";
+    private static final String LANG = "lang";
     private static final SecureRandom RAND = new SecureRandom();
     private static final int OTP_LENGTH = 6;
     private static final String SUBJECT_TEMPLATE = "Here's your verification code: %s";
@@ -57,6 +77,57 @@ public class JansEmailUpdate extends EmailUpdate {
 
         return INSTANCE;
     }
+
+
+    public static Map<String, Object> validateBearerToken(String access_token) {
+        Map<String, Object> result = new HashMap<>();
+
+        try {
+            if (access_token == null || access_token.trim().isEmpty()) {
+                result.put("valid", false);
+                result.put("errorMessage", "Access token is missing");
+                return result;
+            }
+
+            // Get AuthorizationGrantList service
+            AuthorizationGrantList authorizationGrantList = CdiUtil.bean(AuthorizationGrantList.class);
+            if (authorizationGrantList == null) {
+                result.put("valid", false);
+                result.put("errorMessage", "Service not available");
+                return result;
+            }
+
+            // Get the grant for this token
+            AuthorizationGrant grant = authorizationGrantList.getAuthorizationGrantByAccessToken(access_token.trim());
+
+            if (grant == null) {
+                // Token not found
+                result.put("valid", false);
+                result.put("errorMessage", "Access token is invalid or expired");
+                return result;
+            }
+
+            // Get the actual token object to check if it's valid (not expired)
+            AbstractToken tokenObject = grant.getAccessToken(access_token.trim());
+
+            // Check if token is active (exists and is valid)
+            boolean isActive = tokenObject != null && tokenObject.isValid();
+
+            if (isActive) {
+                result.put("valid", true);
+            } else {
+                result.put("valid", false);
+                result.put("errorMessage", "Access token is invalid or expired");
+            }
+
+        } catch (Exception e) {
+            result.put("valid", false);
+            result.put("errorMessage", "Access token is invalid or expired");
+        }
+
+        return result;
+    }
+
 
     public boolean passwordPolicyMatch(String userPassword) {
         String regex = '''^(?=.*[!@#$^&*])[A-Za-z0-9!@#$^&*]{6,}$'''
@@ -116,6 +187,7 @@ public class JansEmailUpdate extends EmailUpdate {
             String displayName = getSingleValuedAttr(user, DISPLAY_NAME);
             String givenName = getSingleValuedAttr(user, GIVEN_NAME);
             String sn = getSingleValuedAttr(user, LAST_NAME);
+            String lang = getSingleValuedAttr(user, LANG);
     
             if (name == null) {
                 name = getSingleValuedAttr(user, DISPLAY_NAME);
@@ -131,6 +203,7 @@ public class JansEmailUpdate extends EmailUpdate {
             userMap.put("email", email);
             userMap.put(DISPLAY_NAME, displayName);
             userMap.put(LAST_NAME, sn);
+            userMap.put(LANG, lang);
     
             return userMap;
         }
@@ -219,35 +292,83 @@ public class JansEmailUpdate extends EmailUpdate {
         return new HashMap<>();
     }
 
-    public String sendEmail(String to) {
 
-        SmtpConfiguration smtpConfiguration = getSmtpConfiguration();
+    public String sendEmail(String to, String lang) {
+    try {
+        // Fetch SMTP configuration
+        ConfigurationService configService = CdiUtil.bean(ConfigurationService.class);
+        SmtpConfiguration smtpConfig = configService.getConfiguration().getSmtpConfiguration();
 
+        if (smtpConfig == null) {
+            LogUtils.log("SMTP configuration is missing.");
+            return null;
+        }
+
+        // Preferred language from user profile or fallback to English
+        String preferredLang = (lang != null && !lang.isEmpty())
+                ? lang.toLowerCase()
+                : "en";
+
+        // Generate OTP
         StringBuilder otpBuilder = new StringBuilder();
         for (int i = 0; i < OTP_LENGTH; i++) {
             otpBuilder.append(RAND.nextInt(10)); // Generates 0–9
         }
         String otp = otpBuilder.toString();
 
-        String from = smtpConfiguration.getFromEmailAddress();
-        String subject = String.format(SUBJECT_TEMPLATE, otp);
-        String textBody = String.format(MSG_TEMPLATE_TEXT, otp);
-        ContextData context = new ContextData();
-        context.setDevice("Unknown");
-        context.setTimeZone("Unknown");
-        context.setLocation("Unknown");
-        String htmlBody = EmailTemplate.get(otp, context);
-
-        MailService mailService = CdiUtil.bean(MailService.class);
-
-        if (mailService.sendMailSigned(from, from, to, null, subject, textBody, htmlBody)) {
-            logger.debug("E-mail has been delivered to {} with code {}", to, otp);
-            return otp;
+        // Select correct template
+        Map<String, String> templateData;
+        switch (preferredLang) {
+            case "ar":
+                templateData = EmailTemplateAr.get(otp);
+                break;
+            case "es":
+                templateData = EmailTemplateEs.get(otp);
+                break;
+            case "fr":
+                templateData = EmailTemplateteFr.get(otp);
+                break;
+            case "id":
+                templateData = EmailTemplateId.get(otp);
+                break;
+            case "pt":
+                templateData = EmailTemplatePt.get(otp);
+                break;
+            default:
+                templateData = EmailTemplateEn.get(otp);
+                break;
         }
-        logger.debug("E-mail delivery failed, check jans-auth logs");
-        return null;
 
+        String subject = templateData.get("subject");
+        String htmlBody = templateData.get("body");
+        String textBody = htmlBody.replaceAll("\\<.*?\\>", ""); // crude HTML → text
+
+        // Send signed email
+        MailService mailService = CdiUtil.bean(MailService.class);
+        boolean sent = mailService.sendMailSigned(
+                smtpConfig.getFromEmailAddress(),
+                smtpConfig.getFromName(),
+                to,
+                null,
+                subject,
+                textBody,
+                htmlBody
+        );
+
+        if (sent) {
+            LogUtils.log("Localized OTP email sent successfully to %", to);
+            return otp;
+        } else {
+            LogUtils.log("Failed to send localized OTP email to %", to);
+            return null;
+        }
+
+    } catch (Exception e) {
+        LogUtils.log("Failed to send OTP email: %", e.getMessage());
+        return null;
     }
+}
+
 
     private String getSingleValuedAttr(User user, String attribute) {
         Object value = null;
