@@ -25,7 +25,7 @@ import io.jans.model.SmtpConfiguration;
 import io.jans.service.MailService;
 
 
-import org.gluu.agama.update.EmailTemplateEn;
+import org.gluu.agama.update.EmailOtpTemplateEn;
 import org.gluu.agama.update.EmailTemplateAr;
 import org.gluu.agama.update.EmailTemplateEs;
 import org.gluu.agama.update.EmailTemplateFr;
