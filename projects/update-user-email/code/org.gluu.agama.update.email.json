@@ -1940,21 +1940,28 @@
 					"variableField": "",
 					"valueField": "",
 					"conditionInputField": "",
-					"conditions": [],
+					"conditions": [
+						{
+							"variable": "searchUserInput.formType",
+							"operator": "is",
+							"dataValue": "\"searchUserForm\"",
+							"combinator": "none"
+						}
+					],
 					"nodeIcon": "ph:swap",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "When searchUserForm is submitted"
 				}
 			},
 			"measured": {
 				"width": 110,
 				"height": 60
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2019,8 +2026,8 @@
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 123
+				"width": 168,
+				"height": 120
 			},
 			"selected": false,
 			"dragging": false
@@ -3226,8 +3233,8 @@
 		}
 	],
 	"viewport": {
-		"x": -468.87573096709866,
-		"y": -112.5304707253747,
+		"x": 124.28723283779652,
+		"y": 10.290071229493378,
 		"zoom": 0.860949188338904
 	}
 }
