@@ -1,7 +1,9 @@
 package org.gluu.agama.update;
 
 import io.jans.as.common.model.common.User;
+import io.jans.as.common.service.common.EncryptionService;
 import io.jans.as.common.service.common.UserService;
+import io.jans.orm.exception.operation.EntryNotFoundException;
 import io.jans.service.cdi.util.CdiUtil;
 import io.jans.util.StringHelper;
 import org.slf4j.Logger;
@@ -28,6 +30,15 @@ import org.gluu.agama.smtp.EmailOtpEs;
 import org.gluu.agama.smtp.EmailOtpFr;
 import org.gluu.agama.smtp.EmailOtpId;
 import org.gluu.agama.smtp.EmailOtpPt;
+
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.net.URI;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+import com.fasterxml.jackson.databind.ObjectMapper; 
+import io.jans.as.server.service.token.TokenService;
 import io.jans.as.server.model.common.AuthorizationGrant;
 import io.jans.as.server.model.common.AuthorizationGrantList;
 import io.jans.as.server.model.common.AbstractToken; 
