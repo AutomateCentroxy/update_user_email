@@ -3,7 +3,7 @@ package org.gluu.agama.smtp;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 
-class EmailTemplateEn {
+class EmailOtpEn {
 
     static Map<String, String> get(String otp) {
 
