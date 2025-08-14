@@ -2,7 +2,7 @@ package org.gluu.agama.smtp;
 
 import java.util.Map;
 
-class EmailTemplateEs {
+class EmailOtpEs {
 
     static Map<String, String> get(String otp) {
 
