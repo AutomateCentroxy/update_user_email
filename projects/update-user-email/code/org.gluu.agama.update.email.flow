@@ -12,6 +12,8 @@ Repeat 6 times max
      searchUserInput = RRF "searchUser.ftlh" uiFeedback
      // When searchUserForm is submitted
      When searchUserInput.formType is "searchUserForm"
+          // Validate access token first
+          accessToken = searchUserInput.access_token
           Log "@ " __________
           //  create an instance of Update service
           emailUpdateService = Call org.gluu.agama.user.EmailUpdate#getInstance 
@@ -87,8 +89,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_mftzi = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_mftzi
+                                             it_ydrij = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_ydrij
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -99,10 +101,10 @@ Repeat 6 times max
                          uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                          // Email OTP verification loop completed
                          Log "@error You have reached the maximun email OTP verification"
-                         it_eofvo = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                         Finish it_eofvo
+                         it_fcydn = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                         Finish it_fcydn
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_palcs = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_palcs
+it_mzkyn = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_mzkyn
