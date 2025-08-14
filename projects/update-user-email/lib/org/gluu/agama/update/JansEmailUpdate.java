@@ -10,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.gluu.agama.smtp.jans.service.JansEmailService;
 
-import org.gluu.agama.update.jans.model.ContextData;
 import org.gluu.agama.user.EmailUpdate;
 import io.jans.agama.engine.script.LogUtils;
 import java.io.IOException;
@@ -335,7 +334,7 @@ public class JansEmailUpdate extends EmailUpdate {
                 templateData = EmailTemplatePt.get(otp);
                 break;
             default:
-                templateData = EmailOtpTemplateEn.get(otp);
+                templateData = EmailTemplateEn.get(otp);
                 break;
         }
 
