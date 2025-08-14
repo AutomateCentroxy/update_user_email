@@ -25,7 +25,8 @@ Repeat 6 times max
                // CHANGED: Instead of Finish, set error message and continue loop
                uiFeedback.errorMessage = authCheck.errorMessage
           Otherwise
-               Log "@ " __________
+               // Token is valid, proceed with user search
+               Log "@info Token validation successful for user" 
                // assign username to a variable
                userName = searchUserInput.uid
                // get user by username
@@ -94,8 +95,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_povcz = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_povcz
+                                             it_lyqos = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_lyqos
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -106,10 +107,10 @@ Repeat 6 times max
                          uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                          // Email OTP verification loop completed
                          Log "@error You have reached the maximun email OTP verification"
-                         it_srzap = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                         Finish it_srzap
+                         it_aophq = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                         Finish it_aophq
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_kzgqv = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_kzgqv
+it_kwgqb = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_kwgqb
