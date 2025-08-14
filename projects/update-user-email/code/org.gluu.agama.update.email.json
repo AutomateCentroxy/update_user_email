@@ -2098,20 +2098,28 @@
 					"variableField": "",
 					"valueField": "",
 					"conditionInputField": "",
-					"conditions": [],
+					"conditions": [
+						{
+							"variable": "authCheck.valid",
+							"operator": "is",
+							"dataValue": "false",
+							"combinator": "none"
+						}
+					],
 					"nodeIcon": "ph:swap",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Check if token validation failed"
 				}
 			},
 			"measured": {
 				"width": 110,
 				"height": 60
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "logNode-0765efeb-9fee-4a5e-a244-293d260498b9",
@@ -2142,8 +2150,8 @@
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 123
+				"width": 168,
+				"height": 120
 			},
 			"selected": false,
 			"dragging": false
@@ -2165,20 +2173,27 @@
 				"previousNodeId": "whenNode-ef762cbf-72e1-4d62-ac7f-2ebc068a79f2",
 				"branching": "success",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "authCheck.errorMessage",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "authErrorResponse",
 					"hasComment": true,
-					"comment": ""
+					"comment": "CHANGED: Instead of Finish, set error message and continue loop"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -3242,8 +3257,8 @@
 		}
 	],
 	"viewport": {
-		"x": 20.28723283779641,
-		"y": 9.290071229493378,
+		"x": -279.7127671622036,
+		"y": -15.709928770506622,
 		"zoom": 0.860949188338904
 	}
 }
