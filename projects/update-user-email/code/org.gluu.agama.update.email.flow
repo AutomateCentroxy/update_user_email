@@ -51,7 +51,7 @@ Repeat 6 times max
                          // sent Email otp
                          otpCode = Call emailUpdateService sendEmail email lang
                          // The OTP Code has been send to user.
-                         Log "@info OTP generated and send to: " email
+                         Log "@info OTP generated and send to: " email lang
                          EmailOtpValidationResult = false
                          EmailMax = Repeat 4 times max
                               // "Email OTP verification loop Started"
@@ -96,8 +96,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_pymeh = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_pymeh
+                                             it_alwnx = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_alwnx
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -108,10 +108,10 @@ Repeat 6 times max
                          uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                          // Email OTP verification loop completed
                          Log "@error You have reached the maximun email OTP verification"
-                         it_erady = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                         Finish it_erady
+                         it_zcira = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                         Finish it_zcira
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_bjkhu = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_bjkhu
+it_avyyr = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_avyyr
