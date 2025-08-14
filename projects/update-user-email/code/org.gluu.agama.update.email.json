@@ -2054,19 +2054,22 @@
 				},
 				"previousNodeId": "callNode-5994fd36-9bba-4e51-a736-2f5c2a9d0b6f",
 				"agamaData": {
-					"javaClassName": "",
-					"javaMethodName": "",
+					"javaClassName": "org.gluu.agama.update.JansEmailUpdate",
+					"javaMethodName": "validateBearerToken",
 					"javaVariableName": "",
 					"exceptionVariableField": "",
 					"callType": "Call static method",
-					"arguments": [],
+					"arguments": [
+						"accessToken"
+					],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Call validateBearerToken",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Validate the bearer token",
+					"asssignedVariableName": "authCheck"
 				}
 			},
 			"measured": {
