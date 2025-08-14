@@ -20,7 +20,10 @@ Repeat 6 times max
           emailUpdateService = Call org.gluu.agama.user.EmailUpdate#getInstance 
           // Validate the bearer token
           authCheck = Call org.gluu.agama.update.JansEmailUpdate#validateBearerToken accessToken
-          When 
+          // Check if token validation failed
+          When authCheck.valid is false
+               // CHANGED: Instead of Finish, set error message and continue loop
+               uiFeedback.errorMessage = authCheck.errorMessage
           Otherwise
                Log "@ " __________
                // assign username to a variable
@@ -91,8 +94,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_oajzw = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_oajzw
+                                             it_povcz = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_povcz
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -103,10 +106,10 @@ Repeat 6 times max
                          uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                          // Email OTP verification loop completed
                          Log "@error You have reached the maximun email OTP verification"
-                         it_merfb = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                         Finish it_merfb
+                         it_srzap = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                         Finish it_srzap
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_illly = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_illly
+it_kzgqv = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_kzgqv
