@@ -319,22 +319,22 @@ public class JansEmailUpdate extends EmailUpdate {
         Map<String, String> templateData;
         switch (preferredLang) {
             case "ar":
-                templateData = EmailTemplateAr.get(otp);
+                templateData = EmailOtpAr.get(otp);
                 break;
             case "es":
-                templateData = EmailTemplateEs.get(otp);
+                templateData = EmailOtpEs.get(otp);
                 break;
             case "fr":
-                templateData = EmailTemplateteFr.get(otp);
+                templateData = EmailOtpFr.get(otp);
                 break;
             case "id":
-                templateData = EmailTemplateId.get(otp);
+                templateData = EmailOtpId.get(otp);
                 break;
             case "pt":
-                templateData = EmailTemplatePt.get(otp);
+                templateData = EmailOtpPt.get(otp);
                 break;
             default:
-                templateData = EmailTemplateEn.get(otp);
+                templateData = EmailOtpEn.get(otp);
                 break;
         }
 
