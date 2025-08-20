@@ -32,7 +32,7 @@ class EmailOtpPt {
                         <p>Insira o cÃ³digo de 6 dÃ­gitos abaixo para verificar o seu endereÃ§o de e-mail.</p>
 
                         <div style="text-align:center;margin:30px 0;">
-                          <div style="display:inline-block;background-color:#b6f6da;color:#0ca65d;font-size:40px;font-weight:600;letter-spacing:6px;padding:10px 20px;border-radius:4px;">
+                          <div style="display:inline-block;background-color:#f5f5f5;color:#AD9269;font-size:40px;font-weight:600;letter-spacing:6px;padding:10px 20px;border-radius:4px;">
                             """ + otp + """
                           </div>
                         </div>
