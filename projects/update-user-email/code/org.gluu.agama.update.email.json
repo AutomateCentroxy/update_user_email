@@ -1000,8 +1000,8 @@
 			"id": "callNode-aabaffb7-0adc-4e6f-b7cc-2e0949d9dade",
 			"type": "callNode",
 			"position": {
-				"x": 4112.8005163028365,
-				"y": -113.63720526698279
+				"x": 4122.202482546229,
+				"y": -140.27610962326037
 			},
 			"data": {
 				"id": "callNode-aabaffb7-0adc-4e6f-b7cc-2e0949d9dade",
@@ -1142,7 +1142,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2227,8 +2227,8 @@
 			"id": "logNode-00f5210c-5029-43d7-b0b5-c8d046837b50",
 			"type": "logNode",
 			"position": {
-				"x": 3769.629714277818,
-				"y": -83.60676584131112
+				"x": 3711.6509224435667,
+				"y": -93.00873208470321
 			},
 			"data": {
 				"id": "logNode-00f5210c-5029-43d7-b0b5-c8d046837b50",
@@ -2298,7 +2298,7 @@
 			"type": "assignmentNode",
 			"position": {
 				"x": 3817.6817532152827,
-				"y": 229.63376619179292
+				"y": 211.43298971017492
 			},
 			"data": {
 				"id": "assignmentNode-4c0e2285-f11c-41b5-975f-764fe4ea4b31",
@@ -2314,6 +2314,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"User already Registered with this email\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"example@exmail.com\"",
+							"assignedVariableName": "email"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -2329,7 +2334,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -3509,8 +3514,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3732,
-		"y": 336,
-		"zoom": 1
+		"x": -3047.629649480926,
+		"y": 271.5638234704792,
+		"zoom": 0.9460576467255961
 	}
 }
