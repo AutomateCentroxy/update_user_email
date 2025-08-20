@@ -484,8 +484,8 @@
 			"id": "whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b",
 			"type": "whenNode",
 			"position": {
-				"x": 2555,
-				"y": 254
+				"x": 2619.571189125418,
+				"y": 249.69525405830547
 			},
 			"data": {
 				"id": "whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b",
@@ -520,7 +520,8 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "assignmentNode-b6a25d34-d1c2-476d-ba6c-f7392d095417",
@@ -571,8 +572,8 @@
 			"id": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
 			"type": "assignmentNode",
 			"position": {
-				"x": 2770.562032466444,
-				"y": -92.42630909395726
+				"x": 2769.9238680820295,
+				"y": -93.06447347837174
 			},
 			"data": {
 				"id": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
@@ -619,7 +620,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -998,7 +999,7 @@
 			"id": "logNode-89b978e6-6073-4abf-bfc0-347048925243",
 			"type": "logNode",
 			"position": {
-				"x": 3020.562032466444,
+				"x": 3270.562032466444,
 				"y": -92.42630909395726
 			},
 			"data": {
@@ -1008,7 +1009,7 @@
 					"x": 3020.562032466444,
 					"y": -92.42630909395726
 				},
-				"previousNodeId": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
+				"previousNodeId": "callNode-39461fef-207f-46da-8b47-9fc2e9de8c81",
 				"agamaData": {
 					"logMessage": "\"Send-Email-page-trigger\"",
 					"logLevel": "info",
@@ -1032,7 +1033,7 @@
 			"id": "callNode-aabaffb7-0adc-4e6f-b7cc-2e0949d9dade",
 			"type": "callNode",
 			"position": {
-				"x": 3270.562032466444,
+				"x": 3520.562032466444,
 				"y": -92.42630909395726
 			},
 			"data": {
@@ -1073,7 +1074,7 @@
 			"id": "logNode-e042d399-71fb-42be-951c-02814c757dd0",
 			"type": "logNode",
 			"position": {
-				"x": 3520.562032466444,
+				"x": 3770.562032466444,
 				"y": -92.42630909395726
 			},
 			"data": {
@@ -1106,7 +1107,7 @@
 			"id": "assignmentNode-fcedbb1f-277e-426d-85aa-544fadb7794f",
 			"type": "assignmentNode",
 			"position": {
-				"x": 3770.562032466444,
+				"x": 4020.562032466444,
 				"y": -92.42630909395726
 			},
 			"data": {
@@ -1144,7 +1145,7 @@
 			"id": "repeatNode-bcc7b6ab-923a-458a-90c9-c3aaf0df465b",
 			"type": "repeatNode",
 			"position": {
-				"x": 4020.562032466444,
+				"x": 4270.562032466444,
 				"y": -92.42630909395726
 			},
 			"data": {
@@ -2171,6 +2172,46 @@
 			"dragging": false
 		},
 		{
+			"id": "callNode-39461fef-207f-46da-8b47-9fc2e9de8c81",
+			"type": "callNode",
+			"position": {
+				"x": 3019.9238680820295,
+				"y": -93.06447347837174
+			},
+			"data": {
+				"id": "callNode-39461fef-207f-46da-8b47-9fc2e9de8c81",
+				"type": "callNode",
+				"position": {
+					"x": 3019.9238680820295,
+					"y": -93.06447347837174
+				},
+				"previousNodeId": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
+				"agamaData": {
+					"javaClassName": "getUserEntityByMail",
+					"javaMethodName": "getUserEntityByMail",
+					"javaVariableName": "emailUpdateService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"email"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "existingUserEmail check",
+					"hasComment": true,
+					"comment": "existingUserEmail",
+					"asssignedVariableName": "existingUserEmail"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": false
+		},
+		{
 			"id": "assignmentNode-673aa466-7ed8-44c3-87f4-d49037f4bb9e",
 			"type": "assignmentNode",
 			"position": {
@@ -2609,25 +2650,6 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751source_logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751-finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565atarget_finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a"
-		},
-		{
-			"id": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78-logNode-89b978e6-6073-4abf-bfc0-347048925243",
-			"type": "default",
-			"source": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
-			"target": "logNode-89b978e6-6073-4abf-bfc0-347048925243",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78"
 		},
 		{
 			"id": "logNode-89b978e6-6073-4abf-bfc0-347048925243-callNode-aabaffb7-0adc-4e6f-b7cc-2e0949d9dade",
@@ -3269,11 +3291,49 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-ef762cbf-72e1-4d62-ac7f-2ebc068a79f2_success"
+		},
+		{
+			"id": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78-callNode-39461fef-207f-46da-8b47-9fc2e9de8c81",
+			"type": "default",
+			"source": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
+			"target": "callNode-39461fef-207f-46da-8b47-9fc2e9de8c81",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78"
+		},
+		{
+			"id": "callNode-39461fef-207f-46da-8b47-9fc2e9de8c81-logNode-89b978e6-6073-4abf-bfc0-347048925243",
+			"type": "default",
+			"source": "callNode-39461fef-207f-46da-8b47-9fc2e9de8c81",
+			"target": "logNode-89b978e6-6073-4abf-bfc0-347048925243",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "source_callNode-39461fef-207f-46da-8b47-9fc2e9de8c81",
+			"targetHandle": "target_logNode-89b978e6-6073-4abf-bfc0-347048925243"
 		}
 	],
 	"viewport": {
-		"x": -1345.7499806213864,
-		"y": 454.0036842794641,
-		"zoom": 0.7412335049014176
+		"x": -3017.7588875407087,
+		"y": 551.5427738237531,
+		"zoom": 1.0988542175768798
 	}
 }
