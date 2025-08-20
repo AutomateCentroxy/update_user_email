@@ -104,22 +104,22 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_fmxsu = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_fmxsu
+                                             it_rpthd = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_rpthd
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
                                              uiFeedback.errorMessage = "User update failed"
                                    Otherwise
                                         Log "@info Invalid OTP, Please Try Again!"
-                                        uiFeedback.infoMessage = "Invalid OTP, Please Try Again!"
+                                        uiFeedback.errorMessage = "Invalid OTP, Please Try Again!"
                          uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                          // Email OTP verification loop completed
                          Log "@error You have reached the maximun email OTP verification"
-                         it_xolrq = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                         Finish it_xolrq
+                         it_xmzrg = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                         Finish it_xmzrg
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_hevfc = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_hevfc
+it_shyro = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_shyro
