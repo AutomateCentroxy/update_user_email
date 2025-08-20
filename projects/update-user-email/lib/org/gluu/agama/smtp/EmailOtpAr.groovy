@@ -7,7 +7,7 @@ class EmailOtpAr {
     static Map<String, String> get(String otp) {
 
         String html = """
-<table role="presentation" dir="rtl" cellspacing="0" cellpadding="0" width="100%" style="background-color:#F2F4F6;margin:0;padding:0;width:100%;">
+<table role="presentation" cellspacing="0" cellpadding="0" width="100%" style="background-color:#F2F4F6;margin:0;padding:0;width:100%;">
   <tbody>
     <tr>
       <td align="center">
@@ -23,7 +23,7 @@ class EmailOtpAr {
             <!-- Main Email Body -->
             <tr>
               <td style="width:100%;margin:0;padding:0;">
-                <table role="presentation" cellspacing="0" cellpadding="0" width="570" align="center" style="background-color:#FFFFFF;margin:0 auto;padding:0;border-radius:4px;">
+                <table role="presentation" dir="rtl" cellspacing="0" cellpadding="0" width="570" align="center" style="background-color:#FFFFFF;margin:0 auto;padding:0;border-radius:4px;">
                   <tbody>
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
@@ -31,7 +31,7 @@ class EmailOtpAr {
                         <p>أدخل الرمز المكون من 6 أرقام أدناه للتحقق من عنوان بريدك الإلكتروني.</p>
 
                         <div style="text-align:center;margin:30px 0;">
-                          <div style="display:inline-block;background-color:#b6f6da;color:#0ca65d;font-size:40px;font-weight:600;letter-spacing:6px;padding:10px 20px;border-radius:4px;">
+                          <div style="display:inline-block;background-color:#f5f5f5;color:#AD9269;font-size:40px;font-weight:600;letter-spacing:6px;padding:10px 20px;border-radius:4px;">
                             """ + otp + """
                           </div>
                         </div>
@@ -74,7 +74,7 @@ class EmailOtpAr {
                 </table>
               </td>
             </tr>
-
+            
           </tbody>
         </table>
       </td>
