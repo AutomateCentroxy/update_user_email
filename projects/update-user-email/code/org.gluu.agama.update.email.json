@@ -2427,7 +2427,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"You have reached the maximun email OTP verification\"",
+							"assignmentExpression": "\"You have reached the maximun limit\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -3618,8 +3618,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2154.971376955932,
-		"y": 281.7886441787899,
+		"x": -2040.971376955932,
+		"y": 212.78864417878992,
 		"zoom": 1
 	}
 }
