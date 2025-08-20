@@ -2,7 +2,7 @@ package org.gluu.agama.smtp;
 
 import java.util.Map;
 
-class EmailOtpPt {
+class EmailOtpId {
 
     static Map<String, String> get(String otp) {
 
@@ -27,9 +27,9 @@ class EmailOtpPt {
                   <tbody>
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
-                        <p>Halo,</p>
+                        <p>OlÃ¡,</p>
 
-                        <p>Insira o cÃ³digo de 6 dÃ­gitos abaixo para verificar o seu endereÃ§o de e-mail.</p>
+                        <p>Masukkan kode 6 digit di bawah ini untuk memverifikasi alamat email Anda.</p>
 
                         <div style="text-align:center;margin:30px 0;">
                           <div style="display:inline-block;background-color:#f5f5f5;color:#AD9269;font-size:40px;font-weight:600;letter-spacing:6px;padding:10px 20px;border-radius:4px;">
@@ -37,10 +37,10 @@ class EmailOtpPt {
                           </div>
                         </div>
 
-                        <p>Se vocÃª nÃ£o solicitou isto, pode ignorar este e-mail com seguranÃ§a.</p>
-                        <p>Obrigado por nos ajudar a manter a seguranÃ§a da sua conta.</p>
+                        <p>Jika Anda tidak meminta ini, abaikan email ini dengan aman.</p>
+                        <p>Terima kasih telah membantu menjaga keamanan akun Anda.</p>
 
-                        <p style="margin-top:30px;">Equipe Phi Wallet</p>
+                        <p style="margin-top:30px;">Tim Phi Wallet</p>
 
                       </td>
                     </tr>
@@ -85,7 +85,7 @@ class EmailOtpPt {
 """;
 
         return Map.of(
-            "subject", "Seu cÃ³digo de verificaÃ§Ã£o",
+            "subject", "Kode verifikasi Anda",
             "body", html
         );
     }
