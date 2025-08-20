@@ -1128,7 +1128,7 @@
 				"previousNodeId": "assignmentNode-fcedbb1f-277e-426d-85aa-544fadb7794f",
 				"agamaData": {
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
-					"maxIteration": "3",
+					"maxIteration": "4",
 					"maxIterationVariableName": "EmailMax",
 					"nodeColor": "",
 					"titleColor": "",
@@ -1142,7 +1142,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1487,7 +1487,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -3509,8 +3509,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5000.667958057766,
-		"y": 505.6138485456662,
+		"x": -3956.6679580577656,
+		"y": 325.6138485456662,
 		"zoom": 0.9100388240808991
 	}
 }
