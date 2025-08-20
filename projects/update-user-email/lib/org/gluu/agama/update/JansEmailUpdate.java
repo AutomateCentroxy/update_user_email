@@ -8,7 +8,7 @@ import io.jans.service.cdi.util.CdiUtil;
 import io.jans.util.StringHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.gluu.agama.smtp.jans.service.JansEmailService;
+// import org.gluu.agama.smtp.jans.service.JansEmailService;
 
 import org.gluu.agama.user.EmailUpdate;
 import io.jans.agama.engine.script.LogUtils;
