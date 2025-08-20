@@ -2489,8 +2489,47 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "assignmentNode-ffa9c79f-4a6f-4368-bedb-c3b9b124c921",
+			"type": "assignmentNode",
+			"position": {
+				"x": 4580.132452149071,
+				"y": 469.78255843576414
+			},
+			"data": {
+				"id": "assignmentNode-ffa9c79f-4a6f-4368-bedb-c3b9b124c921",
+				"type": "assignmentNode",
+				"position": {
+					"x": 4580.132452149071,
+					"y": 469.78255843576414
+				},
+				"previousNodeId": "whenNode-cdd22526-2958-491a-9c1a-b712fb77d4f8",
+				"branching": "success",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Invalid OTP, Please Try Again!\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -3680,11 +3719,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-cdd22526-2958-491a-9c1a-b712fb77d4f8_continue"
+		},
+		{
+			"id": "whenNode-cdd22526-2958-491a-9c1a-b712fb77d4f8-assignmentNode-ffa9c79f-4a6f-4368-bedb-c3b9b124c921",
+			"type": "default",
+			"source": "whenNode-cdd22526-2958-491a-9c1a-b712fb77d4f8",
+			"target": "assignmentNode-ffa9c79f-4a6f-4368-bedb-c3b9b124c921",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "Condition met",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-cdd22526-2958-491a-9c1a-b712fb77d4f8_success"
 		}
 	],
 	"viewport": {
-		"x": -5427.955007971157,
-		"y": 45.600778947380036,
+		"x": -5558.955007971158,
+		"y": -99.39922105261996,
 		"zoom": 1.4260257173641406
 	}
 }
