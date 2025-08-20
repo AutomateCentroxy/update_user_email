@@ -36,93 +36,91 @@ Repeat 6 times max
                     // show error
                     uiFeedback.errorMessage = "User not registered with this UserName"
                Otherwise
-                    ValidMailLoop = Repeat 3 times max
-                         // Display update user page
-                         userInput = RRF "updateUserEmail.ftlh" userWithUid
-                         // when fields values are not entered
-                         When userInput.empty is true
-                              // show error
-                              uiFeedback.errorMessage = "User input fields are empty"
-                              inum = userInput.inum
+                    // Display update user page
+                    userInput = RRF "updateUserEmail.ftlh" userWithUid
+                    // when fields values are not entered
+                    When userInput.empty is true
+                         // show error
+                         uiFeedback.errorMessage = "User input fields are empty"
+                         inum = userInput.inum
+                    Otherwise
+                         email = userInput.mail
+                         inum = userWithUid.inum
+                         lang = userWithUid.lang
+                         uiFeedback.errorMessage = ""
+                         // existingUserEmail
+                         existingUserEmail = Call emailUpdateService getUserEntityByMail email
+                         When existingUserEmail.empty is false
+                              // User already registered with mail
+                              Log "@info User already registered with mail: %" email
+                              // User already Registered with this mail
+                              uiFeedback.errorMessage = "User already Registered with this email"
                          Otherwise
-                              email = userInput.mail
-                              inum = userWithUid.inum
-                              lang = userWithUid.lang
-                              uiFeedback.errorMessage = ""
-                              // existingUserEmail
-                              existingUserEmail = Call emailUpdateService getUserEntityByMail email
-                              When existingUserEmail.empty is false
-                                   // User already registered with mail
-                                   Log "@info User already registered with mail: %" email
-                                   // User already Registered with this mail
-                                   uiFeedback.errorMessage = "User already Registered with this email"
-                              Otherwise
-                                   Log "@info Send-Email-page-trigger"
-                                   // sent Email otp
-                                   otpCode = Call emailUpdateService sendEmail email lang
-                                   // The OTP Code has been send to user.
-                                   Log "@info OTP generated and send to: " email lang
-                                   EmailOtpValidationResult = false
-                                   EmailMax = Repeat 4 times max
-                                        // "Email OTP verification loop Started"
-                                        Log "@info Email OTP verification loop Started"
-                                        // uiFeedback.email/matches
-                                        uiFeedback.email = email
-                                        uiFeedback.matches = true
-                                        //  Show UI to collect OTP code from user.
-                                        emailOtpCreds = RRF "emailOtp.ftlh" uiFeedback
-                                        When emailOtpCreds.resend is "yes"
-                                             // Log new code request
-                                             Log "@info User has requested a new code."
-                                             // Resend Email otp
-                                             otpCode = Call emailUpdateService sendEmail email lang
-                                             When otpCode is null
-                                                  Log "@info Fail to resend new code to user. " otpCode
-                                                  // Provide feedback about the otp resend error to user.
-                                                  uiFeedback.infoMessage = "Error occurs while sending new code to you. Please contact site administrator."
-                                             // Log code resend
-                                             Log "@info New OTP code send successfully!" otpCode
-                                             // Provide feedback about the error message to user.
-                                             uiFeedback.errorMessage = "A new OTP code has been send to you on your Email."
-                                        Otherwise
-                                             // Add log entry with collected code in log file.
-                                             Log "@info Password provided by the user " 
-                                             When emailOtpCreds.passcode is otpCode
-                                                  Log "@info Email Otp Verified"
-                                                  // EmailOtpValidationResult:TRUE
-                                                  EmailOtpValidationResult = true
-                                                  // E-mail verification passed, initiating user provisioning flow
-                                                  Log "@info E-mail verification passed, initiating user email update flow"
-                                                  //  Check user already exist or not with username
-                                                  userWithUid = Call emailUpdateService getUserEntityByInum inum
-                                                  //  Call user registration service method to update a user
-                                                  inum = Call emailUpdateService updateUser userInput
-                                                  //  If user update success
-                                                  When inum is not null
-                                                       //  Show user updation log
-                                                       Log "@info User % has been updated" inum
-                                                       //  Show acknowledgement UI page for successful Update 
-                                                       acknowledgementInput = RRF "acknowledgementEmail.ftlh" 
-                                                       //  Finish the flow successfully
-                                                       Log "@info Finish the flow successfully"
-                                                       //  Finish the flow successfully
-                                                       it_ovtva = {success:true, data: { userId: userName, email: email}}
-                                                       Finish it_ovtva
-                                                  Otherwise
-                                                       //  User update failed log
-                                                       Log "@info User update failed. Error : %" E
-                                                       uiFeedback.errorMessage = "User update failed"
+                              Log "@info Send-Email-page-trigger"
+                              // sent Email otp
+                              otpCode = Call emailUpdateService sendEmail email lang
+                              // The OTP Code has been send to user.
+                              Log "@info OTP generated and send to: " email lang
+                              EmailOtpValidationResult = false
+                              EmailMax = Repeat 4 times max
+                                   // "Email OTP verification loop Started"
+                                   Log "@info Email OTP verification loop Started"
+                                   // uiFeedback.email/matches
+                                   uiFeedback.email = email
+                                   uiFeedback.matches = true
+                                   //  Show UI to collect OTP code from user.
+                                   emailOtpCreds = RRF "emailOtp.ftlh" uiFeedback
+                                   When emailOtpCreds.resend is "yes"
+                                        // Log new code request
+                                        Log "@info User has requested a new code."
+                                        // Resend Email otp
+                                        otpCode = Call emailUpdateService sendEmail email lang
+                                        When otpCode is null
+                                             Log "@info Fail to resend new code to user. " otpCode
+                                             // Provide feedback about the otp resend error to user.
+                                             uiFeedback.infoMessage = "Error occurs while sending new code to you. Please contact site administrator."
+                                        // Log code resend
+                                        Log "@info New OTP code send successfully!" otpCode
+                                        // Provide feedback about the error message to user.
+                                        uiFeedback.errorMessage = "A new OTP code has been send to you on your Email."
+                                   Otherwise
+                                        // Add log entry with collected code in log file.
+                                        Log "@info Password provided by the user " 
+                                        When emailOtpCreds.passcode is otpCode
+                                             Log "@info Email Otp Verified"
+                                             // EmailOtpValidationResult:TRUE
+                                             EmailOtpValidationResult = true
+                                             // E-mail verification passed, initiating user provisioning flow
+                                             Log "@info E-mail verification passed, initiating user email update flow"
+                                             //  Check user already exist or not with username
+                                             userWithUid = Call emailUpdateService getUserEntityByInum inum
+                                             //  Call user registration service method to update a user
+                                             inum = Call emailUpdateService updateUser userInput
+                                             //  If user update success
+                                             When inum is not null
+                                                  //  Show user updation log
+                                                  Log "@info User % has been updated" inum
+                                                  //  Show acknowledgement UI page for successful Update 
+                                                  acknowledgementInput = RRF "acknowledgementEmail.ftlh" 
+                                                  //  Finish the flow successfully
+                                                  Log "@info Finish the flow successfully"
+                                                  //  Finish the flow successfully
+                                                  it_ytnku = {success:true, data: { userId: userName, email: email}}
+                                                  Finish it_ytnku
                                              Otherwise
-                                                  Log "@info Invalid OTP, Please Try Again!"
-                                                  uiFeedback.infoMessage = "Invalid OTP, Please Try Again!"
-                                   uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
-                                   // Email OTP verification loop completed
-                                   Log "@error You have reached the maximun email OTP verification"
-                                   it_lskub = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                                   Finish it_lskub
-                    uiFeedback.errorMessage = "You have reached the maximun limit"
+                                                  //  User update failed log
+                                                  Log "@info User update failed. Error : %" E
+                                                  uiFeedback.errorMessage = "User update failed"
+                                        Otherwise
+                                             Log "@info Invalid OTP, Please Try Again!"
+                                             uiFeedback.infoMessage = "Invalid OTP, Please Try Again!"
+                              uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
+                              // Email OTP verification loop completed
+                              Log "@error You have reached the maximun email OTP verification"
+                              it_pferc = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_pferc
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_ibzdp = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_ibzdp
+it_hugrv = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_hugrv
