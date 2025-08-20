@@ -2305,7 +2305,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2451,6 +2451,16 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"Invalid OTP, Please Try Again!\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "uiFeedback.matches"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "userInput.mail",
+							"assignedVariableName": "email"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -2491,6 +2501,16 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"Invalid OTP, Please Try Again!\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "uiFeedback.matches"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "userInput.mail",
+							"assignedVariableName": "email"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -2506,7 +2526,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -3754,8 +3774,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3293.1194801227743,
-		"y": 50.03093811629674,
+		"x": -3303.119480122774,
+		"y": 46.03093811629674,
 		"zoom": 0.9100388240808991
 	}
 }
