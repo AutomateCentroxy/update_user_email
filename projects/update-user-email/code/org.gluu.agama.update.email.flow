@@ -106,8 +106,8 @@ Repeat 6 times max
                                                        //  Finish the flow successfully
                                                        Log "@info Finish the flow successfully"
                                                        //  Finish the flow successfully
-                                                       it_gkftk = {success:true, data: { userId: userName, email: email}}
-                                                       Finish it_gkftk
+                                                       it_wvuof = {success:true, data: { userId: userName, email: email}}
+                                                       Finish it_wvuof
                                                   Otherwise
                                                        //  User update failed log
                                                        Log "@info User update failed. Error : %" E
@@ -118,11 +118,11 @@ Repeat 6 times max
                                    uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                                    // Email OTP verification loop completed
                                    Log "@error You have reached the maximun email OTP verification"
-                                   it_wnqjb = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                                   Finish it_wnqjb
-                    Log "@ " __________
+                                   it_aiekz = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                                   Finish it_aiekz
+                    uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_jojup = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_jojup
+it_ppjwn = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_ppjwn
