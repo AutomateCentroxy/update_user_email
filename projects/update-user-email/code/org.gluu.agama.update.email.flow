@@ -51,14 +51,13 @@ Repeat 6 times max
                          // existingUserEmail
                          existingUserEmail = Call emailUpdateService getUserEntityByMail email
                          When existingUserEmail.empty is false
-                              // User already registered with mail
-                              Log "@info User already registered with mail: %" email
-                              // User already Registered with this mail
-                              uiFeedback.errorMessage = "User already Registered with this email"
-                              emailOtpCred = RRF "emailOtp.ftlh" uiFeedback
-                              When emailOtpCred.passcode is "101010"
+                              Repeat 3 times max
+                                   // User already Registered with this mail
+                                   uiFeedback.errorMessage = "User already Registered with this email"
+                                   emailOtpCred = RRF "emailOtp.ftlh" uiFeedback
+                                   When emailOtpCred.passcode is "101010"
+                                        uiFeedback.errorMessage = "Invalid OTP, Please Try Again!"
                                    uiFeedback.errorMessage = "Invalid OTP, Please Try Again!"
-                              uiFeedback.errorMessage = "Invalid OTP, Please Try Again!"
                          Otherwise
                               Log "@info Send-Email-page-trigger"
                               // sent Email otp
@@ -109,8 +108,8 @@ Repeat 6 times max
                                                   //  Finish the flow successfully
                                                   Log "@info Finish the flow successfully"
                                                   //  Finish the flow successfully
-                                                  it_wxsek = {success:true, data: { userId: userName, email: email}}
-                                                  Finish it_wxsek
+                                                  it_igtlr = {success:true, data: { userId: userName, email: email}}
+                                                  Finish it_igtlr
                                              Otherwise
                                                   //  User update failed log
                                                   Log "@info User update failed. Error : %" E
@@ -121,10 +120,10 @@ Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@error You have reached the maximun email OTP verification"
-                              it_lermg = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                              Finish it_lermg
+                              it_drcgi = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_drcgi
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_yfmqy = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_yfmqy
+it_nxohh = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_nxohh
