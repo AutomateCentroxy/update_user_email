@@ -2361,7 +2361,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2408,15 +2408,15 @@
 			"dragging": false
 		},
 		{
-			"id": "logNode-aead54c8-9071-428b-815c-03bcbf54af7b",
-			"type": "logNode",
+			"id": "assignmentNode-8014db59-ec38-43f4-92a5-9a07218fab88",
+			"type": "assignmentNode",
 			"position": {
-				"x": 2611.662306442267,
-				"y": -5.027686593222143
+				"x": 2567.141922809057,
+				"y": 19.25615902489244
 			},
 			"data": {
-				"id": "logNode-aead54c8-9071-428b-815c-03bcbf54af7b",
-				"type": "logNode",
+				"id": "assignmentNode-8014db59-ec38-43f4-92a5-9a07218fab88",
+				"type": "assignmentNode",
 				"position": {
 					"x": 2567.141922809057,
 					"y": 19.25615902489244
@@ -2424,9 +2424,14 @@
 				"previousNodeId": "repeatNode-d378f3e5-78d3-4bec-9e1e-676a8512cab6",
 				"branching": "continue",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
-					"nodeIcon": "octicon:log-16",
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"You have reached the maximun email OTP verification\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
@@ -2439,8 +2444,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
-			"dragging": false
+			"selected": true
 		}
 	],
 	"edges": [
@@ -3594,10 +3598,10 @@
 			"id": "xy-edge__repeatNode-d378f3e5-78d3-4bec-9e1e-676a8512cab6source_repeatNode-d378f3e5-78d3-4bec-9e1e-676a8512cab6_repeat-rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66target_rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66"
 		},
 		{
-			"id": "repeatNode-d378f3e5-78d3-4bec-9e1e-676a8512cab6-logNode-aead54c8-9071-428b-815c-03bcbf54af7b",
+			"id": "repeatNode-d378f3e5-78d3-4bec-9e1e-676a8512cab6-assignmentNode-8014db59-ec38-43f4-92a5-9a07218fab88",
 			"type": "default",
 			"source": "repeatNode-d378f3e5-78d3-4bec-9e1e-676a8512cab6",
-			"target": "logNode-aead54c8-9071-428b-815c-03bcbf54af7b",
+			"target": "assignmentNode-8014db59-ec38-43f4-92a5-9a07218fab88",
 			"labelBgPadding": [
 				8,
 				4
@@ -3614,8 +3618,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2103.971376955932,
-		"y": 175.78864417878995,
+		"x": -2154.971376955932,
+		"y": 281.7886441787899,
 		"zoom": 1
 	}
 }
