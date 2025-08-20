@@ -2317,8 +2317,8 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"example@example.com\"",
-							"assignedVariableName": "email"
+							"assignmentExpression": "\"INVALID_CODE\"",
+							"assignedVariableName": "otpCode"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -2334,7 +2334,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -3513,8 +3513,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2207.488157170669,
-		"y": 388.6924956725737,
-		"zoom": 0.7412335049014176
+		"x": -3059.1260102128795,
+		"y": 159.1764963480253,
+		"zoom": 1
 	}
 }
