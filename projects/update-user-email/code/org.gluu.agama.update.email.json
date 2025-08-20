@@ -1371,7 +1371,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2374,41 +2374,6 @@
 			},
 			"selected": false,
 			"dragging": false
-		},
-		{
-			"id": "rrfNode-2608b3ae-4171-405b-8d36-d647edeb578f",
-			"type": "rrfNode",
-			"position": {
-				"x": 4233.241841392262,
-				"y": 318.56318498399895
-			},
-			"data": {
-				"id": "rrfNode-2608b3ae-4171-405b-8d36-d647edeb578f",
-				"type": "rrfNode",
-				"position": {
-					"x": 4233.241841392262,
-					"y": 318.56318498399895
-				},
-				"previousNodeId": "assignmentNode-4c0e2285-f11c-41b5-975f-764fe4ea4b31",
-				"agamaData": {
-					"assignments": [],
-					"nodeIcon": "ph:globe-simple",
-					"templatePath": "updateUserEmail.ftlh",
-					"asssignedVariableName": "userInput",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": "",
-					"arguments": "userWithUid"
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 123
-			},
-			"selected": false
 		}
 	],
 	"edges": [
@@ -3541,30 +3506,11 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__whenNode-532b07c7-f7a9-4a53-a097-f7259278fa5fsource_whenNode-532b07c7-f7a9-4a53-a097-f7259278fa5f_otherwise-rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66target_rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66"
-		},
-		{
-			"id": "assignmentNode-4c0e2285-f11c-41b5-975f-764fe4ea4b31-rrfNode-2608b3ae-4171-405b-8d36-d647edeb578f",
-			"type": "default",
-			"source": "assignmentNode-4c0e2285-f11c-41b5-975f-764fe4ea4b31",
-			"target": "rrfNode-2608b3ae-4171-405b-8d36-d647edeb578f",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_assignmentNode-4c0e2285-f11c-41b5-975f-764fe4ea4b31"
 		}
 	],
 	"viewport": {
-		"x": -4149.494264454584,
-		"y": 340.7128056238855,
-		"zoom": 0.7834971869493407
+		"x": -1492.6157400678553,
+		"y": 263.084458537606,
+		"zoom": 0.6745512671698494
 	}
 }
