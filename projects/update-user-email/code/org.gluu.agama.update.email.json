@@ -999,8 +999,8 @@
 			"id": "callNode-aabaffb7-0adc-4e6f-b7cc-2e0949d9dade",
 			"type": "callNode",
 			"position": {
-				"x": 3770.562032466444,
-				"y": -92.42630909395726
+				"x": 3721.939202600621,
+				"y": -82.91314672890483
 			},
 			"data": {
 				"id": "callNode-aabaffb7-0adc-4e6f-b7cc-2e0949d9dade",
@@ -1034,7 +1034,8 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "logNode-e042d399-71fb-42be-951c-02814c757dd0",
@@ -2265,8 +2266,8 @@
 			"id": "logNode-00f5210c-5029-43d7-b0b5-c8d046837b50",
 			"type": "logNode",
 			"position": {
-				"x": 3404.649970035327,
-				"y": -81.51837385958264
+				"x": 3440.588583414414,
+				"y": -99.4876805491261
 			},
 			"data": {
 				"id": "logNode-00f5210c-5029-43d7-b0b5-c8d046837b50",
@@ -2349,7 +2350,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"User already Registered with this mail\"",
+							"assignmentExpression": "\"User already Registered with this email\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -2359,7 +2360,7 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "User already Registered with this mail"
 				}
 			},
 			"measured": {
@@ -3505,8 +3506,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3719.4499339770455,
-		"y": 666.7842244258694,
-		"zoom": 1.276328768828953
+		"x": -2625.827453293883,
+		"y": 612.1896331953465,
+		"zoom": 0.9460576467255961
 	}
 }
