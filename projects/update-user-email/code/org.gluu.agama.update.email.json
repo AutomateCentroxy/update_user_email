@@ -2297,8 +2297,8 @@
 			"id": "assignmentNode-4c0e2285-f11c-41b5-975f-764fe4ea4b31",
 			"type": "assignmentNode",
 			"position": {
-				"x": 3817.6817532152827,
-				"y": 211.43298971017492
+				"x": 3846.0129064364164,
+				"y": 191.19645169507942
 			},
 			"data": {
 				"id": "assignmentNode-4c0e2285-f11c-41b5-975f-764fe4ea4b31",
@@ -2317,7 +2317,7 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"example@exmail.com\"",
+							"assignmentExpression": "\"example@example.com\"",
 							"assignedVariableName": "email"
 						}
 					],
@@ -2334,7 +2334,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -3513,8 +3513,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3195.531557754731,
-		"y": 436.9536782574197,
-		"zoom": 1
+		"x": -2207.488157170669,
+		"y": 388.6924956725737,
+		"zoom": 0.7412335049014176
 	}
 }
