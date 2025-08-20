@@ -101,8 +101,8 @@ Repeat 6 times max
                                                   //  Finish the flow successfully
                                                   Log "@info Finish the flow successfully"
                                                   //  Finish the flow successfully
-                                                  it_nhwam = {success:true, data: { userId: userName, email: email}}
-                                                  Finish it_nhwam
+                                                  it_nkgto = {success:true, data: { userId: userName, email: email}}
+                                                  Finish it_nkgto
                                              Otherwise
                                                   //  User update failed log
                                                   Log "@info User update failed. Error : %" E
@@ -113,10 +113,14 @@ Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@error You have reached the maximun email OTP verification"
-                              it_itywt = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                              Finish it_itywt
+                              it_oxumv = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_oxumv
+                         Otherwise
+                              // User already registered with mail
+                              Log "@info User already registered with mail: %" email
+                              uiFeedback.errorMessage = "User already Registered with this mail"
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_vvlpk = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_vvlpk
+it_btrky = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_btrky
