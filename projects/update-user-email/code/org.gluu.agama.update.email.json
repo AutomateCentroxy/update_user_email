@@ -2393,7 +2393,7 @@
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
 					"templatePath": "emailOtp.ftlh",
-					"asssignedVariableName": "emailOtpCreds",
+					"asssignedVariableName": "emailOtpCred",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
@@ -2407,7 +2407,90 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
+		},
+		{
+			"id": "whenNode-cdd22526-2958-491a-9c1a-b712fb77d4f8",
+			"type": "whenNode",
+			"position": {
+				"x": 4330.132452149071,
+				"y": 269.78255843576414
+			},
+			"data": {
+				"id": "whenNode-cdd22526-2958-491a-9c1a-b712fb77d4f8",
+				"type": "whenNode",
+				"position": {
+					"x": 4308.992091337843,
+					"y": 265.5544862735186
+				},
+				"previousNodeId": "rrfNode-64308b72-7ecb-4028-88fa-8bcd19367474",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "emailOtpCred.passcode",
+							"operator": "is",
+							"dataValue": "ture",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 110,
+				"height": 60
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "assignmentNode-039eb861-03e0-49c8-a468-ccbecdd8817a",
+			"type": "assignmentNode",
+			"position": {
+				"x": 4577.4023356768275,
+				"y": 233.38100547252816
+			},
+			"data": {
+				"id": "assignmentNode-039eb861-03e0-49c8-a468-ccbecdd8817a",
+				"type": "assignmentNode",
+				"position": {
+					"x": 4580.132452149071,
+					"y": 269.78255843576414
+				},
+				"previousNodeId": "whenNode-cdd22526-2958-491a-9c1a-b712fb77d4f8",
+				"branching": "continue",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Invalid OTP, Please Try Again!\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": false,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -3559,11 +3642,49 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-4c0e2285-f11c-41b5-975f-764fe4ea4b31"
+		},
+		{
+			"id": "rrfNode-64308b72-7ecb-4028-88fa-8bcd19367474-whenNode-cdd22526-2958-491a-9c1a-b712fb77d4f8",
+			"type": "default",
+			"source": "rrfNode-64308b72-7ecb-4028-88fa-8bcd19367474",
+			"target": "whenNode-cdd22526-2958-491a-9c1a-b712fb77d4f8",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_rrfNode-64308b72-7ecb-4028-88fa-8bcd19367474"
+		},
+		{
+			"id": "whenNode-cdd22526-2958-491a-9c1a-b712fb77d4f8-assignmentNode-039eb861-03e0-49c8-a468-ccbecdd8817a",
+			"type": "default",
+			"source": "whenNode-cdd22526-2958-491a-9c1a-b712fb77d4f8",
+			"target": "assignmentNode-039eb861-03e0-49c8-a468-ccbecdd8817a",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-cdd22526-2958-491a-9c1a-b712fb77d4f8_continue"
 		}
 	],
 	"viewport": {
-		"x": -3164.3823736383065,
-		"y": 142.59797242985996,
-		"zoom": 0.9460576467255961
+		"x": -1656.6802273170856,
+		"y": 342.21135652675173,
+		"zoom": 0.6037402957432483
 	}
 }
