@@ -1221,7 +1221,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1471,7 +1471,7 @@
 						{
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"Invalid OTP, Please Try Again!\"",
-							"assignedVariableName": "uiFeedback.infoMessage"
+							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -1487,7 +1487,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -3509,8 +3509,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4367.031162854948,
-		"y": 290.88115986356684,
-		"zoom": 1.0570180405613803
+		"x": -5000.667958057766,
+		"y": 505.6138485456662,
+		"zoom": 0.9100388240808991
 	}
 }
