@@ -2427,7 +2427,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2555,6 +2555,42 @@
 					"displayName": "",
 					"hasComment": true,
 					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "finishNode-c1e5bdeb-25de-46d3-be42-2fc36b39e730",
+			"type": "finishNode",
+			"position": {
+				"x": 4129.2942491197155,
+				"y": 184.4462623086954
+			},
+			"data": {
+				"id": "finishNode-c1e5bdeb-25de-46d3-be42-2fc36b39e730",
+				"type": "finishNode",
+				"position": {
+					"x": 4042.484765931143,
+					"y": 187.74282496142604
+				},
+				"previousNodeId": "repeatNode-50822cd1-1ce1-4911-b61b-969deacb03e7",
+				"branching": "continue",
+				"agamaData": {
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"flowfilename": "",
+					"returnVariable": "{success:false, error:\"ExceededTheNumberOfAttemptsAllowed\"}",
+					"finishMode": "withFailure",
+					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
 			},
 			"measured": {
@@ -3770,11 +3806,30 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__repeatNode-50822cd1-1ce1-4911-b61b-969deacb03e7source_repeatNode-50822cd1-1ce1-4911-b61b-969deacb03e7_repeat-rrfNode-64308b72-7ecb-4028-88fa-8bcd19367474target_rrfNode-64308b72-7ecb-4028-88fa-8bcd19367474"
+		},
+		{
+			"id": "repeatNode-50822cd1-1ce1-4911-b61b-969deacb03e7-finishNode-c1e5bdeb-25de-46d3-be42-2fc36b39e730",
+			"type": "default",
+			"source": "repeatNode-50822cd1-1ce1-4911-b61b-969deacb03e7",
+			"target": "finishNode-c1e5bdeb-25de-46d3-be42-2fc36b39e730",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_repeatNode-50822cd1-1ce1-4911-b61b-969deacb03e7_continue"
 		}
 	],
 	"viewport": {
-		"x": -2277.492676439454,
-		"y": 172.06870479012986,
-		"zoom": 0.7834971869493407
+		"x": -3220.7392192528614,
+		"y": 298.8212793740123,
+		"zoom": 0.9100388240808991
 	}
 }
