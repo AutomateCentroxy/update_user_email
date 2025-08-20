@@ -2284,6 +2284,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "true",
 							"assignedVariableName": "uiFeedback.matches"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "userInput.mail",
+							"assignedVariableName": "email"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -3749,8 +3754,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2532.234343319469,
-		"y": 146.89931933484468,
-		"zoom": 0.7834971869493407
+		"x": -3293.1194801227743,
+		"y": 50.03093811629674,
+		"zoom": 0.9100388240808991
 	}
 }
