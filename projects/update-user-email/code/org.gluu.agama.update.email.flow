@@ -55,7 +55,9 @@ Repeat 6 times max
                               Log "@info User already registered with mail: %" email
                               // User already Registered with this mail
                               uiFeedback.errorMessage = "User already Registered with this email"
-                              emailOtpCreds = RRF "emailOtp.ftlh" uiFeedback
+                              emailOtpCred = RRF "emailOtp.ftlh" uiFeedback
+                              When emailOtpCred.passcode is ture
+                              uiFeedback.errorMessage = "Invalid OTP, Please Try Again!"
                          Otherwise
                               Log "@info Send-Email-page-trigger"
                               // sent Email otp
@@ -106,8 +108,8 @@ Repeat 6 times max
                                                   //  Finish the flow successfully
                                                   Log "@info Finish the flow successfully"
                                                   //  Finish the flow successfully
-                                                  it_abqyq = {success:true, data: { userId: userName, email: email}}
-                                                  Finish it_abqyq
+                                                  it_wgzrb = {success:true, data: { userId: userName, email: email}}
+                                                  Finish it_wgzrb
                                              Otherwise
                                                   //  User update failed log
                                                   Log "@info User update failed. Error : %" E
@@ -118,10 +120,10 @@ Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@error You have reached the maximun email OTP verification"
-                              it_erypt = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                              Finish it_erypt
+                              it_uywtf = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_uywtf
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_fpwic = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_fpwic
+it_zhfqz = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_zhfqz
