@@ -833,7 +833,7 @@
 				"previousNodeId": "whenNode-4df2446b-c1c3-4fb6-8c83-1f3b4396fed0",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "\"User % has been updated\" inum",
+					"logMessage": "\"User % has been updated\" inum email lang",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -848,7 +848,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2637,7 +2637,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -3942,8 +3942,8 @@
 		}
 	],
 	"viewport": {
-		"x": -10267.106398145013,
-		"y": -206.73316693251036,
-		"zoom": 1.3491025343396987
+		"x": -7141.079180524717,
+		"y": 155.9058770730877,
+		"zoom": 1
 	}
 }
