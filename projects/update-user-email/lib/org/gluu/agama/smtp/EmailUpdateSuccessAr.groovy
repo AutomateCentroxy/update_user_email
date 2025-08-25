@@ -28,11 +28,11 @@ class EmailUpdateSuccessAr {
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.8;direction:rtl;text-align:right;">
 
-                        <p>ÙØ±Ø­Ø¨Ø§ÙØ</p>
-                        <p>ØªÙ ØªØ­Ø¯ÙØ« Ø¹ÙÙØ§Ù Ø¨Ø±ÙØ¯Ù Ø§ÙØ¥ÙÙØªØ±ÙÙÙ Ø¨ÙØ¬Ø§Ø­. ÙÙÙÙÙ Ø§ÙØ¢Ù ÙÙØ§ØµÙØ© Ø§Ø³ØªØ®Ø¯Ø§Ù Ø§ÙØªØ·Ø¨ÙÙ ÙØ§ÙØ§Ø³ØªÙØªØ§Ø¹ Ø¨Ø®Ø¯ÙØ§ØªÙØ§ Ø¯ÙÙ Ø£Ù Ø§ÙÙØ·Ø§Ø¹.</p>
-                        <p><a href="https://link.phiwallet.com/vLl3yLHkeQb" style="color:#3869D4;font-weight:bold;">ÙØªØ­ Ø§ÙØªØ·Ø¨ÙÙ</a></p>
-                        <p>Ø¥Ø°Ø§ ÙÙØª Ø¨Ø­Ø§Ø¬Ø© Ø¥ÙÙ Ø§ÙÙØ³Ø§Ø¹Ø¯Ø©Ø ÙØ§ Ø¹ÙÙÙ Ø³ÙÙ Ø§ÙØ±Ø¯ Ø¹ÙÙ ÙØ°Ø§ Ø§ÙØ¨Ø±ÙØ¯ ÙÙØªÙØ§ØµÙ ÙØ¹ ÙØ±ÙÙ Ø§ÙØ¯Ø¹Ù.</p>
-                        <p style="margin-top:30px;">ÙØ¹ Ø®Ø§ÙØµ Ø§ÙØªØ­ÙØ©Ø<br>ÙØ±ÙÙ Phi Wallet</p>
+                        <p>مرحباً،</p>
+                        <p>تم تحديث عنوان بريدك الإلكتروني بنجاح. يمكنك الآن مواصلة استخدام التطبيق والاستمتاع بخدماتنا دون أي انقطاع.</p>
+                        <p><a href="https://link.phiwallet.com/vLl3yLHkeQb" style="color:#3869D4;font-weight:bold;">فتح التطبيق</a></p>
+                        <p>إذا كنت بحاجة إلى المساعدة، ما عليك سوى الرد على هذا البريد للتواصل مع فريق الدعم.</p>
+                        <p style="margin-top:30px;">مع خالص التحية،<br>فريق Phi Wallet</p>
 
                       </td>
                     </tr>
@@ -48,7 +48,7 @@ class EmailUpdateSuccessAr {
                   <tbody>
                     <tr>
                       <td style="padding:20px;font-size:12px;color:#666;direction:rtl;text-align:center;">
-                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">ØªØ§Ø¨Ø¹ÙØ§ Ø¹ÙÙ:</p>
+                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">تابعنا على:</p>
                         <p>
                           <a href="https://www.facebook.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/facebook.png" style="height:20px;"></a>
                           <a href="https://x.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/twitter.png" style="height:20px;"></a>
@@ -58,8 +58,8 @@ class EmailUpdateSuccessAr {
                         <p style="margin-top:10px;line-height:20px;color:#A8AAAF;font-size:12px;">
                           Phi Wallet Unipessoal LDA<br>
                           Avenida da Liberdade 262 R/C<br>
-                          1250-149 ÙØ´Ø¨ÙÙØ©<br>
-                          Ø§ÙØ¨Ø±ØªØºØ§Ù
+                          1250-149 لشبونة<br>
+                          البرتغال
                         </p>
                       </td>
                     </tr>
@@ -77,7 +77,7 @@ class EmailUpdateSuccessAr {
 """;
 
         return Map.of(
-            "subject", "ØªÙ ØªØ­Ø¯ÙØ« Ø¹ÙÙØ§Ù Ø¨Ø±ÙØ¯Ù Ø§ÙØ¥ÙÙØªØ±ÙÙÙ",
+            "subject", "تم تحديث عنوان بريدك الإلكتروني",
             "body", html
         );
     }
