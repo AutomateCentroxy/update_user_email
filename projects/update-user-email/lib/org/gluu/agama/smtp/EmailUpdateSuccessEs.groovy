@@ -29,9 +29,9 @@ class EmailUpdateSuccessEs {
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
 
                         <p>Hola,</p>
-                        <p>Tu direcciÃ³n de correo electrÃ³nico ha sido actualizada correctamente. Ya estÃ¡s listo para seguir disfrutando de tu experiencia con Phi Wallet sin interrupciones.</p>
-                        <p><a href="https://link.phiwallet.com/vLl3yLHkeQb" style="color:#3869D4;font-weight:bold;">Iniciar sesiÃ³n</a></p>
-                        <p>Â¿Necesitas ayuda? Estamos a tu disposiciÃ³n, solo responde a este correo electrÃ³nico.</p>
+                        <p>Tu dirección de correo electrónico ha sido actualizada correctamente. Ya estás listo para seguir disfrutando de tu experiencia con Phi Wallet sin interrupciones.</p>
+                        <p><a href="https://link.phiwallet.com/vLl3yLHkeQb" style="color:#3869D4;font-weight:bold;">Iniciar sesión</a></p>
+                        <p>¿Necesitas ayuda? Estamos a tu disposición, solo responde a este correo electrónico.</p>
                         <p style="margin-top:30px;">Un saludo,<br>Equipo de Phi Wallet</p>
 
                       </td>
@@ -48,7 +48,7 @@ class EmailUpdateSuccessEs {
                   <tbody>
                     <tr>
                       <td style="padding:20px;font-size:12px;color:#666;">
-                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">SÃ­guenos en:</p>
+                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">Síguenos en:</p>
                         <p>
                           <a href="https://www.facebook.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/facebook.png" style="height:20px;"></a>
                           <a href="https://x.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/twitter.png" style="height:20px;"></a>
@@ -77,7 +77,7 @@ class EmailUpdateSuccessEs {
 """;
 
         return Map.of(
-            "subject", "DirecciÃ³n de correo electrÃ³nico actualizada correctamente",
+            "subject", "Dirección de correo electrónico actualizada correctamente",
             "body", html
         );
     }
