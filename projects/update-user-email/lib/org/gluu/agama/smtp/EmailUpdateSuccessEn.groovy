@@ -2,7 +2,7 @@ package org.gluu.agama.smtp;
 
 import java.util.Map;
 
-class EmailUpdateSuccessEs {
+class EmailUpdateSuccessEn {
 
     static Map<String, String> get() {
 
