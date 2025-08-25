@@ -58,14 +58,16 @@ Repeat 6 times max
                               Repeat 3 times max
                                    emailOtpCred = RRF "emailOtp.ftlh" uiFeedback
                                    When emailOtpCred.passcode is "101010"
-                                        uiFeedback.errorMessage = "Invalid OTP, Please Try Again!"
+                                        // OTP doesn't match
+                                        uiFeedback.errorMessage = "OTP doesn't match"
                                         uiFeedback.matches = true
                                         email = userInput.mail
+                                   // OTP doesn't match
                                    uiFeedback.errorMessage = "OTP doesn't match"
                                    uiFeedback.matches = true
                                    email = userInput.mail
-                              it_zgoag = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                              Finish it_zgoag
+                              it_rgspa = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_rgspa
                          Otherwise
                               Log "@info Send-Email-page-trigger"
                               // sent Email otp
@@ -116,8 +118,8 @@ Repeat 6 times max
                                                   //  Finish the flow successfully
                                                   Log "@info Finish the flow successfully"
                                                   //  Finish the flow successfully
-                                                  it_iwnoi = {success:true, data: { userId: userName, email: email}}
-                                                  Finish it_iwnoi
+                                                  it_lelno = {success:true, data: { userId: userName, email: email}}
+                                                  Finish it_lelno
                                              Otherwise
                                                   //  User update failed log
                                                   Log "@info User update failed. Error : %" E
@@ -128,10 +130,10 @@ Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@error You have reached the maximun email OTP verification"
-                              it_vinhf = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                              Finish it_vinhf
+                              it_idtjl = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_idtjl
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_pztvx = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_pztvx
+it_evdld = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_evdld
