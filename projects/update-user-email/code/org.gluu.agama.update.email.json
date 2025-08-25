@@ -1433,7 +1433,7 @@
 				"previousNodeId": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
 				"branching": "otherwise",
 				"agamaData": {
-					"logMessage": "\"Invalid OTP, Please Try Again!\"",
+					"logMessage": "\"OTP doesn't match\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -1448,7 +1448,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2477,7 +2477,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -3828,8 +3828,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4607.0729655674795,
-		"y": -67.10217771251996,
-		"zoom": 1.0570180405613803
+		"x": -7435.507870725056,
+		"y": 532.7349319232761,
+		"zoom": 1.2277356839150602
 	}
 }
