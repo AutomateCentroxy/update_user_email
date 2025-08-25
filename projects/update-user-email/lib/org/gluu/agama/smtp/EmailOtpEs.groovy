@@ -29,7 +29,7 @@ class EmailOtpEs {
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
                         <p>Hola,</p>
                         
-                        <p>Introduce el cÃ³digo de 6 dÃ­gitos a continuaciÃ³n para verificar tu direcciÃ³n de correo electrÃ³nico.</p>
+                        <p>Ingresa el código de 6 dígitos a continuación para verificar tu dirección de correo electrónico.</p>
 
                         <div style="text-align:center;margin:30px 0;">
                           <div style="display:inline-block;background-color:#f5f5f5;color:#AD9269;font-size:40px;font-weight:600;letter-spacing:6px;padding:10px 20px;border-radius:4px;">
@@ -37,9 +37,10 @@ class EmailOtpEs {
                           </div>
                         </div>
 
-                        <p>Si no realizaste esta solicitud, puedes ignorar este correo de forma segura.</p>
-                        <p>Gracias por ayudarnos a mantener tu cuenta segura.</p>
+                        <p>Si tú no realizaste esta solicitud, puedes ignorar este mensaje con tranquilidad. Tu cuenta seguirá segura.</p>
+                        <p>Gracias por confiar en nosotros</p>
 
+                        <p style="margin-top:30px;">Atentamente,</p>
                         <p style="margin-top:30px;">Equipo Phi Wallet</p>
 
                       </td>
@@ -85,7 +86,7 @@ class EmailOtpEs {
 """;
 
         return Map.of(
-            "subject", "Tu cÃ³digo de verificaciÃ³n",
+            "subject", "Código de verificación - Phi Wallet",
             "body", html
         );
     }
