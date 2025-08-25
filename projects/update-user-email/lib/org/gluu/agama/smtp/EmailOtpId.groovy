@@ -2,7 +2,7 @@ package org.gluu.agama.smtp;
 
 import java.util.Map;
 
-class EmailOtpId {
+class EmailChangeOtpId {
 
     static Map<String, String> get(String otp) {
 
@@ -27,7 +27,7 @@ class EmailOtpId {
                   <tbody>
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
-                        <p>OlÃ¡,</p>
+                        <p>Halo,</p>
 
                         <p>Masukkan kode 6 digit di bawah ini untuk memverifikasi alamat email Anda.</p>
 
@@ -37,9 +37,10 @@ class EmailOtpId {
                           </div>
                         </div>
 
-                        <p>Jika Anda tidak meminta ini, abaikan email ini dengan aman.</p>
-                        <p>Terima kasih telah membantu menjaga keamanan akun Anda.</p>
+                        <p>Jika Anda tidak meminta ini, Anda dapat mengabaikan pesan ini dengan aman. Akun Anda tetap aman.</p>
+                        <p>Terima kasih atas kepercayaan Anda.</p>
 
+                        <p style="margin-top:30px;">Salam hangat,</p>
                         <p style="margin-top:30px;">Tim Phi Wallet</p>
 
                       </td>
@@ -56,7 +57,7 @@ class EmailOtpId {
                   <tbody>
                     <tr>
                       <td style="padding:20px;font-size:12px;color:#666;">
-                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">Follow us on:</p>
+                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">Ikuti kami di:</p>
                         <p>
                           <a href="https://www.facebook.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/facebook.png" style="height:20px;"></a>
                           <a href="https://x.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/twitter.png" style="height:20px;"></a>
@@ -85,7 +86,7 @@ class EmailOtpId {
 """;
 
         return Map.of(
-            "subject", "Kode verifikasi Anda",
+            "subject", "Kode Verifikasi - Phi Walletl",
             "body", html
         );
     }
