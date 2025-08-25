@@ -29,10 +29,10 @@ class EmailUpdateSuccessFr {
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
 
                         <p>Bonjour,</p>
-                        <p>Votre adresse e-mail a Ã©tÃ© mise Ã  jour avec succÃ¨s. Vous pouvez continuer Ã  profiter de Phi Wallet en toute fluiditÃ©.</p>
-                        <p><a href="https://link.phiwallet.com/vLl3yLHkeQb" style="color:#3869D4;font-weight:bold;">AccÃ©der au compte</a></p>
-                        <p>Si vous avez besoin d'aide, il vous suffit de rÃ©pondre Ã  cet e-mail et notre Ã©quipe vous rÃ©pondra rapidement.</p>
-                        <p style="margin-top:30px;">Cordialement,<br>L'Ã©quipe Phi Wallet</p>
+                        <p>Votre adresse e-mail a été mise à jour avec succès. Vous pouvez continuer à profiter de Phi Wallet en toute fluidité.</p>
+                        <p><a href="https://link.phiwallet.com/vLl3yLHkeQb" style="color:#3869D4;font-weight:bold;">Accéder au compte</a></p>
+                        <p>Si vous avez besoin d'aide, il vous suffit de répondre à cet e-mail et notre équipe vous répondra rapidement.</p>
+                        <p style="margin-top:30px;">Cordialement,<br>L'équipe Phi Wallet</p>
 
                       </td>
                     </tr>
@@ -77,7 +77,7 @@ class EmailUpdateSuccessFr {
 """;
 
         return Map.of(
-            "subject", "Votre adresse e-mail a bien Ã©tÃ© mise Ã  jour",
+            "subject", "Votre adresse e-mail a bien été mise à jour",
             "body", html
         );
     }
