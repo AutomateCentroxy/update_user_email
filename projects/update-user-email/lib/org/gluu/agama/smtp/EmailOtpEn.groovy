@@ -28,7 +28,7 @@ class EmailOtpEn {
                   <tbody>
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
-                        <p>Hi,</p>
+                        <p>Dear User,</p>
                         <p>Enter the 6-digit code below to verify your email address.</p>
 
                         <div style="text-align:center;margin:30px 0;">
@@ -37,10 +37,11 @@ class EmailOtpEn {
                           </div>
                         </div>
 
-                        <p>If you did not make this request, you can safely ignore this email.</p>
-                        <p>Thanks for helping us keep your account secure.</p>
+                        <p>If you did not request this, you can safely ignore this message. Your account will remain secure.</p>
+                        <p>Thank you for trusting us.</p>
 
-                        <p style="margin-top:30px;">Team Phi Wallet</p>
+                        <p style="margin-top:30px;">Thank you,</p>
+                        <p style="margin-top:30px;">Phi Wallet Team</p>
 
                       </td>
                     </tr>
