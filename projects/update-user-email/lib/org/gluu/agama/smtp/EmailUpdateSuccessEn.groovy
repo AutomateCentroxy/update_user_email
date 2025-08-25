@@ -30,7 +30,7 @@ class EmailUpdateSuccessEn {
 
                         <p>Dear User,</p>
                         <p>Your email address has been updated successfully. You're all set to keep enjoying your Phi Wallet experience without interruption.</p>
-                        <p><a href="https://link.phiwallet.com/vLl3yLHkeQb" style="color:#3869D4;font-weight:bold;">Access your account</a></p>
+                        <p><a href="https://link.phiwallet.com/vLl3yLHkeQb" style="color:#3869D4;font-weight:bold;">Access account</a></p>
                         <p>Need help? Our support team is here for you, just reply to this email.</p>
                         <p style="margin-top:30px;">Kind regards,<br>Phi Wallet Team</p>
 
