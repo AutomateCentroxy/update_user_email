@@ -1448,7 +1448,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1470,7 +1470,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"Invalid OTP, Please Try Again!\"",
+							"assignmentExpression": "\"OTP doesn't match\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -1487,7 +1487,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
