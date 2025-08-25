@@ -855,8 +855,8 @@
 			"id": "rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
 			"type": "rrfNode",
 			"position": {
-				"x": 8572.837532829877,
-				"y": 350.99534393794517
+				"x": 8701.275238026046,
+				"y": 343.5830088889309
 			},
 			"data": {
 				"id": "rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
@@ -865,7 +865,7 @@
 					"x": 7038.320854995159,
 					"y": 787.4664153001027
 				},
-				"previousNodeId": "callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce",
+				"previousNodeId": "logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
 				"agamaData": {
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
@@ -890,8 +890,8 @@
 			"id": "logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751",
 			"type": "logNode",
 			"position": {
-				"x": 8892.133199763157,
-				"y": 377.80515648388814
+				"x": 9012.41733640541,
+				"y": 380.7700905034938
 			},
 			"data": {
 				"id": "logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751",
@@ -965,8 +965,8 @@
 			"id": "finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a",
 			"type": "finishNode",
 			"position": {
-				"x": 9129.867468846685,
-				"y": 390.72288173154897
+				"x": 9289.436981248713,
+				"y": 394.42904925605603
 			},
 			"data": {
 				"id": "finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a",
@@ -2568,8 +2568,8 @@
 			"id": "callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce",
 			"type": "callNode",
 			"position": {
-				"x": 8183.901640815142,
-				"y": 345.73936652943473
+				"x": 8128.800892761452,
+				"y": 341.4346205877402
 			},
 			"data": {
 				"id": "callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce",
@@ -2604,6 +2604,40 @@
 				"height": 123
 			},
 			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
+			"type": "logNode",
+			"position": {
+				"x": 8416.603801511425,
+				"y": 341.4346205877402
+			},
+			"data": {
+				"id": "logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
+				"type": "logNode",
+				"position": {
+					"x": 8378.800892761452,
+					"y": 341.4346205877402
+				},
+				"previousNodeId": "callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce",
+				"agamaData": {
+					"logMessage": "\"Email send successfully\"",
+					"logLevel": "error",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "\"Email send successfully\""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -3869,9 +3903,28 @@
 			"sourceHandle": "source_logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3"
 		},
 		{
-			"id": "callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce-rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
+			"id": "callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce-logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
 			"type": "default",
 			"source": "callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce",
+			"target": "logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce"
+		},
+		{
+			"id": "logNode-4915bec5-1205-4d19-852d-8fe0f4b48742-rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
+			"type": "default",
+			"source": "logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
 			"target": "rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
 			"label": "",
 			"labelBgPadding": [
@@ -3884,13 +3937,13 @@
 				"color": "#ffffff",
 				"fillOpacity": 0.7
 			},
-			"sourceHandle": "source_callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce",
+			"sourceHandle": "source_logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
 			"targetHandle": "target_rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627"
 		}
 	],
 	"viewport": {
-		"x": -8929.151453444392,
-		"y": -16.06009301031179,
-		"zoom": 1.161508731925722
+		"x": -10267.106398145013,
+		"y": -206.73316693251036,
+		"zoom": 1.3491025343396987
 	}
 }
