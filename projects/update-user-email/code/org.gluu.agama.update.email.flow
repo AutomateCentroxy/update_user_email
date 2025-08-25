@@ -66,8 +66,8 @@ Repeat 6 times max
                                    uiFeedback.errorMessage = "OTP doesn't match"
                                    uiFeedback.matches = true
                                    email = userInput.mail
-                              it_jshhb = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                              Finish it_jshhb
+                              it_dhfrh = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_dhfrh
                          Otherwise
                               Log "@info Send-Email-page-trigger"
                               // sent Email otp
@@ -112,7 +112,7 @@ Repeat 6 times max
                                              //  If user update success
                                              When inum is not null
                                                   //  Show user updation log
-                                                  Log "@info User % has been updated" inum
+                                                  Log "@info User % has been updated" inum email lang
                                                   // emailUpdateSuccessMail
                                                   emailUpdateSuccessMail = Call emailUpdateService sendEmailUpdateSuccess email lang
                                                   // "Email send successfully"
@@ -122,8 +122,8 @@ Repeat 6 times max
                                                   //  Finish the flow successfully
                                                   Log "@info Finish the flow successfully"
                                                   //  Finish the flow successfully
-                                                  it_qzegt = {success:true, data: { userId: userName, email: email}}
-                                                  Finish it_qzegt
+                                                  it_dcqfc = {success:true, data: { userId: userName, email: email}}
+                                                  Finish it_dcqfc
                                              Otherwise
                                                   //  User update failed log
                                                   Log "@info User update failed. Error : %" E
@@ -134,10 +134,10 @@ Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@error You have reached the maximun email OTP verification"
-                              it_waqog = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                              Finish it_waqog
+                              it_xwtjz = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_xwtjz
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_vezrh = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_vezrh
+it_dssxq = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_dssxq
