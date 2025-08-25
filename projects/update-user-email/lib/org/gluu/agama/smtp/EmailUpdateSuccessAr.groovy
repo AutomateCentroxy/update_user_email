@@ -7,7 +7,7 @@ class EmailUpdateSuccessAr {
     static Map<String, String> get() {
 
         String html = """
-<table role="presentation" cellspacing="0" cellpadding="0" width="100%" style="background-color:#F2F4F6;margin:0;padding:0;width:100%;direction:rtl;text-align:right;">
+<table role="presentation" cellspacing="0" cellpadding="0" width="100%" style="background-color:#F2F4F6;margin:0;padding:0;width:100%;">
   <tbody>
     <tr>
       <td align="center">
@@ -23,7 +23,7 @@ class EmailUpdateSuccessAr {
             <!-- Main Email Body -->
             <tr>
               <td style="width:100%;margin:0;padding:0;">
-                <table role="presentation" cellspacing="0" cellpadding="0" width="570" align="center" style="background-color:#FFFFFF;margin:0 auto;padding:0;border-radius:4px;direction:rtl;text-align:right;">
+                <table role="presentation" dir="rtl" cellspacing="0" cellpadding="0" width="570" align="center" style="background-color:#FFFFFF;margin:0 auto;padding:0;border-radius:4px;">
                   <tbody>
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.8;direction:rtl;text-align:right;">
@@ -44,11 +44,11 @@ class EmailUpdateSuccessAr {
             <!-- Footer -->
             <tr>
               <td>
-                <table role="presentation" cellspacing="0" cellpadding="0" width="570" align="center" style="margin:0 auto;padding:0;text-align:center;direction:rtl;">
+                <table role="presentation" cellspacing="0" cellpadding="0" width="570" align="center" style="margin:0 auto;padding:0;text-align:center;">
                   <tbody>
                     <tr>
                       <td style="padding:20px;font-size:12px;color:#666;direction:rtl;text-align:center;">
-                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">تابعنا على:</p>
+                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">Follow us on:</p>
                         <p>
                           <a href="https://www.facebook.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/facebook.png" style="height:20px;"></a>
                           <a href="https://x.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/twitter.png" style="height:20px;"></a>
