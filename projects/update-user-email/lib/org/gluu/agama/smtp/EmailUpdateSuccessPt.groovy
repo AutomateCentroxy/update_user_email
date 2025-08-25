@@ -16,7 +16,7 @@ class EmailUpdateSuccessPt {
             <!-- Logo -->
             <tr>
               <td align="center" style="padding:25px 0;text-align:center;">
-                <img src="https://storage.googleapis.com/email_template_staticfiles/Phi_logo320x132_Aug2024.png" width="160" alt="LogÃ³tipo Phi" style="border:none;">
+                <img src="https://storage.googleapis.com/email_template_staticfiles/Phi_logo320x132_Aug2024.png" width="160" alt="Logótipo Phi" style="border:none;">
               </td>
             </tr>
 
@@ -28,10 +28,10 @@ class EmailUpdateSuccessPt {
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
 
-                        <p>OlÃ¡,</p>
-                        <p>O seu endereÃ§o de e-mail foi atualizado com sucesso. Pode continuar a desfrutar da sua experiÃªncia com a Phi Wallet sem interrupÃ§Ãµes.</p>
-                        <p><a href="https://link.phiwallet.com/vLl3yLHkeQb" style="color:#3869D4;font-weight:bold;">Aceder Ã  conta</a></p>
-                        <p>Se precisar de ajuda, basta responder a este e-mail e a nossa equipa entrarÃ¡ em contacto consigo.</p>
+                        <p>Olá,</p>
+                        <p>O seu endereço de e-mail foi atualizado com sucesso. Pode continuar a desfrutar da sua experiência com a Phi Wallet sem interrupções.</p>
+                        <p><a href="https://link.phiwallet.com/vLl3yLHkeQb" style="color:#3869D4;font-weight:bold;">Aceder à conta</a></p>
+                        <p>Se precisar de ajuda, basta responder a este e-mail e a nossa equipa entrará em contacto consigo.</p>
                         <p style="margin-top:30px;">Com os melhores cumprimentos,<br>Equipa Phi Wallet</p>
 
                       </td>
@@ -77,7 +77,7 @@ class EmailUpdateSuccessPt {
 """;
 
         return Map.of(
-            "subject", "O seu endereÃ§o de e-mail foi atualizado",
+            "subject", "O seu endereço de e-mail foi atualizado",
             "body", html
         );
     }
