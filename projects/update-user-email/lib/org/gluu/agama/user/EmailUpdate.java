@@ -16,6 +16,8 @@ public abstract class EmailUpdate {
 
     public abstract String sendEmail(String to, String lang);
 
+    public abstract String sendEmailUpdateSuccess(String to, String lang);
+
     public abstract Map<String, String> getUserEntityByInum(String inum);
 
     public static EmailUpdate getInstance(){

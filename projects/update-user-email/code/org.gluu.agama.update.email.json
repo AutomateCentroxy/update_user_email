@@ -820,8 +820,8 @@
 			"id": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3",
 			"type": "logNode",
 			"position": {
-				"x": 7969.865065499092,
-				"y": 307.9254855595578
+				"x": 7887.4103846448415,
+				"y": 310.44044980753966
 			},
 			"data": {
 				"id": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3",
@@ -833,7 +833,7 @@
 				"previousNodeId": "whenNode-4df2446b-c1c3-4fb6-8c83-1f3b4396fed0",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "\"User % has been updated\" inum",
+					"logMessage": "\"User % has been updated\" inum email lang",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -848,15 +848,15 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
 			"id": "rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
 			"type": "rrfNode",
 			"position": {
-				"x": 8217.76605719382,
-				"y": 329.0036397350494
+				"x": 8701.275238026046,
+				"y": 343.5830088889309
 			},
 			"data": {
 				"id": "rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
@@ -865,7 +865,7 @@
 					"x": 7038.320854995159,
 					"y": 787.4664153001027
 				},
-				"previousNodeId": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3",
+				"previousNodeId": "logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
 				"agamaData": {
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
@@ -890,8 +890,8 @@
 			"id": "logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751",
 			"type": "logNode",
 			"position": {
-				"x": 8440.135324121744,
-				"y": 367.2165581639753
+				"x": 9012.41733640541,
+				"y": 380.7700905034938
 			},
 			"data": {
 				"id": "logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751",
@@ -965,8 +965,8 @@
 			"id": "finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a",
 			"type": "finishNode",
 			"position": {
-				"x": 8672.168040263781,
-				"y": 372.8037153440042
+				"x": 9289.436981248713,
+				"y": 394.42904925605603
 			},
 			"data": {
 				"id": "finishNode-1f9d20c7-2f98-4a3b-8d5a-2b07fc4d565a",
@@ -1433,7 +1433,7 @@
 				"previousNodeId": "whenNode-78ef1d95-f0a1-4f28-bad2-13750905d5bb",
 				"branching": "otherwise",
 				"agamaData": {
-					"logMessage": "\"Invalid OTP, Please Try Again!\"",
+					"logMessage": "\"OTP doesn't match\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -1470,7 +1470,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"Invalid OTP, Please Try Again!\"",
+							"assignmentExpression": "\"OTP doesn't match\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -2450,7 +2450,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"Invalid OTP, Please Try Again!\"",
+							"assignmentExpression": "\"OTP doesn't match\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						},
 						{
@@ -2470,7 +2470,7 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "OTP doesn't match"
 				}
 			},
 			"measured": {
@@ -2534,7 +2534,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"Invalid OTP, Please Try Again!\"",
+							"assignmentExpression": "\"OTP doesn't match\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						},
 						{
@@ -2554,7 +2554,83 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "OTP doesn't match"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce",
+			"type": "callNode",
+			"position": {
+				"x": 8128.800892761452,
+				"y": 341.4346205877402
+			},
+			"data": {
+				"id": "callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce",
+				"type": "callNode",
+				"position": {
+					"x": 8137.4103846448415,
+					"y": 310.44044980753966
+				},
+				"previousNodeId": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "sendEmailUpdateSuccess",
+					"javaVariableName": "emailUpdateService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"email",
+						"lang"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "call",
+					"hasComment": true,
+					"comment": "emailUpdateSuccessMail",
+					"asssignedVariableName": "emailUpdateSuccessMail"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
+			"type": "logNode",
+			"position": {
+				"x": 8416.603801511425,
+				"y": 341.4346205877402
+			},
+			"data": {
+				"id": "logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
+				"type": "logNode",
+				"position": {
+					"x": 8378.800892761452,
+					"y": 341.4346205877402
+				},
+				"previousNodeId": "callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce",
+				"agamaData": {
+					"logMessage": "\"Email send successfully\"",
+					"logLevel": "error",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "\"Email send successfully\""
 				}
 			},
 			"measured": {
@@ -2886,25 +2962,6 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-4df2446b-c1c3-4fb6-8c83-1f3b4396fed0_success"
-		},
-		{
-			"id": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3-rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
-			"type": "default",
-			"source": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3",
-			"target": "rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3"
 		},
 		{
 			"id": "rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627-logNode-b1dd16e6-89ee-422a-89e7-2dd2834ce751",
@@ -3825,11 +3882,68 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_repeatNode-50822cd1-1ce1-4911-b61b-969deacb03e7_continue"
+		},
+		{
+			"id": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3-callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce",
+			"type": "default",
+			"source": "logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3",
+			"target": "callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-bb399a81-71d3-45cb-a5aa-ba39c4f6cbb3"
+		},
+		{
+			"id": "callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce-logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
+			"type": "default",
+			"source": "callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce",
+			"target": "logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-44cfb5bf-bf94-4063-aa29-3f6e6cf505ce"
+		},
+		{
+			"id": "logNode-4915bec5-1205-4d19-852d-8fe0f4b48742-rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
+			"type": "default",
+			"source": "logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
+			"target": "rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "source_logNode-4915bec5-1205-4d19-852d-8fe0f4b48742",
+			"targetHandle": "target_rrfNode-1eb84363-a591-49bc-9d7e-71df6bcf9627"
 		}
 	],
 	"viewport": {
-		"x": -3220.7392192528614,
-		"y": 298.8212793740123,
-		"zoom": 0.9100388240808991
+		"x": -7141.079180524717,
+		"y": 155.9058770730877,
+		"zoom": 1
 	}
 }

@@ -58,14 +58,16 @@ Repeat 6 times max
                               Repeat 3 times max
                                    emailOtpCred = RRF "emailOtp.ftlh" uiFeedback
                                    When emailOtpCred.passcode is "101010"
-                                        uiFeedback.errorMessage = "Invalid OTP, Please Try Again!"
+                                        // OTP doesn't match
+                                        uiFeedback.errorMessage = "OTP doesn't match"
                                         uiFeedback.matches = true
                                         email = userInput.mail
-                                   uiFeedback.errorMessage = "Invalid OTP, Please Try Again!"
+                                   // OTP doesn't match
+                                   uiFeedback.errorMessage = "OTP doesn't match"
                                    uiFeedback.matches = true
                                    email = userInput.mail
-                              it_qhrvz = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                              Finish it_qhrvz
+                              it_dhfrh = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_dhfrh
                          Otherwise
                               Log "@info Send-Email-page-trigger"
                               // sent Email otp
@@ -110,28 +112,32 @@ Repeat 6 times max
                                              //  If user update success
                                              When inum is not null
                                                   //  Show user updation log
-                                                  Log "@info User % has been updated" inum
+                                                  Log "@info User % has been updated" inum email lang
+                                                  // emailUpdateSuccessMail
+                                                  emailUpdateSuccessMail = Call emailUpdateService sendEmailUpdateSuccess email lang
+                                                  // "Email send successfully"
+                                                  Log "@error Email send successfully"
                                                   //  Show acknowledgement UI page for successful Update 
                                                   acknowledgementInput = RRF "acknowledgementEmail.ftlh" 
                                                   //  Finish the flow successfully
                                                   Log "@info Finish the flow successfully"
                                                   //  Finish the flow successfully
-                                                  it_qulbx = {success:true, data: { userId: userName, email: email}}
-                                                  Finish it_qulbx
+                                                  it_dcqfc = {success:true, data: { userId: userName, email: email}}
+                                                  Finish it_dcqfc
                                              Otherwise
                                                   //  User update failed log
                                                   Log "@info User update failed. Error : %" E
                                                   uiFeedback.errorMessage = "User update failed"
                                         Otherwise
-                                             Log "@info Invalid OTP, Please Try Again!"
-                                             uiFeedback.errorMessage = "Invalid OTP, Please Try Again!"
+                                             Log "@info OTP doesn't match"
+                                             uiFeedback.errorMessage = "OTP doesn't match"
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@error You have reached the maximun email OTP verification"
-                              it_apgvg = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                              Finish it_apgvg
+                              it_xwtjz = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_xwtjz
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_rrwjr = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_rrwjr
+it_dssxq = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_dssxq

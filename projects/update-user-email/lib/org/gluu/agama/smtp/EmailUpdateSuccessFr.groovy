@@ -2,9 +2,9 @@ package org.gluu.agama.smtp;
 
 import java.util.Map;
 
-class EmailOtpId {
+class EmailUpdateSuccessFr {
 
-    static Map<String, String> get(String otp) {
+    static Map<String, String> get() {
 
         String html = """
 <table role="presentation" cellspacing="0" cellpadding="0" width="100%" style="background-color:#F2F4F6;margin:0;padding:0;width:100%;">
@@ -27,21 +27,12 @@ class EmailOtpId {
                   <tbody>
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
-                        <p>Halo,</p>
 
-                        <p>Masukkan kode 6 digit di bawah ini untuk memverifikasi alamat email Anda.</p>
-
-                        <div style="text-align:center;margin:30px 0;">
-                          <div style="display:inline-block;background-color:#f5f5f5;color:#AD9269;font-size:40px;font-weight:600;letter-spacing:6px;padding:10px 20px;border-radius:4px;">
-                            """ + otp + """
-                          </div>
-                        </div>
-
-                        <p>Jika Anda tidak meminta ini, Anda dapat mengabaikan pesan ini dengan aman. Akun Anda tetap aman.</p>
-                        <p>Terima kasih atas kepercayaan Anda.</p>
-
-                        <p style="margin-top:30px;">Salam hangat,</p>
-                        <p style="margin-top:30px;">Tim Phi Wallet</p>
+                        <p>Bonjour,</p>
+                        <p>Votre adresse e-mail a été mise à jour avec succès. Vous pouvez continuer à profiter de Phi Wallet en toute fluidité.</p>
+                        <p><a href="https://link.phiwallet.com/vLl3yLHkeQb" style="color:#3869D4;font-weight:bold;">Accéder au compte</a></p>
+                        <p>Si vous avez besoin d'aide, il vous suffit de répondre à cet e-mail et notre équipe vous répondra rapidement.</p>
+                        <p style="margin-top:30px;">Cordialement,<br>L'équipe Phi Wallet</p>
 
                       </td>
                     </tr>
@@ -57,7 +48,7 @@ class EmailOtpId {
                   <tbody>
                     <tr>
                       <td style="padding:20px;font-size:12px;color:#666;">
-                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">Ikuti kami di:</p>
+                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">Suivez-nous sur :</p>
                         <p>
                           <a href="https://www.facebook.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/facebook.png" style="height:20px;"></a>
                           <a href="https://x.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/twitter.png" style="height:20px;"></a>
@@ -67,7 +58,7 @@ class EmailOtpId {
                         <p style="margin-top:10px;line-height:20px;color:#A8AAAF;font-size:12px;">
                           Phi Wallet Unipessoal LDA<br>
                           Avenida da Liberdade 262 R/C<br>
-                          1250-149 Lisbon<br>
+                          1250-149 Lisbonne<br>
                           Portugal
                         </p>
                       </td>
@@ -86,7 +77,7 @@ class EmailOtpId {
 """;
 
         return Map.of(
-            "subject", "Kode Verifikasi - Phi Walletl",
+            "subject", "Votre adresse e-mail a bien été mise à jour",
             "body", html
         );
     }

@@ -27,9 +27,9 @@ class EmailOtpPt {
                   <tbody>
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
-                        <p>Halo,</p>
+                        <p>Olá,</p>
 
-                        <p>Insira o cÃ³digo de 6 dÃ­gitos abaixo para verificar o seu endereÃ§o de e-mail.</p>
+                        <p>Insira o código de 6 dígitos abaixo para verificar seu endereço de e-mail.</p>
 
                         <div style="text-align:center;margin:30px 0;">
                           <div style="display:inline-block;background-color:#f5f5f5;color:#AD9269;font-size:40px;font-weight:600;letter-spacing:6px;padding:10px 20px;border-radius:4px;">
@@ -37,9 +37,10 @@ class EmailOtpPt {
                           </div>
                         </div>
 
-                        <p>Se vocÃª nÃ£o solicitou isto, pode ignorar este e-mail com seguranÃ§a.</p>
-                        <p>Obrigado por nos ajudar a manter a seguranÃ§a da sua conta.</p>
+                        <p>Se não foi você que fez este pedido, pode ignorar esta mensagem com segurança. A sua conta continuará segura.</p>
+                        <p>Obrigado pela sua confiança.</p>
 
+                        <p style="margin-top:30px;">Com os melhores cumprimentos,</p>
                         <p style="margin-top:30px;">Equipe Phi Wallet</p>
 
                       </td>
@@ -56,7 +57,7 @@ class EmailOtpPt {
                   <tbody>
                     <tr>
                       <td style="padding:20px;font-size:12px;color:#666;">
-                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">Follow us on:</p>
+                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">Siga-nos:</p>
                         <p>
                           <a href="https://www.facebook.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/facebook.png" style="height:20px;"></a>
                           <a href="https://x.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/twitter.png" style="height:20px;"></a>
@@ -66,7 +67,7 @@ class EmailOtpPt {
                         <p style="margin-top:10px;line-height:20px;color:#A8AAAF;font-size:12px;">
                           Phi Wallet Unipessoal LDA<br>
                           Avenida da Liberdade 262 R/C<br>
-                          1250-149 Lisbon<br>
+                          1250-149 Lisboa<br>
                           Portugal
                         </p>
                       </td>
@@ -85,7 +86,7 @@ class EmailOtpPt {
 """;
 
         return Map.of(
-            "subject", "Seu cÃ³digo de verificaÃ§Ã£o",
+            "subject", "Código de verificação - Phi Wallet",
             "body", html
         );
     }
