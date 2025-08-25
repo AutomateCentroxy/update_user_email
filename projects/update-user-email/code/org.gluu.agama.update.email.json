@@ -2470,7 +2470,7 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "OTP doesn't match"
 				}
 			},
 			"measured": {
@@ -2534,7 +2534,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"Invalid OTP, Please Try Again!\"",
+							"assignmentExpression": "\"OTP doesn't match\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						},
 						{
@@ -2554,7 +2554,7 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "OTP doesn't match"
 				}
 			},
 			"measured": {
