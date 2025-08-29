@@ -2737,7 +2737,14 @@
 					"variableField": "",
 					"valueField": "",
 					"conditionInputField": "",
-					"conditions": [],
+					"conditions": [
+						{
+							"variable": "UserAPiCall.status",
+							"operator": "is not",
+							"dataValue": "\"success\"",
+							"combinator": "none"
+						}
+					],
 					"nodeIcon": "ph:swap",
 					"nodeColor": "",
 					"titleColor": "",
@@ -2751,7 +2758,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -4163,8 +4170,8 @@
 		}
 	],
 	"viewport": {
-		"x": -9197.670533231532,
-		"y": 41.70698240378613,
-		"zoom": 1.161508731925722
+		"x": -10692.072785145567,
+		"y": -278.68053912193864,
+		"zoom": 1.3491025343396987
 	}
 }
