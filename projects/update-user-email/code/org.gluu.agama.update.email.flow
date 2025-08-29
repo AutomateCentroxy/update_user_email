@@ -18,7 +18,7 @@ Repeat 6 times max
           // accessToken
           Log "@info Validating access token: %" accessToken
           //  create an instance of Update service
-          emailUpdateService = Call org.gluu.agama.user.EmailUpdate#getInstance 
+          emailUpdateService = Call org.gluu.agama.user.EmailUpdate#getInstance conf
           // Validate the bearer token
           authCheck = Call org.gluu.agama.update.JansEmailUpdate#validateBearerToken accessToken
           // Check if token validation failed
@@ -67,8 +67,8 @@ Repeat 6 times max
                                    uiFeedback.errorMessage = "OTP doesn't match"
                                    uiFeedback.matches = true
                                    email = userInput.mail
-                              it_ewari = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                              Finish it_ewari
+                              it_evwac = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_evwac
                          Otherwise
                               Log "@info Send-Email-page-trigger"
                               // sent Email otp
@@ -128,8 +128,8 @@ Repeat 6 times max
                                                        //  Finish the flow successfully
                                                        Log "@info Finish the flow successfully"
                                                        //  Finish the flow successfully
-                                                       it_tvnue = {success:true, data: { userId: userName, email: email}}
-                                                       Finish it_tvnue
+                                                       it_bmusu = {success:true, data: { userId: userName, email: email}}
+                                                       Finish it_bmusu
                                              Otherwise
                                                   //  User update failed log
                                                   Log "@info User update failed. Error : %" E
@@ -140,10 +140,10 @@ Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@error You have reached the maximun email OTP verification"
-                              it_zoyzg = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                              Finish it_zoyzg
+                              it_nrwtx = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_nrwtx
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_lzihr = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_lzihr
+it_sdsrx = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_sdsrx
