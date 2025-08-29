@@ -2,6 +2,7 @@ package org.gluu.agama.update;
 
 import io.jans.as.common.model.common.User;
 import io.jans.as.common.service.common.EncryptionService;
+import io.jans.agama.engine.service.FlowService;
 import io.jans.as.common.service.common.UserService;
 import io.jans.orm.exception.operation.EntryNotFoundException;
 import io.jans.service.cdi.util.CdiUtil;
