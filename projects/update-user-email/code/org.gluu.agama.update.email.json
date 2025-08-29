@@ -19,11 +19,11 @@
 				"agamaData": {
 					"isTopLevelFlow": true,
 					"basepath": "",
-					"configParams": "{}",
+					"configParams": "{\n  \"PRIVATE_KEY\": \"your_private_key_here\",\n  \"PUBLIC_KEY\": \"your_public_key_here\"\n}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "500000",
 					"inputs": "",
-					"configs": "",
+					"configs": "config",
 					"flowname": "org.gluu.agama.update.email",
 					"displayName": "Update User Email",
 					"creationDate": "09/07/2025",
@@ -35,7 +35,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -848,7 +848,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -3942,8 +3942,8 @@
 		}
 	],
 	"viewport": {
-		"x": -7141.079180524717,
-		"y": 155.9058770730877,
-		"zoom": 1
+		"x": 1552.6539484977477,
+		"y": 257.1464689916453,
+		"zoom": 1.3491025343396987
 	}
 }
