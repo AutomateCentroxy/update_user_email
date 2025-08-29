@@ -37,6 +37,9 @@ import io.jans.as.server.service.token.TokenService;
 import io.jans.as.server.model.common.AuthorizationGrant;
 import io.jans.as.server.model.common.AuthorizationGrantList;
 import io.jans.as.server.model.common.AbstractToken;
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+
 
 
 class JansEmailUpdate extends EmailUpdate {
