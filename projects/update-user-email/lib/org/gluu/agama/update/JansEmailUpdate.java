@@ -37,6 +37,7 @@ import io.jans.as.server.service.token.TokenService;
 import io.jans.as.server.model.common.AuthorizationGrant;
 import io.jans.as.server.model.common.AuthorizationGrantList;
 import io.jans.as.server.model.common.AbstractToken;
+private final Map<String, String> flowConfig;
 
 public class JansEmailUpdate extends EmailUpdate {
     private static final Logger logger = LoggerFactory.getLogger(JansEmailUpdate.class);
@@ -60,6 +61,14 @@ public class JansEmailUpdate extends EmailUpdate {
     private static JansEmailUpdate INSTANCE = null;
 
     public JansEmailUpdate() {
+        this.flowConfig = new HashMap<>();
+        logger.info("Initialized JansUserRegistration using default constructor (no config).");
+    }
+
+    // ✅ Constructor used by getInstance()
+    private JansEmailUpdate(Map config) {
+        this.flowConfig = config;
+        logger.debug("Flow config provided for PhiWallet is: {}", config);
     }
 
     public static synchronized JansEmailUpdate getInstance() {
@@ -445,4 +454,93 @@ public class JansEmailUpdate extends EmailUpdate {
         UserService userService = CdiUtil.bean(UserService.class);
         return userService.getUserByAttribute(attributeName, value, true);
     }
+
+
+    // Add inside JansEmailUpdate class
+    public String generateSignature(String userId) {
+        try {
+            if (userId == null || userId.isBlank()) {
+                logger.error("UserId is null or empty, cannot generate signature");
+                return null;
+            }
+            // Load from Agama config
+            Map<String, String> config = getAgamaConfig();
+            String privateKey = config.get("PRIVATE_KEY");
+
+            if (privateKey == null) {
+                logger.error("PRIVATE_KEY is missing in Agama config");
+                return null;
+            }
+
+            Mac mac = Mac.getInstance("HmacSHA256");
+            SecretKeySpec secretKeySpec = new SecretKeySpec(privateKey.getBytes(StandardCharsets.UTF_8), "HmacSHA256");
+            mac.init(secretKeySpec);
+            byte[] hmacBytes = mac.doFinal(userId.getBytes(StandardCharsets.UTF_8));
+
+            // Convert to lowercase hex
+            StringBuilder sb = new StringBuilder();
+            for (byte b : hmacBytes) {
+                sb.append(String.format("%02x", b));
+            }
+            return sb.toString().toLowerCase();
+
+        } catch (Exception e) {
+            logger.error("Error generating HMAC signature: {}", e.getMessage());
+            return null;
+        }
+    }
+        
+
+    public Map<String, Object> syncUserWithExternal(String userId) {
+        Map<String, Object> result = new HashMap<>();
+        try {
+            // Load config
+            Map<String, String> config = getAgamaConfig();
+            String publicKey = config.get("PUBLIC_KEY");
+
+            if (publicKey == null) {
+                result.put("status", "error");
+                result.put("message", "PUBLIC_KEY missing in config");
+                return result;
+            }
+
+            // Generate signature using PRIVATE_KEY from config
+            String signature = generateSignature(userId);
+            if (signature == null) {
+                result.put("status", "error");
+                result.put("message", "Failed to generate signature");
+                return result;
+            }
+
+            // Build webhook URL
+            String url = String.format("https://api.phiwallet.dev/v1/webhooks/users/%s/sync", userId);
+
+            // HTTP request
+            HttpClient client = HttpClient.newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(url))
+                    .header("X-AUTH-CLIENT", publicKey)
+                    .header("X-HMAC-SIGNATURE", signature)
+                    .POST(HttpRequest.BodyPublishers.noBody())
+                    .build();
+
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            logger.info("Webhook sync response status: {}, body: {}", response.statusCode(), response.body());
+
+            if (response.statusCode() == 200) {
+                result.put("status", "success");
+            } else {
+                result.put("status", "error");
+            }
+
+            return result;
+
+        } catch (Exception e) {
+            logger.error("Error syncing user {}: {}", userId, e.getMessage());
+            result.put("status", "error");
+            result.put("message", e.getMessage());
+            return result;
+        }
+    }
+
 }
