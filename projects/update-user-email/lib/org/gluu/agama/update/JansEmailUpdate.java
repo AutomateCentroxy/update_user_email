@@ -37,9 +37,9 @@ import io.jans.as.server.service.token.TokenService;
 import io.jans.as.server.model.common.AuthorizationGrant;
 import io.jans.as.server.model.common.AuthorizationGrantList;
 import io.jans.as.server.model.common.AbstractToken;
-private final Map<String, String> flowConfig;
 
-public class JansEmailUpdate extends EmailUpdate {
+
+class JansEmailUpdate extends EmailUpdate {
 
     private static final Logger logger = LoggerFactory.getLogger(FlowService.class);
     private static final String MAIL = "mail";
@@ -57,6 +57,7 @@ public class JansEmailUpdate extends EmailUpdate {
     private static final int OTP_LENGTH = 6;
     private static final String SUBJECT_TEMPLATE = "Here's your verification code: %s";
     private static final String MSG_TEMPLATE_TEXT = "%s is the code to complete your verification";
+    private final Map<String, String> flowConfig;
 
     private static JansEmailUpdate INSTANCE = null;
 
