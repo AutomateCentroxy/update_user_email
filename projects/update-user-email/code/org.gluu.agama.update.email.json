@@ -2767,7 +2767,7 @@
 			"id": "logNode-9f871d32-d7e5-4390-b78a-8bb316e99d53",
 			"type": "logNode",
 			"position": {
-				"x": 8592.934720559162,
+				"x": 8593.844759383244,
 				"y": 545.7156362513928
 			},
 			"data": {
@@ -2827,14 +2827,14 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "API Error Essage"
+					"comment": "API Error Message"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		}
 	],
@@ -4178,8 +4178,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4619.904777048795,
-		"y": 195.77585690029812,
-		"zoom": 0.6745512671698494
+		"x": -8620.545155277796,
+		"y": -38.32818675512215,
+		"zoom": 1.0988542175768798
 	}
 }
