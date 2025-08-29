@@ -74,9 +74,9 @@ class JansEmailUpdate extends EmailUpdate {
         logger.debug("Flow config provided for PhiWallet is: {}", config);
     }
 
-    public static synchronized JansEmailUpdate getInstance() {
+    public static synchronized JansEmailUpdate getInstance(Map<String, String> config) {
         if (INSTANCE == null)
-            INSTANCE = new JansEmailUpdate();
+            INSTANCE = new JansEmailUpdate(config);
 
         return INSTANCE;
     }
