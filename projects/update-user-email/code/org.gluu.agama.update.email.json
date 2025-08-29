@@ -23,7 +23,7 @@
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "500000",
 					"inputs": "",
-					"configs": "config",
+					"configs": "conf",
 					"flowname": "org.gluu.agama.update.email",
 					"displayName": "Update User Email",
 					"creationDate": "09/07/2025",
@@ -35,7 +35,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2793,7 +2793,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -4170,8 +4170,8 @@
 		}
 	],
 	"viewport": {
-		"x": -10692.072785145567,
-		"y": -278.68053912193864,
-		"zoom": 1.3491025343396987
+		"x": 1466.5404544919256,
+		"y": 258.03419663859677,
+		"zoom": 0.860949188338904
 	}
 }
