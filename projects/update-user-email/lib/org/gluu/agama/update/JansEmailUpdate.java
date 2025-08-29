@@ -40,8 +40,8 @@ import io.jans.as.server.model.common.AbstractToken;
 private final Map<String, String> flowConfig;
 
 public class JansEmailUpdate extends EmailUpdate {
-    private static final Logger logger = LoggerFactory.getLogger(JansEmailUpdate.class);
 
+    private static final Logger logger = LoggerFactory.getLogger(FlowService.class);
     private static final String MAIL = "mail";
     private static final String UID = "uid";
     private static final String DISPLAY_NAME = "displayName";
@@ -61,8 +61,6 @@ public class JansEmailUpdate extends EmailUpdate {
     private static JansEmailUpdate INSTANCE = null;
 
     public JansEmailUpdate() {
-        this.flowConfig = new HashMap<>();
-        logger.info("Initialized JansUserRegistration using default constructor (no config).");
     }
 
     // ✅ Constructor used by getInstance()
