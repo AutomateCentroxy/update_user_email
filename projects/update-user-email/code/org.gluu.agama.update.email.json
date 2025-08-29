@@ -198,7 +198,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2814,21 +2814,27 @@
 				},
 				"previousNodeId": "logNode-9f871d32-d7e5-4390-b78a-8bb316e99d53",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "UserAPiCall.message",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "API Error Essage"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		}
 	],
@@ -4172,8 +4178,8 @@
 		}
 	],
 	"viewport": {
-		"x": 1029.9766073134783,
-		"y": 21.50802358327701,
-		"zoom": 1.0570180405613803
+		"x": -13934.398958562404,
+		"y": -530.7653762495954,
+		"zoom": 1.656341322669091
 	}
 }
