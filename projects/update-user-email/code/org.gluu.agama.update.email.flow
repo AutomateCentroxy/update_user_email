@@ -67,8 +67,8 @@ Repeat 6 times max
                                    uiFeedback.errorMessage = "OTP doesn't match"
                                    uiFeedback.matches = true
                                    email = userInput.mail
-                              it_evwac = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                              Finish it_evwac
+                              it_hdcrk = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_hdcrk
                          Otherwise
                               Log "@info Send-Email-page-trigger"
                               // sent Email otp
@@ -128,8 +128,8 @@ Repeat 6 times max
                                                        //  Finish the flow successfully
                                                        Log "@info Finish the flow successfully"
                                                        //  Finish the flow successfully
-                                                       it_bmusu = {success:true, data: { userId: userName, email: email}}
-                                                       Finish it_bmusu
+                                                       it_qrufg = {success:true, data: { userId: userName, email: email}}
+                                                       Finish it_qrufg
                                              Otherwise
                                                   //  User update failed log
                                                   Log "@info User update failed. Error : %" E
@@ -140,10 +140,10 @@ Repeat 6 times max
                               uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                               // Email OTP verification loop completed
                               Log "@error You have reached the maximun email OTP verification"
-                              it_nrwtx = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                              Finish it_nrwtx
+                              it_erkar = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                              Finish it_erkar
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_sdsrx = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_sdsrx
+it_zpven = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_zpven
