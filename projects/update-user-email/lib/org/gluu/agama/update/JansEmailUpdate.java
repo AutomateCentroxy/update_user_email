@@ -457,10 +457,10 @@ public class JansEmailUpdate extends EmailUpdate {
 
 
     // Add inside JansEmailUpdate class
-    public String generateSignature(String userId) {
+    public String generateSignature(String inum) {
         try {
-            if (userId == null || userId.isBlank()) {
-                logger.error("UserId is null or empty, cannot generate signature");
+            if (inum == null || inum.isBlank()) {
+                logger.error("inum is null or empty, cannot generate signature");
                 return null;
             }
             // Load from Agama config
@@ -475,7 +475,7 @@ public class JansEmailUpdate extends EmailUpdate {
             Mac mac = Mac.getInstance("HmacSHA256");
             SecretKeySpec secretKeySpec = new SecretKeySpec(privateKey.getBytes(StandardCharsets.UTF_8), "HmacSHA256");
             mac.init(secretKeySpec);
-            byte[] hmacBytes = mac.doFinal(userId.getBytes(StandardCharsets.UTF_8));
+            byte[] hmacBytes = mac.doFinal(inum.getBytes(StandardCharsets.UTF_8));
 
             // Convert to lowercase hex
             StringBuilder sb = new StringBuilder();
@@ -491,7 +491,7 @@ public class JansEmailUpdate extends EmailUpdate {
     }
         
 
-    public Map<String, Object> syncUserWithExternal(String userId) {
+    public Map<String, Object> syncUserWithExternal(String inum) {
         Map<String, Object> result = new HashMap<>();
         try {
             // Load config
@@ -505,7 +505,7 @@ public class JansEmailUpdate extends EmailUpdate {
             }
 
             // Generate signature using PRIVATE_KEY from config
-            String signature = generateSignature(userId);
+            String signature = generateSignature(inum);
             if (signature == null) {
                 result.put("status", "error");
                 result.put("message", "Failed to generate signature");
@@ -513,7 +513,7 @@ public class JansEmailUpdate extends EmailUpdate {
             }
 
             // Build webhook URL
-            String url = String.format("https://api.phiwallet.dev/v1/webhooks/users/%s/sync", userId);
+            String url = String.format("https://api.phiwallet.dev/v1/webhooks/users/%s/sync", inum);
 
             // HTTP request
             HttpClient client = HttpClient.newHttpClient();
@@ -536,7 +536,7 @@ public class JansEmailUpdate extends EmailUpdate {
             return result;
 
         } catch (Exception e) {
-            logger.error("Error syncing user {}: {}", userId, e.getMessage());
+            logger.error("Error syncing user {}: {}", inum, e.getMessage());
             result.put("status", "error");
             result.put("message", e.getMessage());
             return result;
