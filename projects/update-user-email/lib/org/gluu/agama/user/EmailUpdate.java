@@ -20,7 +20,7 @@ public abstract class EmailUpdate {
 
     public abstract Map<String, String> getUserEntityByInum(String inum);
 
-    public static EmailUpdate getInstance(){
-        return  JansEmailUpdate.getInstance();
+    public static EmailUpdate getInstance(HashMap config){
+        return  JansEmailUpdate.getInstance(config);
     }    
 }
